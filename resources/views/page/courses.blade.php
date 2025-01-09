@@ -14,7 +14,7 @@
                   </div>
                 </div>
                 <div class="col-md-4 position-relative">
-                    <img src="{{ url('assets/frontend/img/university-banner.gif') }}" >
+                    <img src="{{ url('assets/frontend/img/course-banner.gif') }}" >
                 </div>
             </div>    
         </div>
