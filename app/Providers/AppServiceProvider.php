@@ -32,8 +32,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
-
         Menu::macro('main', function () {
             return  Menu::new([
                 Link::to('/', 'Home'),
@@ -48,8 +46,7 @@ class AppServiceProvider extends ServiceProvider
         {
 
             // Header Menu
-            $primaryMenu = array(
-                '/about-us' => "About Us",                
+            $primaryMenu = array(   
                 '/contact' => "Contact",
             );
             $view->with('primaryMenu', $primaryMenu);
@@ -66,9 +63,7 @@ class AppServiceProvider extends ServiceProvider
             $user = Auth::user();
             $view->with('user', $user);
 
-
-
-             // Get User
+            // Get User
             $loggedInUser = Auth::user();
             $view->with('loggedInUser', $loggedInUser);
  

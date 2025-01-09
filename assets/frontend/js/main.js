@@ -12,6 +12,16 @@
     preloader();
   });
 
+  $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+     //>=, not <=
+    if (scroll >= 500) {
+        //clearHeader, not clearheader - caps H
+        $(".course-sidebar").addClass("sticky");
+    }
+  }); //missing );
+
   $(function () {
     mainNav();
     stickyHeader();
@@ -174,6 +184,87 @@
           var mdPoint = parseInt($ts.attr('data-md-slides'), 10);
           var smPoint = parseInt($ts.attr('data-sm-slides'), 10);
           var xsPoing = parseInt($ts.attr('data-xs-slides'), 10);
+        }
+        var fadeVar = parseInt($($ts).attr('data-fade-slide'));
+        fadeVar === 1 ? (fadeVar = true) : (fadeVar = false);
+        $slickActive.slick({
+          autoplay: autoPlayVar,
+          dots: paginaiton,
+          centerPadding: '28%',
+          speed: speedVar,
+          infinite: loopVar,
+          autoplaySpeed: autoplaySpdVar,
+          centerMode: centerVar,
+          fade: fadeVar,
+          prevArrow: $(this).find('.td_left_arrow'),
+          nextArrow: $(this).find('.td_right_arrow'),
+          appendDots: $(this).find('.td_pagination'),
+          slidesToShow: slidesPerView,
+          variableWidth: variableWidthVar,
+          swipeToSlide: true,
+          responsive: [
+            {
+              breakpoint: 1600,
+              settings: {
+                slidesToShow: lgPoint,
+              },
+            },
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: mdPoint,
+              },
+            },
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: smPoint,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: xsPoing,
+              },
+            },
+          ],
+        });
+      });
+    }
+
+    if ($.exists('.three_td_slider')) {
+      $('.three_td_slider').each(function () {
+        var $ts = $(this).find('.td_three_slider_container');
+        console.log($ts);
+        
+        var $slickActive = $(this).find('.td_three_slider_wrapper');
+        var autoPlayVar = parseInt($ts.attr('data-autoplay'), 10);
+        var autoplaySpdVar = 3000;
+        if (autoPlayVar > 1) {
+          autoplaySpdVar = autoPlayVar;
+          autoPlayVar = 1;
+        }
+        var speedVar = parseInt($ts.attr('data-speed'), 10);
+        var loopVar = Boolean(parseInt($ts.attr('data-loop'), 10));
+        var centerVar = Boolean(parseInt($ts.attr('data-center'), 10));
+        var variableWidthVar = Boolean(
+          parseInt($ts.attr('data-variable-width'), 10),
+        );
+        var paginaiton = $(this)
+          .find('.td_pagination')
+          .hasClass('td_pagination');
+        var slidesPerView = $ts.attr('data-slides-per-view');
+        if (slidesPerView == 1) {
+          slidesPerView = 1;
+        }
+        if (slidesPerView == 'responsive') {
+          var slidesPerView = parseInt($ts.attr('data-add-slides'), 10);
+          var lgPoint = parseInt($ts.attr('data-lg-slides'), 10);
+          var mdPoint = parseInt($ts.attr('data-md-slides'), 10);
+          var smPoint = parseInt($ts.attr('data-sm-slides'), 10);
+          var xsPoing = parseInt($ts.attr('data-xs-slides'), 10);
+          console.log(lgPoint);
+          
         }
         var fadeVar = parseInt($($ts).attr('data-fade-slide'));
         fadeVar === 1 ? (fadeVar = true) : (fadeVar = false);

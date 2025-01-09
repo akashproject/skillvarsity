@@ -5735,14 +5735,17 @@ label {
   overflow: hidden;
 }
 
-.td_card.course-sticky-sidebar {
+.td_card.course-sidebar {
   padding: 15px 30px;
   box-shadow: 2px 2px 50px 0px rgba(0, 0, 27, 0.1);
-  position: fixed;
   z-index: 10;
   width: 380px;
   background: #fff;
   top: 140px;
+}
+
+.sticky{
+  position: fixed;
 }
 
 .td_page_heading {
@@ -10046,12 +10049,13 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .td_hero.td_style_3 {
-  height: 640px;
+  height: 530px;
   position: relative;
   background-color: rgba(250, 250, 250, 0.5);
   overflow: hidden;
-  padding-top: 20px;
+  padding-bottom: 80px;
 }
+
 @media (max-width: 991px) {
   .td_hero.td_style_3 {
     height: initial;
@@ -13366,12 +13370,9 @@ button.td_icon_btn:hover {
   position: relative;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
+  background: #fff;
 }
 .td_card.td_style_3 .td_card_label {
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  z-index: 2;
   padding: 4px 10px;
   border-radius: 6px;
 }
@@ -13492,12 +13493,14 @@ button.td_icon_btn:hover {
   overflow: hidden;
 }
 .td_card.td_style_3 .td_card_thumb {
-  overflow: hidden;
-  display: block;
+  display: inline-block;
   position: relative;
+  overflow: hidden;
+  margin-left: 20px;
+  vertical-align: top;
 }
 .td_card.td_style_3 .td_card_thumb img {
-  width: 100%;
+  width: auto;
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
 }

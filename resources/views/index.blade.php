@@ -17,7 +17,7 @@
     </section>
     <!-- Start Courses Section -->
     <section class="td_yellow_bg_4">
-      <div class="container">
+      <div class="container-fluid">
         <div class="td_tabs td_style_1">
           <div class="td_section_heading py-2 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
             <div class="row">
@@ -36,676 +36,80 @@
                 </a>
               </div>
             </div>
-            
           </div>
           <div class="td_tab_body">
-            <div class="td_tab active" id="td_tab_1">
-              <div class="row td_gap_y_30 td_row_gap_30">
-                @foreach($courses as $key => $course )
-                <div class="col-xl-4">
-                  <div class="td_card td_style_5 td_type_3 bg-white p-3">
-                    <div class="td_card_content">
-                      <h5 class="td_card_title td_semibold td_mb_12"><a href="{{ $course->slug }}">{{ $course->name }}</a></h5>
-                      <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
-                        <li>
-                          <img src="assets/frontend/img/icons/user_3.svg" alt="">
-                          <span class="td_opacity_7">150 Enrolled</span>
-                        </li>
-                        <li>
-                          <img src="assets/frontend/img/icons/book.svg" alt="">
-                          <span class="td_opacity_7">{{ $course->no_of_module }} Modules</span>
-                        </li>
-                      </ul>
-                      <div class="td_card_price_wrap td_mb_12">
-                        <div class="td_card_review">
-                          <div class="td_rating" data-rating="4.5">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <div class="td_rating_percentage">
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
+            <div class="">
+                <div class="three_td_slider td_style_1 td_slider_gap_24 td_remove_overflow">
+                  <div class="td_three_slider_container" data-autoplay="0" data-loop="3" data-speed="800" data-center="0" data-variable-width="3" data-slides-per-view="responsive" data-xs-slides="4" data-sm-slides="4" data-md-slides="4" data-lg-slides="5" data-add-slides="4">
+                    <div class="td_three_slider_wrapper">
+                      @foreach($courses as $key => $course )
+                        <div class="td_slide">
+                          <div class="td_card td_style_5 td_type_3 bg-white p-3">
+                            <div class="td_card_content">
+                              <h5 class="td_card_title td_semibold td_mb_12"><a href="{{ $course->slug }}">{{ $course->name }}</a></h5>
+                              <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
+                                <li>
+                                  <img src="assets/frontend/img/icons/user_3.svg" alt="">
+                                  <span class="td_opacity_7">150 Enrolled</span>
+                                </li>
+                                <li>
+                                  <img src="assets/frontend/img/icons/book.svg" alt="">
+                                  <span class="td_opacity_7">{{ $course->no_of_module }} Modules</span>
+                                </li>
+                              </ul>
+                              <div class="td_card_price_wrap td_mb_12">
+                                <div class="td_card_review">
+                                  <div class="td_rating" data-rating="4.5">
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <div class="td_rating_percentage">
+                                      <i class="fa-solid fa-star fa-fw"></i>
+                                      <i class="fa-solid fa-star fa-fw"></i>
+                                      <i class="fa-solid fa-star fa-fw"></i>
+                                      <i class="fa-solid fa-star fa-fw"></i>
+                                      <i class="fa-solid fa-star fa-fw"></i>
+                                    </div>
+                                  </div>
+                                  <span class="td_heading_color td_opacity_5 td_fs_14">(5.0/6 Ratings)</span>
+                                </div>
+                                <span class="td_card_price td_accent_color td_fs_18 td_medium">$39</span>
+                              </div>
+                              <div class="td_card_btns_wrap">
+                                <a href="blog-details.html" class="td_btn td_style_1 td_type_3 td_radius_10 td_medium td_fs_14">
+                                  <span class="td_btn_in td_accent_color">
+                                    <span>Enroll Now</span>
+                                  </span>             
+                                </a>
+                                <span class="td_fs_18 td_medium td_heading_color">Robert Anderson</span>
+                              </div>
                             </div>
                           </div>
-                          <span class="td_heading_color td_opacity_5 td_fs_14">(5.0/6 Ratings)</span>
                         </div>
-                        <span class="td_card_price td_accent_color td_fs_18 td_medium">$39</span>
-                      </div>
-                      <div class="td_card_btns_wrap">
-                        <a href="blog-details.html" class="td_btn td_style_1 td_type_3 td_radius_10 td_medium td_fs_14">
-                          <span class="td_btn_in td_accent_color">
-                            <span>Enroll Now</span>
-                          </span>             
-                        </a>
-                        <span class="td_fs_18 td_medium td_heading_color">Robert Anderson</span>
-                      </div>
+                      @endforeach
                     </div>
                   </div>
-                </div>
-                @endforeach
-                
-              </div>
-            </div><!-- .td_tab_item -->
-            <div class="td_tab" id="td_tab_2">
-              <div class="row td_gap_y_30 td_row_gap_30">
-                <div class="col-xl-4 bg-white">
-                  <div class="td_card td_style_5 td_type_1">
-                    <div class="td_card_content">
-                      <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
-                        <li>
-                          <img src="assets/frontend/img/icons/user_3.svg" alt="">
-                          <span class="td_opacity_7">120 Seats</span>
-                        </li>
-                        <li>
-                          <img src="assets/frontend/img/icons/book.svg" alt="">
-                          <span class="td_opacity_7">15 Semesters</span>
-                        </li>
-                      </ul>
-                      <h2 class="td_card_title td_fs_24 td_semibold td_mb_12"><a href="course-details.html">Master Technology & Elevate Your Career</a></h2>
-                      <div class="td_card_price_wrap td_mb_12">
-                        <div class="td_card_review">
-                          <div class="td_rating" data-rating="5">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <div class="td_rating_percentage">
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                            </div>
-                          </div>
-                          <span class="td_heading_color td_opacity_5 td_fs_14">(5.0/10 Ratings)</span>
-                        </div>
-                        <span class="td_card_price td_accent_bg td_white_color td_fs_18 td_medium">$89</span>
-                      </div>
-                      <div class="td_card_btns_wrap">
-                        <a href="blog-details.html" class="td_btn td_style_1 td_type_3 td_radius_30 td_medium td_fs_14">
-                          <span class="td_btn_in td_accent_color">
-                            <span>Enroll Now</span>
-                          </span>             
-                        </a>
-                        <span class="td_fs_18 td_medium td_heading_color">Robert Anderson</span>
-                      </div>
+                  <div class="td_height_40 td_height_lg_30"></div>
+                  <div class="td_slider_arrows td_style_1 td_type_2">
+                    <div class="td_left_arrow td_accent_bg td_radius_10 td_center td_white_color">
+                      <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.00194 6.00024L17.002 6.00024" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M6.00191 1C6.00191 1 1.00196 4.68244 1.00195 6.00004C1.00194 7.31763 6.00195 11 6.00195 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>                            
                     </div>
-                  </div>
-                </div>
-                <div class="col-xl-6">
-                  <div class="td_card td_style_5 td_type_1">
-                    <a href="course-details.html" class="td_card_thumb">
-                      <span class="td_card_thumb_in">
-                        <img src="assets/frontend/img/home_3/course_thumb_3.jpg" alt="">
-                        <span class="td_card_label td_fs_14 td_white_color td_accent_bg">Best Seller</span>
-                      </span>
-                    </a>
-                    <div class="td_card_content">
-                      <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
-                        <li>
-                          <img src="assets/frontend/img/icons/user_3.svg" alt="">
-                          <span class="td_opacity_7">200 Seats</span>
-                        </li>
-                        <li>
-                          <img src="assets/frontend/img/icons/book.svg" alt="">
-                          <span class="td_opacity_7">20 Semesters</span>
-                        </li>
-                      </ul>
-                      <h2 class="td_card_title td_fs_24 td_semibold td_mb_12"><a href="course-details.html">Boost Creativity & Expand Your Horizons</a></h2>
-                      <div class="td_card_price_wrap td_mb_12">
-                        <div class="td_card_review">
-                          <div class="td_rating" data-rating="5">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <div class="td_rating_percentage">
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                            </div>
-                          </div>
-                          <span class="td_heading_color td_opacity_5 td_fs_14">(5.0/30 Ratings)</span>
-                        </div>
-                        <span class="td_card_price td_accent_bg td_white_color td_fs_18 td_medium">$19</span>
-                      </div>
-                      <div class="td_card_btns_wrap">
-                        <a href="blog-details.html" class="td_btn td_style_1 td_type_3 td_radius_30 td_medium td_fs_14">
-                          <span class="td_btn_in td_accent_color">
-                            <span>Enroll Now</span>
-                          </span>             
-                        </a>
-                        <span class="td_fs_18 td_medium td_heading_color">Jhon Doe</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6">
-                  <div class="td_card td_style_5 td_type_1">
-                    <a href="course-details.html" class="td_card_thumb">
-                      <span class="td_card_thumb_in">
-                        <img src="assets/frontend/img/home_3/course_thumb_1.jpg" alt="">
-                        <span class="td_card_label td_fs_14 td_white_color td_accent_bg">New</span>
-                      </span>
-                    </a>
-                    <div class="td_card_content">
-                      <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
-                        <li>
-                          <img src="assets/frontend/img/icons/user_3.svg" alt="">
-                          <span class="td_opacity_7">150 Seats</span>
-                        </li>
-                        <li>
-                          <img src="assets/frontend/img/icons/book.svg" alt="">
-                          <span class="td_opacity_7">12 Semesters</span>
-                        </li>
-                      </ul>
-                      <h2 class="td_card_title td_fs_24 td_semibold td_mb_12"><a href="course-details.html">Starting Matheis Courses & Build your Skills</a></h2>
-                      <div class="td_card_price_wrap td_mb_12">
-                        <div class="td_card_review">
-                          <div class="td_rating" data-rating="4.5">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <div class="td_rating_percentage">
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                            </div>
-                          </div>
-                          <span class="td_heading_color td_opacity_5 td_fs_14">(5.0/6 Ratings)</span>
-                        </div>
-                        <span class="td_card_price td_accent_bg td_white_color td_fs_18 td_medium">$39</span>
-                      </div>
-                      <div class="td_card_btns_wrap">
-                        <a href="blog-details.html" class="td_btn td_style_1 td_type_3 td_radius_30 td_medium td_fs_14">
-                          <span class="td_btn_in td_accent_color">
-                            <span>Enroll Now</span>
-                          </span>             
-                        </a>
-                        <span class="td_fs_18 td_medium td_heading_color">Robert Anderson</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6">
-                  <div class="td_card td_style_5 td_type_1">
-                    <a href="course-details.html" class="td_card_thumb">
-                      <span class="td_card_thumb_in">
-                        <img src="assets/frontend/img/home_3/course_thumb_4.jpg" alt="">
-                      </span>
-                    </a>
-                    <div class="td_card_content">
-                      <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
-                        <li>
-                          <img src="assets/frontend/img/icons/user_3.svg" alt="">
-                          <span class="td_opacity_7">170 Seats</span>
-                        </li>
-                        <li>
-                          <img src="assets/frontend/img/icons/book.svg" alt="">
-                          <span class="td_opacity_7">19 Semesters</span>
-                        </li>
-                      </ul>
-                      <h2 class="td_card_title td_fs_24 td_semibold td_mb_12"><a href="course-details.html">Hone Leadership & Achieve Success</a></h2>
-                      <div class="td_card_price_wrap td_mb_12">
-                        <div class="td_card_review">
-                          <div class="td_rating" data-rating="5">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <div class="td_rating_percentage">
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                            </div>
-                          </div>
-                          <span class="td_heading_color td_opacity_5 td_fs_14">(5.0/50 Ratings)</span>
-                        </div>
-                        <span class="td_card_price td_accent_bg td_white_color td_fs_18 td_medium">$89</span>
-                      </div>
-                      <div class="td_card_btns_wrap">
-                        <a href="blog-details.html" class="td_btn td_style_1 td_type_3 td_radius_30 td_medium td_fs_14">
-                          <span class="td_btn_in td_accent_color">
-                            <span>Enroll Now</span>
-                          </span>             
-                        </a>
-                        <span class="td_fs_18 td_medium td_heading_color">Mary Krisey</span>
-                      </div>
+                    <div class="td_right_arrow td_accent_bg td_radius_10 td_center td_white_color">
+                      <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.002 5.99976L1.00195 5.99976" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.002 11C12.002 11 17.0019 7.31756 17.002 5.99996C17.002 4.68237 12.002 1 12.002 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>                               
                     </div>
                   </div>
                 </div>
               </div>
-            </div><!-- .td_tab_item -->
-            <div class="td_tab" id="td_tab_3">
-              <div class="row td_gap_y_30 td_row_gap_30">
-                <div class="col-xl-6">
-                  <div class="td_card td_style_5 td_type_1">
-                    <a href="course-details.html" class="td_card_thumb">
-                      <span class="td_card_thumb_in">
-                        <img src="assets/frontend/img/home_3/course_thumb_3.jpg" alt="">
-                        <span class="td_card_label td_fs_14 td_white_color td_accent_bg">Best Seller</span>
-                      </span>
-                    </a>
-                    <div class="td_card_content">
-                      <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
-                        <li>
-                          <img src="assets/frontend/img/icons/user_3.svg" alt="">
-                          <span class="td_opacity_7">200 Seats</span>
-                        </li>
-                        <li>
-                          <img src="assets/frontend/img/icons/book.svg" alt="">
-                          <span class="td_opacity_7">20 Semesters</span>
-                        </li>
-                      </ul>
-                      <h2 class="td_card_title td_fs_24 td_semibold td_mb_12"><a href="course-details.html">Boost Creativity & Expand Your Horizons</a></h2>
-                      <div class="td_card_price_wrap td_mb_12">
-                        <div class="td_card_review">
-                          <div class="td_rating" data-rating="5">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <div class="td_rating_percentage">
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                            </div>
-                          </div>
-                          <span class="td_heading_color td_opacity_5 td_fs_14">(5.0/30 Ratings)</span>
-                        </div>
-                        <span class="td_card_price td_accent_bg td_white_color td_fs_18 td_medium">$19</span>
-                      </div>
-                      <div class="td_card_btns_wrap">
-                        <a href="blog-details.html" class="td_btn td_style_1 td_type_3 td_radius_30 td_medium td_fs_14">
-                          <span class="td_btn_in td_accent_color">
-                            <span>Enroll Now</span>
-                          </span>             
-                        </a>
-                        <span class="td_fs_18 td_medium td_heading_color">Jhon Doe</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6">
-                  <div class="td_card td_style_5 td_type_1">
-                    <a href="course-details.html" class="td_card_thumb">
-                      <span class="td_card_thumb_in">
-                        <img src="assets/frontend/img/home_3/course_thumb_4.jpg" alt="">
-                      </span>
-                    </a>
-                    <div class="td_card_content">
-                      <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
-                        <li>
-                          <img src="assets/frontend/img/icons/user_3.svg" alt="">
-                          <span class="td_opacity_7">170 Seats</span>
-                        </li>
-                        <li>
-                          <img src="assets/frontend/img/icons/book.svg" alt="">
-                          <span class="td_opacity_7">19 Semesters</span>
-                        </li>
-                      </ul>
-                      <h2 class="td_card_title td_fs_24 td_semibold td_mb_12"><a href="course-details.html">Hone Leadership & Achieve Success</a></h2>
-                      <div class="td_card_price_wrap td_mb_12">
-                        <div class="td_card_review">
-                          <div class="td_rating" data-rating="5">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <div class="td_rating_percentage">
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                            </div>
-                          </div>
-                          <span class="td_heading_color td_opacity_5 td_fs_14">(5.0/50 Ratings)</span>
-                        </div>
-                        <span class="td_card_price td_accent_bg td_white_color td_fs_18 td_medium">$89</span>
-                      </div>
-                      <div class="td_card_btns_wrap">
-                        <a href="blog-details.html" class="td_btn td_style_1 td_type_3 td_radius_30 td_medium td_fs_14">
-                          <span class="td_btn_in td_accent_color">
-                            <span>Enroll Now</span>
-                          </span>             
-                        </a>
-                        <span class="td_fs_18 td_medium td_heading_color">Mary Krisey</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6">
-                  <div class="td_card td_style_5 td_type_1">
-                    <a href="course-details.html" class="td_card_thumb">
-                      <span class="td_card_thumb_in">
-                        <img src="assets/frontend/img/home_3/course_thumb_1.jpg" alt="">
-                        <span class="td_card_label td_fs_14 td_white_color td_accent_bg">New</span>
-                      </span>
-                    </a>
-                    <div class="td_card_content">
-                      <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
-                        <li>
-                          <img src="assets/frontend/img/icons/user_3.svg" alt="">
-                          <span class="td_opacity_7">150 Seats</span>
-                        </li>
-                        <li>
-                          <img src="assets/frontend/img/icons/book.svg" alt="">
-                          <span class="td_opacity_7">12 Semesters</span>
-                        </li>
-                      </ul>
-                      <h2 class="td_card_title td_fs_24 td_semibold td_mb_12"><a href="course-details.html">Starting Matheis Courses & Build your Skills</a></h2>
-                      <div class="td_card_price_wrap td_mb_12">
-                        <div class="td_card_review">
-                          <div class="td_rating" data-rating="4.5">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <div class="td_rating_percentage">
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                            </div>
-                          </div>
-                          <span class="td_heading_color td_opacity_5 td_fs_14">(5.0/6 Ratings)</span>
-                        </div>
-                        <span class="td_card_price td_accent_bg td_white_color td_fs_18 td_medium">$39</span>
-                      </div>
-                      <div class="td_card_btns_wrap">
-                        <a href="blog-details.html" class="td_btn td_style_1 td_type_3 td_radius_30 td_medium td_fs_14">
-                          <span class="td_btn_in td_accent_color">
-                            <span>Enroll Now</span>
-                          </span>             
-                        </a>
-                        <span class="td_fs_18 td_medium td_heading_color">Robert Anderson</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6">
-                  <div class="td_card td_style_5 td_type_1">
-                    <a href="course-details.html" class="td_card_thumb">
-                      <span class="td_card_thumb_in">
-                        <img src="assets/frontend/img/home_3/course_thumb_2.jpg" alt="">
-                      </span>
-                    </a>
-                    <div class="td_card_content">
-                      <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
-                        <li>
-                          <img src="assets/frontend/img/icons/user_3.svg" alt="">
-                          <span class="td_opacity_7">120 Seats</span>
-                        </li>
-                        <li>
-                          <img src="assets/frontend/img/icons/book.svg" alt="">
-                          <span class="td_opacity_7">15 Semesters</span>
-                        </li>
-                      </ul>
-                      <h2 class="td_card_title td_fs_24 td_semibold td_mb_12"><a href="course-details.html">Master Technology & Elevate Your Career</a></h2>
-                      <div class="td_card_price_wrap td_mb_12">
-                        <div class="td_card_review">
-                          <div class="td_rating" data-rating="5">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <div class="td_rating_percentage">
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                            </div>
-                          </div>
-                          <span class="td_heading_color td_opacity_5 td_fs_14">(5.0/10 Ratings)</span>
-                        </div>
-                        <span class="td_card_price td_accent_bg td_white_color td_fs_18 td_medium">$89</span>
-                      </div>
-                      <div class="td_card_btns_wrap">
-                        <a href="blog-details.html" class="td_btn td_style_1 td_type_3 td_radius_30 td_medium td_fs_14">
-                          <span class="td_btn_in td_accent_color">
-                            <span>Enroll Now</span>
-                          </span>             
-                        </a>
-                        <span class="td_fs_18 td_medium td_heading_color">Robert Anderson</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- .td_tab_item -->
-            <div class="td_tab" id="td_tab_4">
-              <div class="row td_gap_y_30 td_row_gap_30">
-                <div class="col-xl-6">
-                  <div class="td_card td_style_5 td_type_1">
-                    <a href="course-details.html" class="td_card_thumb">
-                      <span class="td_card_thumb_in">
-                        <img src="assets/frontend/img/home_3/course_thumb_3.jpg" alt="">
-                        <span class="td_card_label td_fs_14 td_white_color td_accent_bg">Best Seller</span>
-                      </span>
-                    </a>
-                    <div class="td_card_content">
-                      <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
-                        <li>
-                          <img src="assets/frontend/img/icons/user_3.svg" alt="">
-                          <span class="td_opacity_7">200 Seats</span>
-                        </li>
-                        <li>
-                          <img src="assets/frontend/img/icons/book.svg" alt="">
-                          <span class="td_opacity_7">20 Semesters</span>
-                        </li>
-                      </ul>
-                      <h2 class="td_card_title td_fs_24 td_semibold td_mb_12"><a href="course-details.html">Boost Creativity & Expand Your Horizons</a></h2>
-                      <div class="td_card_price_wrap td_mb_12">
-                        <div class="td_card_review">
-                          <div class="td_rating" data-rating="5">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <div class="td_rating_percentage">
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                            </div>
-                          </div>
-                          <span class="td_heading_color td_opacity_5 td_fs_14">(5.0/30 Ratings)</span>
-                        </div>
-                        <span class="td_card_price td_accent_bg td_white_color td_fs_18 td_medium">$19</span>
-                      </div>
-                      <div class="td_card_btns_wrap">
-                        <a href="blog-details.html" class="td_btn td_style_1 td_type_3 td_radius_30 td_medium td_fs_14">
-                          <span class="td_btn_in td_accent_color">
-                            <span>Enroll Now</span>
-                          </span>             
-                        </a>
-                        <span class="td_fs_18 td_medium td_heading_color">Jhon Doe</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6">
-                  <div class="td_card td_style_5 td_type_1">
-                    <a href="course-details.html" class="td_card_thumb">
-                      <span class="td_card_thumb_in">
-                        <img src="assets/frontend/img/home_3/course_thumb_1.jpg" alt="">
-                        <span class="td_card_label td_fs_14 td_white_color td_accent_bg">New</span>
-                      </span>
-                    </a>
-                    <div class="td_card_content">
-                      <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
-                        <li>
-                          <img src="assets/frontend/img/icons/user_3.svg" alt="">
-                          <span class="td_opacity_7">150 Seats</span>
-                        </li>
-                        <li>
-                          <img src="assets/frontend/img/icons/book.svg" alt="">
-                          <span class="td_opacity_7">12 Semesters</span>
-                        </li>
-                      </ul>
-                      <h2 class="td_card_title td_fs_24 td_semibold td_mb_12"><a href="course-details.html">Starting Matheis Courses & Build your Skills</a></h2>
-                      <div class="td_card_price_wrap td_mb_12">
-                        <div class="td_card_review">
-                          <div class="td_rating" data-rating="4.5">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <div class="td_rating_percentage">
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                            </div>
-                          </div>
-                          <span class="td_heading_color td_opacity_5 td_fs_14">(5.0/6 Ratings)</span>
-                        </div>
-                        <span class="td_card_price td_accent_bg td_white_color td_fs_18 td_medium">$39</span>
-                      </div>
-                      <div class="td_card_btns_wrap">
-                        <a href="blog-details.html" class="td_btn td_style_1 td_type_3 td_radius_30 td_medium td_fs_14">
-                          <span class="td_btn_in td_accent_color">
-                            <span>Enroll Now</span>
-                          </span>             
-                        </a>
-                        <span class="td_fs_18 td_medium td_heading_color">Robert Anderson</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6">
-                  <div class="td_card td_style_5 td_type_1">
-                    <a href="course-details.html" class="td_card_thumb">
-                      <span class="td_card_thumb_in">
-                        <img src="assets/frontend/img/home_3/course_thumb_2.jpg" alt="">
-                      </span>
-                    </a>
-                    <div class="td_card_content">
-                      <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
-                        <li>
-                          <img src="assets/frontend/img/icons/user_3.svg" alt="">
-                          <span class="td_opacity_7">120 Seats</span>
-                        </li>
-                        <li>
-                          <img src="assets/frontend/img/icons/book.svg" alt="">
-                          <span class="td_opacity_7">15 Semesters</span>
-                        </li>
-                      </ul>
-                      <h2 class="td_card_title td_fs_24 td_semibold td_mb_12"><a href="course-details.html">Master Technology & Elevate Your Career</a></h2>
-                      <div class="td_card_price_wrap td_mb_12">
-                        <div class="td_card_review">
-                          <div class="td_rating" data-rating="5">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <div class="td_rating_percentage">
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                            </div>
-                          </div>
-                          <span class="td_heading_color td_opacity_5 td_fs_14">(5.0/10 Ratings)</span>
-                        </div>
-                        <span class="td_card_price td_accent_bg td_white_color td_fs_18 td_medium">$89</span>
-                      </div>
-                      <div class="td_card_btns_wrap">
-                        <a href="blog-details.html" class="td_btn td_style_1 td_type_3 td_radius_30 td_medium td_fs_14">
-                          <span class="td_btn_in td_accent_color">
-                            <span>Enroll Now</span>
-                          </span>             
-                        </a>
-                        <span class="td_fs_18 td_medium td_heading_color">Robert Anderson</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6">
-                  <div class="td_card td_style_5 td_type_1">
-                    <a href="course-details.html" class="td_card_thumb">
-                      <span class="td_card_thumb_in">
-                        <img src="assets/frontend/img/home_3/course_thumb_4.jpg" alt="">
-                      </span>
-                    </a>
-                    <div class="td_card_content">
-                      <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
-                        <li>
-                          <img src="assets/frontend/img/icons/user_3.svg" alt="">
-                          <span class="td_opacity_7">170 Seats</span>
-                        </li>
-                        <li>
-                          <img src="assets/frontend/img/icons/book.svg" alt="">
-                          <span class="td_opacity_7">19 Semesters</span>
-                        </li>
-                      </ul>
-                      <h2 class="td_card_title td_fs_24 td_semibold td_mb_12"><a href="course-details.html">Hone Leadership & Achieve Success</a></h2>
-                      <div class="td_card_price_wrap td_mb_12">
-                        <div class="td_card_review">
-                          <div class="td_rating" data-rating="5">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <div class="td_rating_percentage">
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                              <i class="fa-solid fa-star fa-fw"></i>
-                            </div>
-                          </div>
-                          <span class="td_heading_color td_opacity_5 td_fs_14">(5.0/50 Ratings)</span>
-                        </div>
-                        <span class="td_card_price td_accent_bg td_white_color td_fs_18 td_medium">$89</span>
-                      </div>
-                      <div class="td_card_btns_wrap">
-                        <a href="blog-details.html" class="td_btn td_style_1 td_type_3 td_radius_30 td_medium td_fs_14">
-                          <span class="td_btn_in td_accent_color">
-                            <span>Enroll Now</span>
-                          </span>             
-                        </a>
-                        <span class="td_fs_18 td_medium td_heading_color">Mary Krisey</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- .td_tab_item -->
+            </div>
           </div>
-        </div>
       </div>
       <div class="td_height_120 td_height_lg_80"></div>
        <!-- End Courses Section -->
@@ -768,19 +172,19 @@
             <div class="col-lg-6 wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.25s">
               <div class="td_about_thumb_wrap">
                 <div class="td_about_year text-uppercase td_fs_64 td_bold">EST 1995</div>
-                <div class="td_about_thumb_1">
-                  <img src="assets/frontend/img/home_1/about_img_1.jpg" alt="">
-                </div>
-                <div class="td_about_thumb_2">
-                  <img src="assets/frontend/img/home_1/about_img_2.jpg" alt="">
-                </div>
-                <a href="https://www.youtube.com/embed/rRid6GCJtgc" class="td_circle_text td_center td_video_open">
-                  <svg width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.086 8.63792C14.6603 9.03557 14.6603 9.88459 14.086 10.2822L2.54766 18.2711C1.88444 18.7303 0.978418 18.2557 0.978418 17.449L0.978418 1.47118C0.978418 0.664496 1.88444 0.189811 2.54767 0.649016L14.086 8.63792Z" fill="white"/>
-                  </svg>   
-                  <img src="assets/frontend/img/home_1/about_circle_text.svg" alt="" class="">                 
-                </a>
-                <div class="td_circle_shape"></div>
+                  <div class="td_about_thumb_1">
+                    <img src="assets/frontend/img/home_1/about_img_1.jpg" alt="">
+                  </div>
+                  <div class="td_about_thumb_2">
+                    <img src="assets/frontend/img/home_1/about_img_2.jpg" alt="">
+                  </div>
+                  <a href="https://www.youtube.com/embed/rRid6GCJtgc" class="td_circle_text td_center td_video_open">
+                    <svg width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M14.086 8.63792C14.6603 9.03557 14.6603 9.88459 14.086 10.2822L2.54766 18.2711C1.88444 18.7303 0.978418 18.2557 0.978418 17.449L0.978418 1.47118C0.978418 0.664496 1.88444 0.189811 2.54767 0.649016L14.086 8.63792Z" fill="white"/>
+                    </svg>   
+                    <img src="assets/frontend/img/home_1/about_circle_text.svg" alt="" class="">                 
+                  </a>
+                  <div class="td_circle_shape"></div>
               </div>
             </div>
             <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
@@ -796,7 +200,7 @@
                     <p class="td_fs_18 mb-0">Browse the Undergraduate Degrees</p>
                   </li>
                   <li>
-                    <h3 class="td_fs_24 td_mb_8">Undergraduate  Program</h3>
+                    <h3 class="td_fs_24 td_mb_8">Undergraduate Program</h3>
                     <p class="td_fs_18 mb-0">Browse the Undergraduate Degrees</p>
                   </li>
                 </ul>
@@ -1240,21 +644,15 @@
             <div class="td_section_heading td_style_1">
               <h2 class="td_section_title td_fs_48 td_mb_20">Learners Say About Educve</h2>
               <p class="td_section_subtitle td_fs_18 mb-0">Far far away, behind the word mountains, far from <br>the Conson antia, there live the blind texts. <br>Separated they marks</p>
-              <div class="td_tabs mt-5">
-                <ul class="td_tab_links td_style_1 td_mp_0 td_fs_20 td_medium td_heading_color wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-                  <li class="active"><a href="#tab_1">Undergraduate</a></li>
-                  <li><a href="#tab_2">Graduate</a></li>
-                  <li><a href="#tab_3">Online</a></li>
-                  <li><a href="#tab_4">Short Course</a></li>
-                </ul>
-              </div>
+              
             </div>
           </div>
           <div class="col-lg-7 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
             <div class="td_full_width">
               <div class="td_slider td_style_1 td_slider_gap_24 td_remove_overflow">
-                <div class="td_slider_container" data-autoplay="0" data-loop="1" data-speed="800" data-center="0" data-variable-width="1" data-slides-per-view="responsive" data-xs-slides="2" data-sm-slides="2" data-md-slides="2" data-lg-slides="2" data-add-slides="3">
+                <div class="td_slider_container" data-autoplay="1" data-loop="3" data-speed="800" data-center="0" data-variable-width="3" data-slides-per-view="responsive" data-xs-slides="3" data-sm-slides="3" data-md-slides="3" data-lg-slides="3" data-add-slides="3">
                   <div class="td_slider_wrapper">
+                    @foreach($universities as $university)
                     <div class="td_slide">
                       <div class="td_card td_style_3 d-block td_radius_10">
                         <div class="td_card_info td_white_bg">
@@ -1270,8 +668,8 @@
                               </li>
                             </ul>
                             <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Data Analytics</span></a>
-                            <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Starting Reputed Education & Build your Skills</a></h2>
-                            <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Far far away, behind the word mountains, far from the Consonantia.</p>
+                            <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">{{ $university->name }}</a></h2>
+                            <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20"> {{ $university->excerpt }}</p>
                             <div class="td_card_review">
                               <div class="td_rating" data-rating="4.5">
                                 <i class="fa-regular fa-star"></i>
@@ -1300,186 +698,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="td_slide">
-                      <div class="td_card td_style_3 d-block td_radius_10"> 
-                        <div class="td_card_info td_white_bg">
-                          <div class="td_card_info_in">
-                            <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
-                              <li>
-                                <img src="assets/frontend/img/icons/user_3.svg" alt="">
-                                <span class="td_opacity_7">250 Seats</span>
-                              </li>
-                              <li>
-                                <img src="assets/frontend/img/icons/book.svg" alt="">
-                                <span class="td_opacity_7">12 Semesters</span>
-                              </li>
-                            </ul>
-                            <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Business Administrator</span></a>
-                            <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Hone Leadership & Achieve Success</a></h2>
-                            <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Develop essential leadership skills to excel in any industry.</p>
-                            <div class="td_card_review">
-                              <div class="td_rating" data-rating="4">
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <div class="td_rating_percentage">
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                </div>
-                              </div>
-                              <span class="td_heading_color td_opacity_5 td_medium">(5.0/30 Ratings)</span>
-                            </div>
-                            <div class="td_card_btn">
-                              <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
-                                <span class="td_btn_in td_white_color td_accent_bg">
-                                  <span>Enroll Now</span>
-                                </span>             
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="td_slide">
-                      <div class="td_card td_style_3 d-block td_radius_10"> 
-                        <div class="td_card_info td_white_bg">
-                          <div class="td_card_info_in">
-                            <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
-                              <li>
-                                <img src="assets/frontend/img/icons/user_3.svg" alt="">
-                                <span class="td_opacity_7">250 Seats</span>
-                              </li>
-                              <li>
-                                <img src="assets/frontend/img/icons/book.svg" alt="">
-                                <span class="td_opacity_7">12 Semesters</span>
-                              </li>
-                            </ul>
-                            <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Business Administrator</span></a>
-                            <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Hone Leadership & Achieve Success</a></h2>
-                            <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Develop essential leadership skills to excel in any industry.</p>
-                            <div class="td_card_review">
-                              <div class="td_rating" data-rating="4">
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <div class="td_rating_percentage">
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                </div>
-                              </div>
-                              <span class="td_heading_color td_opacity_5 td_medium">(5.0/30 Ratings)</span>
-                            </div>
-                            <div class="td_card_btn">
-                              <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
-                                <span class="td_btn_in td_white_color td_accent_bg">
-                                  <span>Enroll Now</span>
-                                </span>             
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="td_slide">
-                      <div class="td_card td_style_3 d-block td_radius_10"> 
-                        <div class="td_card_info td_white_bg">
-                          <div class="td_card_info_in">
-                            <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
-                              <li>
-                                <img src="assets/frontend/img/icons/user_3.svg" alt="">
-                                <span class="td_opacity_7">250 Seats</span>
-                              </li>
-                              <li>
-                                <img src="assets/frontend/img/icons/book.svg" alt="">
-                                <span class="td_opacity_7">12 Semesters</span>
-                              </li>
-                            </ul>
-                            <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Business Administrator</span></a>
-                            <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Hone Leadership & Achieve Success</a></h2>
-                            <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Develop essential leadership skills to excel in any industry.</p>
-                            <div class="td_card_review">
-                              <div class="td_rating" data-rating="4">
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <div class="td_rating_percentage">
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                </div>
-                              </div>
-                              <span class="td_heading_color td_opacity_5 td_medium">(5.0/30 Ratings)</span>
-                            </div>
-                            <div class="td_card_btn">
-                              <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
-                                <span class="td_btn_in td_white_color td_accent_bg">
-                                  <span>Enroll Now</span>
-                                </span>             
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="td_slide">
-                      <div class="td_card td_style_3 d-block td_radius_10"> 
-                        <div class="td_card_info td_white_bg">
-                          <div class="td_card_info_in">
-                            <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
-                              <li>
-                                <img src="assets/frontend/img/icons/user_3.svg" alt="">
-                                <span class="td_opacity_7">250 Seats</span>
-                              </li>
-                              <li>
-                                <img src="assets/frontend/img/icons/book.svg" alt="">
-                                <span class="td_opacity_7">12 Semesters</span>
-                              </li>
-                            </ul>
-                            <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Business Administrator</span></a>
-                            <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Hone Leadership & Achieve Success</a></h2>
-                            <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Develop essential leadership skills to excel in any industry.</p>
-                            <div class="td_card_review">
-                              <div class="td_rating" data-rating="4">
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <div class="td_rating_percentage">
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                </div>
-                              </div>
-                              <span class="td_heading_color td_opacity_5 td_medium">(5.0/30 Ratings)</span>
-                            </div>
-                            <div class="td_card_btn">
-                              <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
-                                <span class="td_btn_in td_white_color td_accent_bg">
-                                  <span>Enroll Now</span>
-                                </span>             
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    @endforeach
                   </div>
                 </div>
                 <div class="td_height_40 td_height_lg_30"></div>
@@ -2060,7 +1279,6 @@
       <div class="td_height_120 td_height_lg_80"></div>
     </section>
     <!-- End Testimonial Section -->
-
     <!-- Start Blog Section -->
     <section class="scrollSnap curve-section">
       <div class="td_height_112 td_height_lg_75"></div>

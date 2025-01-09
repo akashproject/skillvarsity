@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="td_hero_img_box">
-        <img src="{{ url('assets/frontend/img/home_3/hero_img_1.png') }}" alt="" class="td_hero_img_1 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
+        <img src="{{ url('assets/frontend/img/university-banner.gif') }}" alt="" class="td_hero_img_1 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s">
         <div class="td_hero_shape_1 td_hover_layer_3 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s"></div>
         <div class="td_hero_shape_2">
           <img src="{{ url('assets/frontend/img/home_3/hero_shape_1.svg') }}" alt="" class="td_hover_layer_5">
