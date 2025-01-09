@@ -10056,6 +10056,18 @@ html .ui-button.ui-state-disabled:active {
   padding-bottom: 80px;
 }
 
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 0;
+  width: auto;
+  max-width: 820px;
+  margin: 20px auto;
+  transition: 1s all;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
 @media (max-width: 991px) {
   .td_hero.td_style_3 {
     height: initial;
@@ -14783,4 +14795,10 @@ button.td_icon_btn:hover {
   right: 0;
   top: 30px;
   text-align: right;
+}
+.modelSideBanner {
+  background: url('../img/modelBanner.png');
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }

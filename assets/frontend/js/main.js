@@ -72,6 +72,11 @@
     $('td_preloader_in').delay(150).fadeOut('slow');
   }
 
+  jQuery('.open-popup-link').magnificPopup({
+    type: 'inline',
+    midClick: true,
+    mainClass: 'mfp-fade'
+});
   /*--------------------------------------------------------------
     2. Mobile Menu
   --------------------------------------------------------------*/

@@ -43,6 +43,7 @@
 
     <link rel="stylesheet" href="{{ url('assets/frontend/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url('assets/frontend/css/fontawesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url('assets/frontend/css/magnific-popup.css') }}">
     <link rel="stylesheet" href="{{ url('assets/frontend/css/slick.min.css') }}">
     <link rel="stylesheet" href="{{ url('assets/frontend/css/odometer.css') }}">
     <link rel="stylesheet" href="{{ url('assets/frontend/css/animate.css') }}">
@@ -61,6 +62,9 @@
     @include('layouts.header')
     @yield('content')
     @include('layouts.footer')
+    <div id="lead-generate-popup" class="white-popup mfp-hide">
+        @include('common.leadCaptureForm')
+    </div>
     
     <script>
         let globalUrl = "{{ env("APP_URL") }}"
@@ -72,6 +76,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" ></script>
     <script src="{{ url('assets/frontend/js/jquery.slick.min.js') }}"></script>
+    <script src="{{ url('assets/frontend/js/jquery.magnific-popup.min.js') }}"></script>
     <script src="{{ url('assets/frontend/js/odometer.js') }}"></script>
     <script src="{{ url('assets/frontend/js/gsap.min.js') }}"></script>
     <script src="{{ url('assets/frontend/js/jquery-ui.min.js') }}"></script>

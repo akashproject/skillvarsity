@@ -115,7 +115,7 @@
        <!-- End Courses Section -->
       <div class="container">
         <div class="td_hero_btn_group">
-          <a href="courses-grid-view.html" class="td_btn td_style_1 td_radius_10 td_medium td_fs_20 wow fadeInUp" data-wow-duration="0.9s" data-wow-delay="0.35s">
+          <a href="#lead-generate-popup" class="td_btn td_style_1 td_radius_10 td_medium td_fs_20 wow fadeInUp open-popup-link" data-wow-duration="0.9s" data-wow-delay="0.35s">
             <span class="td_btn_in td_white_color td_accent_bg">
               <span>Apply Now</span>
               <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">

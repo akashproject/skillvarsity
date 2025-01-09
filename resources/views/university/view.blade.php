@@ -5,7 +5,7 @@
       <div class="container">
         <div class="td_hero_text wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
           <p class="td_hero_subtitle_up td_fs_18 td_accent_color td_spacing_1 td_semibold text-uppercase td_mb_14">100 % Quality Qurantee</p>
-          <h1 class="td_hero_title td_fs_64 td_mb_20">Build The Skills You Need To Be Successful</h1>
+          <h1 class="td_hero_title td_fs_64 td_mb_20">Build The Skills with {{ $contentMain->name }} </h1>
           <p class="td_hero_subtitle td_fs_18 td_heading_color td_opacity_7 td_mb_30">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
           <div class="td_btns_group">
             <a href="courses-grid-view.html" class="td_btn td_style_1 td_radius_30 td_medium">
