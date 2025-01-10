@@ -23,25 +23,45 @@
                 <div class="">
                     <a >Contact Details</a>
                 </div>
-                <h3 class="td_mb_20 td_fs_24 td_semibold">Let’s get you started!</h3>
-                <p class="td_fs_14 td_mb_20">First we need your phone number</p>
-                <form id="leadCaptureForm">
-                    <input type="tel" class="td_form_field_2 td_mb_27" placeholder="Mobile Number" name="lead_mobile_number" required>
-                    <p class="td_fs_14 td_mb_20">By entering the OTP and clicking continue I confirm that I have read, understood and agree with the Terms and Conditions and Privacy Policy.</p>
-                    <div class="row align-items-center td_row_reverse_lg td_gap_y_20">
-                        <div class="col-lg-6 text-center-lg">
-                        
+                
+                <form id="leadCaptureForm" >
+                    <div class="lead_steps step_1 active">
+                        <h3 class="td_mb_20 td_fs_24 td_semibold">Let’s get you started!</h3>
+                        <p class="td_fs_14 m-0">First we need your phone number</p>
+                        <input type="tel" class="td_form_field_2" placeholder="Mobile Number" name="lead_mobile_number" required>
+                        <p class="td_fs_14 td_mb_20 mt-3">By entering the OTP and clicking continue I confirm that I have read, understood and agree with the Terms and Conditions and Privacy Policy.</p>
+                        <div class="row align-items-center td_row_reverse_lg td_gap_y_20">
+                            <div class="col-lg-6 text-center-lg">
+                            
+                            </div>
+                            <div class="col-lg-6">
+                                <button type="submit" class="td_btn td_style_1 td_radius_30 td_medium w-100">
+                                    <span class="td_btn_in td_white_color td_accent_bg">
+                                    <span>Continue OTP</span>
+                                    </span>             
+                                </button>
+                            </div>
                         </div>
-                        <div class="col-lg-6">
-                            <button type="submit" class="td_btn td_style_1 td_radius_30 td_medium w-100">
-                                <span class="td_btn_in td_white_color td_accent_bg">
-                                <span>Continue OTP</span>
-                                </span>             
-                            </button>
+                    </div>
+                    <div class="lead_steps step_2">
+                        <h3 class="td_mb_20 td_fs_24 td_semibold">We’ve sent you an OTP</h3>
+                        <p class="td_fs_14 m-0">On your phone number <a href="javascript:void(0)" class="backstep">+91 62905-65997 <i class="fa-solid fa-pencil" ></i> </a></p>
+                        <div id="otp_target"></div>
+                        <p class="td_fs_14 td_mb_20 mt-3">By entering the OTP and clicking continue I confirm that I have read, understood and agree with the Terms and Conditions and Privacy Policy.</p>
+                        <div class="row align-items-center td_row_reverse_lg td_gap_y_20">
+                            <div class="col-lg-6 text-center-lg">
+                            
+                            </div>
+                            <div class="col-lg-6">
+                                <button type="button" id="ok" class="td_btn td_style_1 td_radius_30 td_medium w-100">
+                                    <span class="td_btn_in td_white_color td_accent_bg">
+                                    <span>Continue OTP</span>
+                                    </span>             
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </form>
-                
             </div>
         </div>
         <div class="col-md-5">
@@ -51,8 +71,11 @@
                     <div class="placementGrid">
                         <img src="{{ url('assets/frontend/img/home_3/course_thumb_1.jpg') }}" >
                     </div>
-                    <h5>Shanika Jhunjhunwala</h5>
-                    <h5>Digital Marketing Manager</h5>
+                    <div class="placement_content mt-3">
+                        <h5 class="mb-2">Shanika Jhunjhunwala</h5>
+                        <h5 class="m-0" style="font-size: 14px;color: #333;">Digital Marketing Manager</h5>
+                    </div>
+                    
                 </div>
             </div>
         </div>

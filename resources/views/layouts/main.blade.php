@@ -75,6 +75,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/gh/HichemTab-tech/OTP-designer-jquery@2.0.1/dist/otpdesigner.min.js"></script>
     <script src="{{ url('assets/frontend/js/jquery.slick.min.js') }}"></script>
     <script src="{{ url('assets/frontend/js/jquery.magnific-popup.min.js') }}"></script>
     <script src="{{ url('assets/frontend/js/odometer.js') }}"></script>
@@ -84,5 +85,4 @@
     <script src="{{ url('assets/frontend/js/main.js') }}"></script>
 
 </body>
-
 </html>

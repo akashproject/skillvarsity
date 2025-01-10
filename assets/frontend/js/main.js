@@ -78,7 +78,39 @@
     mainClass: 'mfp-fade'
   });
 
-  jQuery(".lead_mobile_number").validate()
+  jQuery('#leadCaptureForm').validate({
+    rules: {
+        
+    },
+    messages: {
+      lead_mobile_number:{
+        'required':"Please Enter Mobile Number"
+      }
+    },
+    submitHandler: function(form) {
+      let formId = $(form).attr('id');
+      sendMobileOtp(formId);
+    }
+  });
+
+  jQuery('#otp_target').otpdesigner({
+    typingDone: function (code) {
+      console.log('Entered OTP code: ' + code);
+    },
+    length: 4,
+    onlyNumbers: false,
+    inputsClasses: 'some-class text-danger',
+  });
+
+  jQuery('#ok').on('click', function () {
+    let result = jQuery('#otp_target').otpdesigner('code');
+    if (result.done) {
+      alert('Entered OTP code: ' + result.code);
+    } else {
+      alert('Typing incomplete!');
+    }
+  });
+  
   /*--------------------------------------------------------------
     2. Mobile Menu
   --------------------------------------------------------------*/
@@ -629,4 +661,35 @@
       );
     }
   }
+
+  /*--------------------------------------------------------------
+    16. Send Mobile OTP
+  --------------------------------------------------------------*/
+  function sendMobileOtp(formId) {
+    var mobileNo = jQuery("#" + formId + " input[name='lead_mobile_number']").val();
+		$.ajaxSetup({
+			headers: {
+			'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+			}
+		});
+		$.ajax({
+			url: `${globalUrl}submit-mobile-otp`,
+			type: "post",
+			data: {
+				mobile: mobileNo,
+			},
+			success: function(result) {
+				if (result) {
+					console.log(result);
+          jQuery("#" + formId + " .lead_steps").removeClass("active");
+					jQuery("#" + formId + " .lead_steps.step_2").addClass("active");
+					return true;
+				} else {
+					
+					return true;
+				}
+			}
+		});
+  }
+
 })(jQuery); // End of use strict

@@ -33,7 +33,7 @@ Route::group(['prefix' => 'administrator', 'namespace' => 'Admin'], function () 
     // Route::get('/reset-password/{token}', [App\Http\Controllers\Auth\ForgotPasswordController::class, 'showResetPasswordForm'])->name('password.reset');
     // Route::post('/reset-password', [App\Http\Controllers\Auth\ForgotPasswordController::class, 'resetPassword'])->name('password.update');
 
-    Route::group(['middleware' => 'auth'], function () {
+    Route::group(['middleware' => ['auth','role:super-admin|admin']], function () {
         Route::get('/', [App\Http\Controllers\Administrator\IndexController::class, 'index'])->name('administrator');
         Route::get('/dashboard', [App\Http\Controllers\Administrator\IndexController::class, 'index'])->name('dashboard');
         Route::get('/profile', [App\Http\Controllers\Administrator\IndexController::class, 'profile'])->name('administrator-profile');
@@ -132,6 +132,7 @@ Route::get('/{slug}', [App\Http\Controllers\PageController::class, 'index'])->wh
 Route::get('/course/{slug}', [App\Http\Controllers\CourseController::class, 'view'])->name('course-detail');
 Route::get('/university/{slug}', [App\Http\Controllers\UniversityController::class, 'view'])->name('university-detail');
 
+Route::post('/submit-mobile-otp', [App\Http\Controllers\IndexController::class, 'submitMobileOtp'])->name('submit-mobile-otp');
 
 Auth::routes();
 
