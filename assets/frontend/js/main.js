@@ -76,7 +76,9 @@
     type: 'inline',
     midClick: true,
     mainClass: 'mfp-fade'
-});
+  });
+
+  jQuery(".lead_mobile_number").validate()
   /*--------------------------------------------------------------
     2. Mobile Menu
   --------------------------------------------------------------*/

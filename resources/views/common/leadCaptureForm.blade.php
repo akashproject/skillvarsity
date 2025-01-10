@@ -25,14 +25,35 @@
                 </div>
                 <h3 class="td_mb_20 td_fs_24 td_semibold">Let’s get you started!</h3>
                 <p class="td_fs_14 td_mb_20">First we need your phone number</p>
-                <form >
-                    <input type="text" class="td_form_field_2 td_mb_27" placeholder="Mobile Number">
+                <form id="leadCaptureForm">
+                    <input type="tel" class="td_form_field_2 td_mb_27" placeholder="Mobile Number" name="lead_mobile_number" required>
+                    <p class="td_fs_14 td_mb_20">By entering the OTP and clicking continue I confirm that I have read, understood and agree with the Terms and Conditions and Privacy Policy.</p>
+                    <div class="row align-items-center td_row_reverse_lg td_gap_y_20">
+                        <div class="col-lg-6 text-center-lg">
+                        
+                        </div>
+                        <div class="col-lg-6">
+                            <button type="submit" class="td_btn td_style_1 td_radius_30 td_medium w-100">
+                                <span class="td_btn_in td_white_color td_accent_bg">
+                                <span>Continue OTP</span>
+                                </span>             
+                            </button>
+                        </div>
+                    </div>
                 </form>
+                
             </div>
         </div>
         <div class="col-md-5">
             <div class="modelSideBanner">
-
+                <div class="placement_card">
+                    <h3> "I now have clarity and confidence in my career choice." </h3>
+                    <div class="placementGrid">
+                        <img src="{{ url('assets/frontend/img/home_3/course_thumb_1.jpg') }}" >
+                    </div>
+                    <h5>Shanika Jhunjhunwala</h5>
+                    <h5>Digital Marketing Manager</h5>
+                </div>
             </div>
         </div>
     </div>

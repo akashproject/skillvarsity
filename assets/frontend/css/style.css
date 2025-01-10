@@ -14796,9 +14796,32 @@ button.td_icon_btn:hover {
   top: 30px;
   text-align: right;
 }
+.leadModelHeader {
+  padding: 20px;
+}
+.leadModelBody {
+  padding: 30px;
+}
 .modelSideBanner {
   background: url('../img/modelBanner.png');
-  height: 100%;
+  height: 81vh;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+}
+.placement_card {
+  background: #fff;
+  width: 80%;
+  height: 185px;
+  overflow: hidden;
+  text-align: center;
+}
+.placement_card h3 {
+  font-size: 18px;
+}
+.placementGrid img {
+  width: 90px;
+  border-radius: 50%;
+  height: 90px;
+  padding: 5px;
+  border: 1px solid #ccc;
 }
