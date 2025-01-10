@@ -95,20 +95,17 @@
 
   jQuery('#otp_target').otpdesigner({
     typingDone: function (code) {
-      console.log('Entered OTP code: ' + code);
+      let otp_value = jQuery("#leadCaptureForm .formFieldOtpResponse").val();      
+      console.log('Entered OTP code: ' + otp_value+' '+code);
+      if(otp_value != code){
+        jQuery("#otp_target-error").show();
+      } else {
+        
+      }
     },
     length: 4,
     onlyNumbers: false,
     inputsClasses: 'some-class text-danger',
-  });
-
-  jQuery('#ok').on('click', function () {
-    let result = jQuery('#otp_target').otpdesigner('code');
-    if (result.done) {
-      alert('Entered OTP code: ' + result.code);
-    } else {
-      alert('Typing incomplete!');
-    }
   });
   
   /*--------------------------------------------------------------
@@ -681,6 +678,7 @@
 			success: function(result) {
 				if (result) {
 					console.log(result);
+          jQuery("#" + formId + " .formFieldOtpResponse").val(result.otp_value);
           jQuery("#" + formId + " .lead_steps").removeClass("active");
 					jQuery("#" + formId + " .lead_steps.step_2").addClass("active");
 					return true;

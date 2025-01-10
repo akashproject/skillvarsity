@@ -14840,7 +14840,7 @@ button.td_icon_btn:hover {
   border: 1px solid #ccc;
 }
 
-label.error {
+label.error,label.otp_error {
   color: #f82727;
   font-size: 14px;
   font-weight: 600;

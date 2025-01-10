@@ -47,20 +47,28 @@
                         <h3 class="td_mb_20 td_fs_24 td_semibold">We’ve sent you an OTP</h3>
                         <p class="td_fs_14 m-0">On your phone number <a href="javascript:void(0)" class="backstep">+91 62905-65997 <i class="fa-solid fa-pencil" ></i> </a></p>
                         <div id="otp_target"></div>
+                        <label id="otp_target-error" class="otp_error" style="display:none">Please Enter valid OTP</label>
+                        <p class="td_fs_14 td_mb_20 mt-3">By entering the OTP and clicking continue I confirm that I have read, understood and agree with the Terms and Conditions and Privacy Policy.</p>
+                    </div>
+                    <div class="lead_steps step_3">
+                        <h3 class="td_mb_20 td_fs_24 td_semibold">Let’s get you started!</h3>
+                        <p class="td_fs_14 m-0">First we need your phone number</p>
+                        <input type="tel" class="td_form_field_2" placeholder="Mobile Number" name="lead_mobile_number" required>
                         <p class="td_fs_14 td_mb_20 mt-3">By entering the OTP and clicking continue I confirm that I have read, understood and agree with the Terms and Conditions and Privacy Policy.</p>
                         <div class="row align-items-center td_row_reverse_lg td_gap_y_20">
                             <div class="col-lg-6 text-center-lg">
                             
                             </div>
                             <div class="col-lg-6">
-                                <button type="button" id="ok" class="td_btn td_style_1 td_radius_30 td_medium w-100">
+                                <button type="submit" class="td_btn td_style_1 td_radius_30 td_medium w-100">
                                     <span class="td_btn_in td_white_color td_accent_bg">
-                                    <span>Continue OTP</span>
+                                    <span>Register Now</span>
                                     </span>             
                                 </button>
                             </div>
                         </div>
                     </div>
+                    <input type="hidden" class="formFieldOtpResponse" > 
                 </form>
             </div>
         </div>
