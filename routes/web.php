@@ -127,13 +127,17 @@ Route::group(['middleware' => ['auth']], function () {
     //Certificate
 });
 
+//Route::get('/{slug}', [App\Http\Controllers\PageController::class, 'index'])->where('slug', '([A-Za-z0-9\-]+)');
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('website');
-Route::get('/{slug}', [App\Http\Controllers\PageController::class, 'index'])->where('slug', '([A-Za-z0-9\-]+)');
+
 Route::get('/course/{slug}', [App\Http\Controllers\CourseController::class, 'view'])->name('course-detail');
 Route::get('/university/{slug}', [App\Http\Controllers\UniversityController::class, 'view'])->name('university-detail');
-
 Route::post('/submit-mobile-otp', [App\Http\Controllers\IndexController::class, 'submitMobileOtp'])->name('submit-mobile-otp');
+Route::post('/capture-lead', [App\Http\Controllers\IndexController::class, 'captureLead'])->name('insert-lead-records');
 
-Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::middleware(ProtectAgainstSpam::class)->group(function() {
+    Auth::routes();
+});

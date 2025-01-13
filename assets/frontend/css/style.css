@@ -5763,15 +5763,7 @@ label {
     min-height: auto;
   }
 }
-.td_page_heading .breadcrumb {
-  /* -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; */
-}
-.td_page_heading .breadcrumb-item.active {
-}
-.td_page_heading .breadcrumb-item + .breadcrumb-item::before {
-}
+
 .td_page_heading .td_page_heading_shape_1 {
   left: 0;
   top: 42%;
@@ -14856,4 +14848,12 @@ label.error,label.otp_error {
 
 div#otp_target {
   display: flex;
+}
+
+.message {
+  font-size: 13px;
+}
+
+.resendOtp {
+  color: #890c25;
 }

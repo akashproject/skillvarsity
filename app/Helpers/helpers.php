@@ -29,7 +29,7 @@ if (! function_exists('check_device')) {
 }
 
 if (! function_exists('getSizedImage')) {
-    function getSizedImage($size = '',$id) {
+    function getSizedImage($id,$size = null) {
         $size = ($size)?$size.'_':"";
         $media = DB::table('media')->where('id',$id)->first();
        
@@ -205,5 +205,14 @@ if (! function_exists('getUtmSource')) {
             return request()->get('utm_source');
         }
         return ($params)?$params:get_theme_setting('utm_source');
+    }
+}
+
+if (! function_exists('getCommunicationMedium')) {
+    function getCommunicationMedium($params = null){
+        if(request()->has('lead_type')){
+            return request()->get('lead_type');
+        }
+        return ($params)?$params:get_theme_setting('lead_type');
     }
 }

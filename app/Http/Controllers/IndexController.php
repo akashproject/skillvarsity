@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Trait\afterLeadSubmit;
 
 class IndexController extends Controller
 {
+    use afterLeadSubmit;
     public $_statusOK = 200;
     public $_statusErr = 500;
     
@@ -55,6 +57,30 @@ class IndexController extends Controller
 
         } catch(\Illuminate\Database\QueryException $e){
             //throw $th;
+        }
+    }
+
+    public function captureLead(Request $request)
+    {
+        try {
+           
+            $postData = $request->all();
+            $validatedData = $request->validate([
+                "lead_mobile_number" => "required",
+                "lead_first_name" => "required",
+            ]);
+            
+            $ee = $this->leadCaptureLeadToExtraage($postData);
+            $cogno = $this->cognoai_api_calling($postData);
+            $postData['crm_status'] = $ee->original;
+            $postData['whatsApp_status'] = $cogno->original;
+
+            $insert_lead_to_db = $this->captureLeadToDB($postData);
+
+            dd($insert_lead_to_db);
+
+        } catch (\Illuminate\Database\QueryException $e) {
+            return response()->json($e, $this->_statusOK);
         }
     }
 }

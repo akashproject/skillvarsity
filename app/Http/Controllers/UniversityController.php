@@ -13,7 +13,8 @@ class UniversityController extends Controller
         try {
             
             $contentMain = University::where('slug', $slug)->first();
-            return view('university.view',compact('contentMain'));
+            $universityName = $contentMain->name;
+            return view('university.view',compact('contentMain','universityName'));
         } catch(\Illuminate\Database\QueryException $e){
             
         }

@@ -1,3 +1,4 @@
+let leadSubmitStatus = false;
 (function ($) {
   'use strict';
 
@@ -89,7 +90,14 @@
     },
     submitHandler: function(form) {
       let formId = $(form).attr('id');
-      sendMobileOtp(formId);
+      console.log(leadSubmitStatus);
+      
+      if (leadSubmitStatus) {
+        form.submit();
+      } else {
+        sendMobileOtp(formId);
+        countDown();
+      }
     }
   });
 
@@ -100,13 +108,24 @@
       if(otp_value != code){
         jQuery("#otp_target-error").show();
       } else {
-        
+        jQuery("#leadCaptureForm .lead_steps").removeClass('active');
+        jQuery("#leadCaptureForm .lead_steps.step_3").addClass('active');
+        leadSubmitStatus = true;
       }
     },
     length: 4,
     onlyNumbers: false,
     inputsClasses: 'some-class text-danger',
   });
+
+  jQuery(".resendOtp").on('click',function(){
+		jQuery(this).addClass('display-none');
+		jQuery('.countdown_label').removeClass('display-none');
+		let form = jQuery(this).closest("form");
+		let formId = $(form).attr('id');
+		countDown();
+		sendMobileOtp(formId);
+	});
   
   /*--------------------------------------------------------------
     2. Mobile Menu
@@ -689,5 +708,29 @@
 			}
 		});
   }
+
+  let interval;
+  function countDown(){
+    clearInterval(interval)
+		var timer2 = "0:59";
+		interval = setInterval(function() {
+			var timer = timer2.split(':');
+			//by parsing integer, I avoid all extra string processing
+			var minutes = parseInt(timer[0], 10);
+			var seconds = parseInt(timer[1], 10);
+			--seconds;
+			minutes = (seconds < 0) ? --minutes : minutes;
+			if (minutes < 0) {
+				clearInterval(interval)
+				jQuery('.countdown_label').addClass("display-none");
+				jQuery('.resendOtp').removeClass("display-none");
+			};
+			seconds = (seconds < 0) ? 59 : seconds;
+			seconds = (seconds < 10) ? '0' + seconds : seconds;
+			//minutes = (minutes < 10) ?  minutes : minutes;
+			jQuery('.countdown').html(minutes + ':' + seconds);
+			timer2 = minutes + ':' + seconds;
+		}, 1000);
+	}
 
 })(jQuery); // End of use strict
