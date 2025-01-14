@@ -78,9 +78,9 @@
                                 <span class="td_card_price td_accent_color td_fs_18 td_medium">$39</span>
                               </div>
                               <div class="td_card_btns_wrap">
-                                <a href="blog-details.html" class="td_btn td_style_1 td_type_3 td_radius_10 td_medium td_fs_14">
+                                <a href="{{ route('course-detail',$course->slug) }}" class="td_btn td_style_1 td_type_3 td_radius_10 td_medium td_fs_14">
                                   <span class="td_btn_in td_accent_color">
-                                    <span>Enroll Now</span>
+                                    <span>View More</span>
                                   </span>             
                                 </a>
                                 <span class="td_fs_18 td_medium td_heading_color">Robert Anderson</span>

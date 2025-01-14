@@ -6,7 +6,7 @@
                 <div class="col-md-8">
                   <div class="td_page_heading_in">
                     <ol class="breadcrumb m-0 td_fs_20 td_opacity_8 td_semibold ">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="{{ route('website') }}">Home</a></li>
                         <li class="breadcrumb-item active">{{ $contentMain->name}}</li>
                     </ol>
                     <h1 class=" td_fs_48 td_mb_10">{{ $contentMain->name}}</h1>
@@ -76,9 +76,8 @@
                       </a>
                     </div>
                     <div class="col-4">
-                    <span class="td_card_label td_accent_bg td_white_color">Advanced</span>
+                      <span class="td_card_label td_accent_bg td_white_color">Advanced</span>
                     </div>
-                    
                   </div>
                   <div class="td_card_info td_white_bg">
                     <div class="td_card_info_in">
@@ -113,7 +112,7 @@
                         <span class="td_heading_color td_opacity_5 td_medium">(5.0/5 Ratings)</span>
                       </div>
                       <div class="td_card_btn">
-                        <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                        <a href="#lead-generate-popup" class="td_btn td_style_1 td_radius_10 td_medium open-popup-link">
                           <span class="td_btn_in td_white_color td_accent_bg">
                             <span>Enroll Now</span>
                           </span>             

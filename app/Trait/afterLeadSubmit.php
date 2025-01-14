@@ -108,8 +108,6 @@ trait afterLeadSubmit
                 'mail_status' => (isset($leadData['mail_status']))?$leadData['mail_status']:'',
             );
 
-            dd($data);
-
             $lead = Lead::create($data);
 
             return response()->json($lead, $this->_statusOK);

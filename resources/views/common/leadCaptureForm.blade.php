@@ -25,8 +25,7 @@
                 </div>
                 
                 <form id="leadCaptureForm" action="{{ route('insert-lead-records')}}" method="post" >
-                    @csrf
-                    @honeypot
+                    {{ csrf_field() }}
                     <div class="lead_steps step_1 active">
                         <h3 class="td_mb_20 td_fs_24 td_semibold">Let’s get you started!</h3>
                         <p class="td_fs_14 m-0">First we need your phone number</p>

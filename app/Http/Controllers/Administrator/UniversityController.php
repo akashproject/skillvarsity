@@ -39,7 +39,7 @@ class UniversityController extends Controller
             $university = University::find($id);
             $courses = Course::all();
             $states = State::all();
-            $cities = City::where('state_id', $center->state_id)->orderBy('name', 'asc')->get();
+            $cities = City::where('state_id', $university->state_id)->orderBy('name', 'asc')->get();
             return view('administrator.universities.show',compact('university','states','cities','courses'));
         } catch(\Illuminate\Database\QueryException $e){
         }        

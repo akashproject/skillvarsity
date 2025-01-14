@@ -74,10 +74,9 @@ class IndexController extends Controller
             $cogno = $this->cognoai_api_calling($postData);
             $postData['crm_status'] = $ee->original;
             $postData['whatsApp_status'] = $cogno->original;
-
             $insert_lead_to_db = $this->captureLeadToDB($postData);
 
-            dd($insert_lead_to_db);
+            return redirect('/thank-you');
 
         } catch (\Illuminate\Database\QueryException $e) {
             return response()->json($e, $this->_statusOK);

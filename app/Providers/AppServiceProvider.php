@@ -46,9 +46,9 @@ class AppServiceProvider extends ServiceProvider
         {
 
             // Header Menu
-            $primaryMenu = array(   
-                '/contact' => "Contact",
-            );
+           
+            $primaryMenu[url('contact')] = "Contact";
+            
             $view->with('primaryMenu', $primaryMenu);
 
             $media = Media::orderBy('created_at', 'desc')->get();

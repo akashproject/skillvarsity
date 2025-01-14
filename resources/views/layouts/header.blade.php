@@ -18,23 +18,23 @@
 			<li>
 				<img src="assets/frontend/img/icons/call.svg" alt="">
 				<span>
-				Call: <a href="tel:99066789768">990 66789 768</a>
+				Call: <a href="tel:{{ get_theme_setting('mobile') }}">{{ get_theme_setting('mobile') }}</a>
 				</span>
 			</li>
 			<li>
 				<img src="assets/frontend/img/icons/envlop.svg" alt="">
 				<span>
-				Email: <a href="mailto:support@educat.com">support@educat.com</a>
+				Email: <a href="mailto:support@educat.com">{{ get_theme_setting('email') }}</a>
 				</span>
 			</li>
 			</ul>
 		</div>
 		<div class="td_top_header_right">
 			<span>
-			<a href="signin.html" class="">Login</a>/
-			<a href="signup.html" class="">Register</a>
+			<a href="#lead-generate-popup" class="open-popup-link">Login</a>/
+			<a href="#lead-generate-popup" class="open-popup-link">Register</a>
 			</span>
-			<a href="#" class="td_btn td_style_1 td_medium">
+			<a href="#lead-generate-popup" class="td_btn td_style_1 td_medium open-popup-link">
 			<span class="td_btn_in td_white_color td_accent_bg">
 				<span>Apply Now</span>
 				<svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -90,7 +90,7 @@
 				<div class="td_nav_list_wrap_in">
 					<ul class="td_nav_list">
 						<li class="menu-item-has-children">
-                        	<a href="javascript:void(0)">University</a>
+                        	<a href="{{ url('universities') }}">University</a>
 							<ul>
 								@foreach($universities as $key => $value)
 								<li>
