@@ -37,6 +37,22 @@
       <div class="td_height_30 td_height_lg_30"></div>
       <div class="container">
         <div class="row td_gap_y_50 td_row_reverse_lg">
+        <div class="col-lg-4">
+            <div class="td_sidebar_filter">
+              
+              <div class="td_filter_widget">
+                <h3 class="td_filter_widget_title td_fs_20 td_mb_16">Courses</h3>
+                <div class="td_filter_category td_fs_18 td_semibold">
+                  @foreach($courses as $key => $course)
+                  <a href="{{ route('course-detail',$course->slug) }}">
+                    <span>{{ $course->name }}</span>
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+                  @endforeach
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="col-lg-8">
             <div class="td_section_head_2">
               <div class="td_section_head_2_left">
@@ -69,27 +85,62 @@
               @foreach($universities as $key => $value)
                 <div class="col-xl-12">
                     <div class="td_card td_style_5 td_type_3">
-                    <a href="{{ route('university-detail',$value->slug) }}" class="td_card_thumb">
+                      <a href="{{ route('university-detail',$value->slug) }}" class="td_card_thumb">
                         <span class="td_card_thumb_in td_radius_10">
-                        <img src="{{ url('assets/frontend/img/home_3/course_thumb_5.jpg')}}" alt="">
-                        <span class="td_card_label td_fs_14 td_white_color td_accent_bg">New</span>
+                          <img src="{{ url('assets/frontend/img/university/tiu.png')}}" alt="">
+                          <!-- <span class="td_card_label td_fs_14 td_white_color td_accent_bg">New</span> -->
                         </span>
-                    </a>
+                      </a>
                     <div class="td_card_content">
-                        <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
-                        <li>
-                            <img src="{{ url('assets/frontend/img/icons/user_3.svg')}}" alt="">
-                            <span class="td_opacity_7">120 Seats</span>
-                        </li>
-                        <li>
-                            <img src="{{ url('assets/frontend/img/icons/book.svg')}}" alt="">
-                            <span class="td_opacity_7">15 Semesters</span>
-                        </li>
+                        
+                        <h4 class="td_card_title td_fs_20 td_semibold td_mb_12 m-0" >
+                          <a href="{{ route('university-detail',$value->slug) }}">{{$value->name}}</a>
+                        </h4>
+                        <ul class="td_card_meta td_mp_0 td_fs_14 td_heading_color">
+                          <li>
+                            <img src="{{ url('assets/frontend/img/icons/location.png')}}" alt="">
+                            <span class="td_opacity_7">Kolkata, West Bengal</span>
+                          </li>
+                          <li>
+                              <img src="{{ url('assets/frontend/img/icons/book.svg')}}" alt="">
+                              <span class="td_opacity_7">Private</span>
+                          </li>
                         </ul>
-                        <h2 class="td_card_title td_fs_24 td_semibold td_mb_12"><a href="{{ route('university-detail',$value->slug) }}">{{$value->name}}</a></h2>
-                        <div class="td_card_price_wrap td_mb_12">
-                        <div class="td_card_review">
-                            <div class="td_rating" data-rating="5">
+                        <hr>
+                        <div class="td_card_price_wrap td_mb_12 mt-2">
+                          <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
+                            <li>
+                              <img src="{{ url('assets/frontend/img/icons/book.svg')}}" alt="">
+                              <span class="td_opacity_7">4 Courses</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-certificate"></i>
+                                <span class="td_opacity_7">3 Scholarship</span>
+                            </li>
+                          </ul>
+                          <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
+                            <li>
+                              <span class="td_opacity_7">IELTS, TOEFL, +2</span>
+                            </li>
+                            <li>
+                                <span class="td_opacity_7">FEE: ₹20.11 L - 40.88 L</span>
+                            </li>
+                          </ul>
+                          
+                          <a href="#lead-generate-popup" class="td_btn td_style_1 td_type_3 td_radius_10 td_medium td_fs_14 open-popup-link">
+                            <span class="td_btn_in td_accent_color">
+                              <span><i class="fa-solid fa-download"></i> Brochure</span>
+                            </span>             
+                          </a>
+                        </div>
+                        <div class="td_card_btns_wrap">
+                        <a href="#lead-generate-popup" class="td_btn td_style_1 td_type_3 td_radius_10 td_medium td_fs_14 open-popup-link">
+                            <span class="td_btn_in td_accent_color">
+                              <span><i class="fa-solid fa-phone"></i> Talk to Expert</span>
+                            </span>             
+                        </a>
+                          <div class="td_card_review">
+                            <div class="td_rating" data-rating="3.5">
                             <i class="fa-regular fa-star"></i>
                             <i class="fa-regular fa-star"></i>
                             <i class="fa-regular fa-star"></i>
@@ -103,17 +154,8 @@
                                 <i class="fa-solid fa-star fa-fw"></i>
                             </div>
                             </div>
-                            <span class="td_heading_color td_opacity_5 td_fs_14">(5.0/10 Ratings)</span>
-                        </div>
-                        <span class="td_card_price td_accent_color td_fs_18 td_medium">$89</span>
-                        </div>
-                        <div class="td_card_btns_wrap">
-                        <a href="blog-details.html" class="td_btn td_style_1 td_type_3 td_radius_10 td_medium td_fs_14">
-                            <span class="td_btn_in td_accent_color">
-                            <span>Enroll Now</span>
-                            </span>             
-                        </a>
-                        <span class="td_fs_18 td_medium td_heading_color">Robert Anderson</span>
+                            <span class="td_heading_color td_opacity_5 td_fs_14">(3.5/5 Ratings)</span>
+                          </div>
                         </div>
                     </div>
                     </div>
@@ -122,254 +164,6 @@
             </div>
             <div class="td_height_60 td_height_lg_40"></div>
             
-          </div>
-          <div class="col-lg-4">
-            <div class="td_sidebar_filter">
-              <div class="td_filter_widget">
-                <form action="#" class="td_sidebar_search">
-                  <input type="text" placeholder="Keywords" class="td_sidebar_search_input">
-                  <button type="submit" class="td_sidebar_search_btn td_center">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
-                </form>
-              </div>
-              <div class="td_filter_widget">
-                <h3 class="td_filter_widget_title td_fs_20 td_mb_16">Price Filter</h3>
-                <div class="st-range-slider-wrap">
-                  <div id="slider-range"></div>
-                  <div class="td_amount_wrap">
-                    <input type="text" id="amount" readonly>
-                  </div>
-                </div>
-              </div>
-              <div class="td_filter_widget">
-                <h3 class="td_filter_widget_title td_fs_20 td_mb_16">Categories</h3>
-                <div class="td_filter_category td_fs_18 td_semibold">
-                  <a href="courses-grid-view.html">
-                    <span>Data Analysis (29)</span>
-                    <i class="fa-solid fa-arrow-right-long"></i>
-                  </a>
-                  <a href="courses-grid-view.html">
-                    <span>Software Engineer (45)</span>
-                    <i class="fa-solid fa-arrow-right-long"></i>
-                  </a>
-                  <a href="courses-grid-view.html">
-                    <span>Fine Arts (16)</span>
-                    <i class="fa-solid fa-arrow-right-long"></i>
-                  </a>
-                  <a href="courses-grid-view.html">
-                    <span>Business Analysis (45)</span>
-                    <i class="fa-solid fa-arrow-right-long"></i>
-                  </a>
-                  <a href="courses-grid-view.html">
-                    <span>Software Develop (42)</span>
-                    <i class="fa-solid fa-arrow-right-long"></i>
-                  </a>
-                  <a href="courses-grid-view.html">
-                    <span>Software Engineer (44)</span>
-                    <i class="fa-solid fa-arrow-right-long"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="td_filter_widget">
-                <h3 class="td_filter_widget_title td_fs_20 td_mb_16">Language Skills</h3>
-                <ul class="td_filter_widget_list td_mp_0">
-                  <li>
-                    <div class="td_custom_checkbox_2">
-                      <input type="checkbox">
-                      <span>Spanish Language</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="td_custom_checkbox_2">
-                      <input type="checkbox">
-                      <span>Arabic Language</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="td_custom_checkbox_2">
-                      <input type="checkbox">
-                      <span>United State(UK)</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="td_custom_checkbox_2">
-                      <input type="checkbox">
-                      <span>United Kingdom(US)</span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="td_filter_widget">
-                <h3 class="td_filter_widget_title td_fs_20 td_mb_16">Skills Level</h3>
-                <ul class="td_filter_widget_list td_mp_0">
-                  <li>
-                    <div class="td_custom_checkbox_2">
-                      <input type="checkbox">
-                      <span>All Level (59)</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="td_custom_checkbox_2">
-                      <input type="checkbox">
-                      <span>Beginners Level  (50)</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="td_custom_checkbox_2">
-                      <input type="checkbox">
-                      <span>Intermediate Level (42)</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="td_custom_checkbox_2">
-                      <input type="checkbox">
-                      <span>Expert Level (30)</span>
-                    </div>
-                  </li>
-                </ul>
-                <div class="td_height_30 td_height_lg_30"></div>
-                <hr>
-                <div class="td_height_30 td_height_lg_30"></div>
-                <h3 class="td_filter_widget_title td_fs_20 td_mb_16">Video Durations</h3>
-                <ul class="td_filter_widget_list td_mp_0 td_semibold">
-                  <li>
-                    <div class="td_custom_checkbox_2">
-                      <input type="checkbox">
-                      <span>0-1 Hours  (120)</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="td_custom_checkbox_2">
-                      <input type="checkbox">
-                      <span>0-3 Hours  (130)</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="td_custom_checkbox_2">
-                      <input type="checkbox">
-                      <span>0-4 Hours  (89)</span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="td_custom_checkbox_2">
-                      <input type="checkbox">
-                      <span>0-5 Hours  (96)</span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div class="td_filter_widget">
-                <h3 class="td_filter_widget_title td_fs_20 td_mb_16">Rated By</h3>
-                <ul class="td_filter_widget_list td_mp_0">
-                  <li>
-                    <div class="td_custom_checkbox_2">
-                      <input type="checkbox">
-                      <span>
-                        <span class="td_rating" data-rating="5">
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <span class="td_rating_percentage">
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                          </span>
-                        </span>
-                      </span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="td_custom_checkbox_2">
-                      <input type="checkbox">
-                      <span>
-                        <span class="td_rating" data-rating="4">
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <span class="td_rating_percentage">
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                          </span>
-                        </span>
-                      </span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="td_custom_checkbox_2">
-                      <input type="checkbox">
-                      <span>
-                        <span class="td_rating" data-rating="3">
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <span class="td_rating_percentage">
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                          </span>
-                        </span>
-                      </span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="td_custom_checkbox_2">
-                      <input type="checkbox">
-                      <span>
-                        <span class="td_rating" data-rating="2">
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <span class="td_rating_percentage">
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                          </span>
-                        </span>
-                      </span>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="td_custom_checkbox_2">
-                      <input type="checkbox">
-                      <span>
-                        <span class="td_rating" data-rating="1">
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <span class="td_rating_percentage">
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                          </span>
-                        </span>
-                      </span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </div>

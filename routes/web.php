@@ -62,6 +62,13 @@ Route::group(['prefix' => 'administrator', 'namespace' => 'Admin'], function () 
         Route::post('/save-course', [App\Http\Controllers\Administrator\CourseController::class, 'save'])->name('admin-save-course');
         Route::get('/delete-course/{id}', [App\Http\Controllers\Administrator\CourseController::class, 'delete'])->name('admin-delete-course');
 
+        //Subjects
+        Route::get('/subjects', [App\Http\Controllers\Administrator\SubjectController::class, 'index'])->name('admin-subjects');
+        Route::get('/add-subject', [App\Http\Controllers\Administrator\SubjectController::class, 'Add'])->name('admin-add-subject');
+        Route::get('/view-subject/{id}', [App\Http\Controllers\Administrator\SubjectController::class, 'show'])->name('admin-show-subject');
+        Route::post('/save-subject', [App\Http\Controllers\Administrator\SubjectController::class, 'save'])->name('admin-save-subject');
+        Route::get('/delete-subject/{id}', [App\Http\Controllers\Administrator\SubjectController::class, 'delete'])->name('admin-delete-subject');
+
         //Universities
         Route::get('/universities', [App\Http\Controllers\Administrator\UniversityController::class, 'index'])->name('admin-universities');
         Route::get('/add-university', [App\Http\Controllers\Administrator\UniversityController::class, 'Add'])->name('admin-add-university');
@@ -101,7 +108,6 @@ Route::group(['prefix' => 'administrator', 'namespace' => 'Admin'], function () 
         //Contacts
         Route::get('/contacts', [App\Http\Controllers\Administrator\ContactController::class, 'index'])->name('admin-contacts');
         Route::get('/view-contact/{id}', [App\Http\Controllers\Administrator\ContactController::class, 'show'])->name('admin-view-contact');
-
         Route::get('/settings', [App\Http\Controllers\Administrator\SettingController::class, 'show'])->name('admin-settings');
         Route::get('/general-settings', [App\Http\Controllers\Administrator\SettingController::class, 'general'])->name('admin-general-settings');
         Route::post('/save-settings', [App\Http\Controllers\Administrator\SettingController::class, 'save'])->name('admin-save-settings');  
@@ -127,7 +133,7 @@ Route::group(['middleware' => ['auth']], function () {
     //Certificate
 });
 
-Route::get('/{slug}', [App\Http\Controllers\PageController::class, 'index'])->where('slug', '([A-Za-z0-9\-]+)');
+//Route::get('/{slug}', [App\Http\Controllers\PageController::class, 'index'])->where('slug', '([A-Za-z0-9\-]+)');
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('website');
 
 Route::get('/course/{slug}', [App\Http\Controllers\CourseController::class, 'view'])->name('course-detail');

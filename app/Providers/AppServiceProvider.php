@@ -7,6 +7,7 @@ use Illuminate\Pagination\Paginator;
 use App\Models\Media;
 use App\Models\Course;
 use App\Models\University;
+use App\Models\Subject;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Spatie\Menu\Laravel\Menu;
@@ -59,6 +60,9 @@ class AppServiceProvider extends ServiceProvider
 
             $universities = University::where('status',"1")->get();
             $view->with('universities', $universities);
+
+            $subjects = Subject::where('status',"1")->get();
+            $view->with('subjects', $subjects);
 
             $user = Auth::user();
             $view->with('user', $user);

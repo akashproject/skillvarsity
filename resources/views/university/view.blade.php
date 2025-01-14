@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('content')
  <!-- Start Hero Section -->
- <section class="td_hero td_style_3 td_center td_hobble">
+    <section class="td_hero td_style_3 td_center td_hobble">
       <div class="container">
         <div class="td_hero_text wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
           <p class="td_hero_subtitle_up td_fs_18 td_accent_color td_spacing_1 td_semibold text-uppercase td_mb_14">100 % Quality Qurantee</p>
@@ -244,106 +244,20 @@
       <div class="container">
         <div class="td_section_heading td_style_1 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
           <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">Browse Categories</p>
-          <h2 class="td_section_title td_fs_48 mb-0">Explore Top Category</h2>
+          <h2 class="td_section_title td_fs_48 mb-0">Explore Treding Subject <i class="fa fa-line-chart" aria-hidden="true"></i></h2>
         </div>
         <div class="td_height_50 td_height_lg_50"></div>
         <div class="row td_gap_y_24">
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="{{ url('assets/frontend/img/home_3/category_icon_1.svg') }}" alt="">
-              </span>
-              <span class="td_iconbox_title">Business Management</span>
-            </a>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="{{ url('assets/frontend/img/home_3/category_icon_2.svg') }}" alt="">
-              </span>
-              <span class="td_iconbox_title">Art & Design System</span>
-            </a>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="{{ url('assets/frontend/img/home_3/category_icon_3.svg') }}" alt="">
-              </span>
-              <span class="td_iconbox_title">Art & Biography</span>
-            </a>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="{{ url('assets/frontend/img/home_3/category_icon_4.svg') }}" alt="">
-              </span>
-              <span class="td_iconbox_title">Design & Pattern</span>
-            </a>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="{{ url('assets/frontend/img/home_3/category_icon_5.svg') }}" alt="">
-              </span>
-              <span class="td_iconbox_title">Photography & Video</span>
-            </a>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="{{ url('assets/frontend/img/home_3/category_icon_6.svg') }}" alt="">
-              </span>
-              <span class="td_iconbox_title">Blockchain Develop</span>
-            </a>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="{{ url('assets/frontend/img/home_3/category_icon_7.svg') }}" alt="">
-              </span>
-              <span class="td_iconbox_title">Design System</span>
-            </a>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="{{ url('assets/frontend/img/home_3/category_icon_8.svg') }}" alt="">
-              </span>
-              <span class="td_iconbox_title">Online Educations</span>
-            </a>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="{{ url('assets/frontend/img/home_3/category_icon_9.svg') }}" alt="">
-              </span>
-              <span class="td_iconbox_title">Health & Philosophy</span>
-            </a>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="{{ url('assets/frontend/img/home_3/category_icon_10.svg') }}" alt="">
-              </span>
-              <span class="td_iconbox_title">Math & Technology</span>
-            </a>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="{{ url('assets/frontend/img/home_3/category_icon_11.svg') }}" alt="">
-              </span>
-              <span class="td_iconbox_title">Zym Center & Fitness</span>
-            </a>
-          </div>
-          <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.45s">
-            <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
-              <span class="td_iconbox_icon">
-                <img src="{{ url('assets/frontend/img/home_3/category_icon_12.svg') }}" alt="">
-              </span>
-              <span class="td_iconbox_title">Language Academy</span>
-            </a>
-          </div>
+          @foreach($subjects as $subject)
+            <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+              <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
+                <span class="td_iconbox_icon">
+                  <img src="{{ url('assets/frontend/img/home_3/category_icon_1.svg') }}" alt="">
+                </span>
+                <span class="td_iconbox_title">{{$subject->name}}</span>
+              </a>
+            </div>
+          @endforeach
         </div>
       </div>
       <div class="td_height_120 td_height_lg_80"></div>

@@ -77,6 +77,20 @@
          <li class="menu-item">
             <a href="javascript:void(0)" class="menu-link menu-toggle">
                <i class="menu-icon tf-icons bx bx-file-blank"></i>
+               <div data-i18n="Authentications">Subject</div>
+            </a>
+            <ul class="menu-sub">
+               <li class="menu-item">
+                  <a href="{{ route('admin-subjects') }}" class="menu-link">
+                     <div data-i18n="Basic">Subjects</div>
+                  </a>
+               </li>
+            </ul>
+         </li>
+
+         <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link menu-toggle">
+               <i class="menu-icon tf-icons bx bx-file-blank"></i>
                <div data-i18n="Authentications">University</div>
             </a>
             <ul class="menu-sub">
