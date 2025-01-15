@@ -27,7 +27,7 @@ class TestimonialController extends Controller
             $recruiters = Recruiter::all();
             return view('administrator.testimonials.add',compact('courses','recruiters'));
         } catch(\Illuminate\Database\QueryException $e){
-            //throw $th;
+            throw $e;
         }
     }
 

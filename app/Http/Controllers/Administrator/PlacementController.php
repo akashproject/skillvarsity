@@ -7,12 +7,11 @@ use Illuminate\Http\Request;
 use App\Models\Placement;
 use App\Models\Course;
 use App\Models\Recruiter;
-use App\Models\Center;
+use App\Models\University;
 use Illuminate\Support\Facades\Storage;
 
 class PlacementController extends Controller
 {
-    //
     //
     public function index()
     {
@@ -20,16 +19,15 @@ class PlacementController extends Controller
             $placements = Placement::all();
             return view('administrator.placements.index',compact('placements'));
         } catch(\Illuminate\Database\QueryException $e){
-            //throw $th;
+            throw $e;
         }        
     }
 
     public function add() {
         try {
-            
             $courses = Course::all();
             $recruiters = Recruiter::all();
-            $centers = Center::all();
+            $centers = University::all();
             return view('administrator.placements.add',compact('centers','courses','recruiters'));
         } catch(\Illuminate\Database\QueryException $e){
             //throw $th;
@@ -42,7 +40,7 @@ class PlacementController extends Controller
             $placement = Placement::findOrFail($id);
             $courses = Course::all();
             $recruiters = Recruiter::all();
-            $centers = Center::all();
+            $centers = University::all();
             return view('administrator.placements.show',compact('placement','courses','centers','recruiters'));
         } catch(\Illuminate\Database\QueryException $e){
         }        
@@ -71,7 +69,7 @@ class PlacementController extends Controller
     public function delete($id) {
         $centerCourse = Placement::findOrFail($id);
         $centerCourse->delete();
-        return redirect('/administrator/placements');
+        return redirect()->back()->with('message', 'Placement deleted successfully!');
     }
 
     public function import() {

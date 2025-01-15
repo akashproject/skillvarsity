@@ -5,13 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Placement extends Model
+class Recruiter extends Model
 {
     use HasFactory;
-    protected $table = 'placements';
+    protected $table = 'recruiters';
     protected $primaryKey = 'id';
-
+    
     protected $fillable = [
-        'id','featured_image','name','course_id','dasignation','placed_at','joining_salary','university_id','status','created_at',
+        'id','featured_image','name','model','model_id','status','created_at'
     ];
 }
