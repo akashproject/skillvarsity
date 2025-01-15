@@ -13379,6 +13379,7 @@ button.td_icon_btn:hover {
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.05);
   background: #fff;
+  border: 1px solid #890c2563;
 }
 .td_card.td_style_3 .td_card_label {
   padding: 4px 10px;

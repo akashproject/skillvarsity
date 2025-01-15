@@ -133,7 +133,7 @@ Route::group(['middleware' => ['auth']], function () {
     //Certificate
 });
 
-//Route::get('/{slug}', [App\Http\Controllers\PageController::class, 'index'])->where('slug', '([A-Za-z0-9\-]+)');
+Route::get('/{slug}', [App\Http\Controllers\PageController::class, 'index'])->where('slug', '([A-Za-z0-9\-]+)');
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('website');
 
 Route::get('/course/{slug}', [App\Http\Controllers\CourseController::class, 'view'])->name('course-detail');
