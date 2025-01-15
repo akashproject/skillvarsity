@@ -129,6 +129,20 @@
                </li>
             </ul>
          </li>
+
+         <li class="menu-item">
+            <a href="javascript:void(0)" class="menu-link menu-toggle">
+               <i class="menu-icon tf-icons bx bx-file-blank"></i>
+               <div data-i18n="Authentications">Recruiters</div>
+            </a>
+            <ul class="menu-sub">
+               <li class="menu-item">
+                  <a href="{{ route('admin-recruiters') }}" class="menu-link">
+                     <div data-i18n="Basic">Recruiters</div>
+                  </a>
+               </li>
+            </ul>
+         </li>
          
          <li class="menu-item">
             <a href="javascript:void(0)" class="menu-link menu-toggle">

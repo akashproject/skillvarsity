@@ -128,6 +128,12 @@ Route::group(['prefix' => 'administrator', 'namespace' => 'Admin'], function () 
         Route::get('/import-placement', [App\Http\Controllers\Administrator\PlacementController::class, 'import'])->name('admin-import-placement');
         Route::post('/upload-placement', [App\Http\Controllers\Administrator\PlacementController::class, 'upload'])->name('admin-upload-placement');
         
+        //Recruiters
+        Route::get('/recruiters', [App\Http\Controllers\Administrator\RecruiterController::class, 'index'])->name('admin-recruiters');
+        Route::get('/add-recruiter', [App\Http\Controllers\Administrator\RecruiterController::class, 'add'])->name('admin-add-recruiter');
+        Route::get('/view-recruiter/{id}', [App\Http\Controllers\Administrator\RecruiterController::class, 'show'])->name('admin-view-recruiter');
+        Route::post('/save-recruiter', [App\Http\Controllers\Administrator\RecruiterController::class, 'save'])->name('admin-save-recruiter');
+        
     });
 
     Route::group(['middleware' => ['role:super-admin']], function () {
