@@ -25,13 +25,13 @@
 				@endif
 				<div class="row">
 					<div class="col-md-7" >
-						<div class="form-group row">
+						<div class="form-group row mb-2">
 							<label for="name" class="col-sm-3 text-right control-label col-form-label">Name</label>
 							<div class="col-sm-9">
 								<input type="text" class="form-control" name="name" id="name" placeholder="Enter Name Here" value="{{ $testimonial->name }}" >
 							</div>
 						</div>
-						<div class="form-group row">
+						<div class="form-group row mb-2">
 							<label for="comment" class="col-sm-3 text-right control-label col-form-label">Comment</label>
 							<div class="col-sm-9">
 								<textarea class="form-control editor" name="comment"  id="mceEditor" placeholder="Enter comment Here" >
@@ -39,25 +39,25 @@
 								</textarea>
 							</div>
 						</div>
-						<div class="form-group row">
+						<div class="form-group row mb-2">
 							<label for="dasignation" class="col-sm-3 text-right control-label col-form-label">Dasignation</label>
 							<div class="col-sm-9">
 								<input type="text" class="form-control" name="dasignation" id="dasignation" placeholder="Enter Dasignation Here" value="{{ $testimonial->dasignation }}">
 							</div>
 						</div>
-						<div class="form-group row">
+						<div class="form-group row mb-2">
 							<label for="video" class="col-sm-3 text-right control-label col-form-label">Video</label>
 							<div class="col-sm-9">
 								<input type="text" class="form-control" name="video" id="video" placeholder="Enter video url Here" value="{{ $testimonial->video }}" >
 							</div>
 						</div>
-						<div class="form-group row">
+						<div class="form-group row mb-2">
 							<label for="model" class="col-sm-3 text-right control-label col-form-label">Model</label>
 							<div class="col-sm-9">
 								<input type="text" class="form-control" name="model" id="model" placeholder="Enter Model Here" value="{{ $testimonial->model }}" >
 							</div>
 						</div>
-						<div class="form-group row">
+						<div class="form-group row mb-2">
 							<label for="model_id" class="col-sm-3 text-right control-label col-form-label">Model id</label>
 							<div class="col-sm-9">
 								<input type="text" class="form-control" name="model_id" id="model_id" placeholder="Enter Model Id Here" value="{{ $testimonial->model_id }}" >
@@ -65,7 +65,7 @@
 						</div>
 					</div>
 					<div class="col-md-5">
-						<div class="form-group row">
+						<div class="form-group row mb-2">
 							<label for="state" class="col-sm-3 text-right control-label col-form-label"> Course</label>
 							<div class="col-sm-9">
 								<select name="course_id" id="course_id" class="select2 form-control custom-select" style="width: 100%; height:36px;">	
@@ -76,7 +76,7 @@
 								</select>
 							</div>
 						</div>		
-						<div class="form-group row">
+						<div class="form-group row mb-2">
 							<label for="state" class="col-sm-3 text-right control-label col-form-label"> Placed At </label>
 							<div class="col-sm-9">
 								<select name="placed_at" id="placed_at" class="select2 form-control custom-select" style="width: 100%; height:36px;">	
@@ -87,7 +87,7 @@
 								</select>
 							</div>
 						</div>					
-						<div class="form-group row">
+						<div class="form-group row mb-2">
 							<label for="state" class="col-sm-3 text-right control-label col-form-label">Status</label>
 							<div class="col-sm-9">
 								<select name="status" id="status" class="select2 form-control custom-select" style="width: 100%; height:36px;">	
@@ -97,7 +97,7 @@
 								<select>
 							</div>
 						</div>
-						<div class="form-group row">
+						<div class="form-group row mb-2">
 							<label for="tags" class="col-md-6 text-left control-label col-form-label">Featured Image</label>
 							<div class="col-sm-6 text-center">
 								<a href="#imageBox" class="image-profile open-popup-link">

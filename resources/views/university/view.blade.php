@@ -223,15 +223,6 @@
                 </div>
               </div>
             </div>
-            <a href="about.html" class="td_btn td_style_1 td_radius_30 td_medium td_with_shadow">
-              <span class="td_btn_in td_white_color td_accent_bg">
-                <span>Explore More About </span>
-                <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M15.1575 4.34302L3.84375 15.6567" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M15.157 11.4142C15.157 11.4142 16.0887 5.2748 15.157 4.34311C14.2253 3.41142 8.08594 4.34314 8.08594 4.34314" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg> 
-              </span>             
-            </a>
           </div>
         </div>
       </div>
@@ -456,6 +447,7 @@
         <div class="td_slider td_style_1 td_slider_gap_24 td_remove_overflow wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
           <div class="td_slider_container" data-autoplay="0" data-loop="1" data-speed="800" data-center="0" data-variable-width="0" data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="2" data-md-slides="2" data-lg-slides="2" data-add-slides="3">
             <div class="td_slider_wrapper">
+              @foreach(getTestimonials() as $key => $testimonial)
               <div class="td_slide">
                 <div class="td_testimonial td_style_1 td_type_2 td_white_bg td_radius_5">
                   <div class="td_rating td_mb_20" data-rating="5">
@@ -472,11 +464,11 @@
                       <i class="fa-solid fa-star fa-fw"></i>
                     </div>
                   </div>
-                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
+                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">{!! $testimonial->comment !!}</blockquote>
                   <div class="td_testimonial_meta td_mb_24">
                     <img src="{{ url('assets/frontend/img/home_1/avatar_1.png') }}" alt="">
                     <div class="td_testimonial_meta_right">
-                      <h3 class="td_fs_20 td_semibold td_mb_2">Antoni Alex</h3>
+                      <h3 class="td_fs_20 td_semibold td_mb_2">{!! $testimonial->name !!}</h3>
                       <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">10th Batch Students</p>
                     </div>
                   </div>
@@ -487,223 +479,7 @@
                   </span> 
                 </div>
               </div>
-              <div class="td_slide">
-                <div class="td_testimonial td_style_1 td_type_2 td_white_bg td_radius_5">
-                  <div class="td_rating td_mb_20" data-rating="5">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <div class="td_rating_percentage">
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                    </div>
-                  </div>
-                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
-                  <div class="td_testimonial_meta td_mb_24">
-                    <img src="{{ url('assets/frontend/img/home_2/avatar_2.png') }}" alt="">
-                    <div class="td_testimonial_meta_right">
-                      <h3 class="td_fs_20 td_semibold td_mb_2">Revert Alexan</h3>
-                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">15th Batch Students</p>
-                    </div>
-                  </div>
-                  <span class="td_quote_icon td_accent_color">
-                    <svg width="65" height="46" viewBox="0 0 65 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.05" d="M13.9305 26.6H1.00195V1H26.8591V27.362L17.9579 45H6.26959L14.8233 28.0505L15.5553 26.6H13.9305ZM51.0734 26.6H38.1448V1H64.002V27.362L55.1008 45H43.4124L51.9661 28.0505L52.6982 26.6H51.0734Z" stroke="currentColor" stroke-width="2"/>
-                    </svg>                      
-                  </span> 
-                </div>
-              </div>
-              <div class="td_slide">
-                <div class="td_testimonial td_style_1 td_type_2 td_white_bg td_radius_5">
-                  <div class="td_rating td_mb_20" data-rating="4.5">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <div class="td_rating_percentage">
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                    </div>
-                  </div>
-                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
-                  <div class="td_testimonial_meta td_mb_24">
-                    <img src="{{ url('assets/frontend/img/home_2/avatar_3.png') }}" alt="">
-                    <div class="td_testimonial_meta_right">
-                      <h3 class="td_fs_20 td_semibold td_mb_2">Anthonia Alex</h3>
-                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">12th Batch Students</p>
-                    </div>
-                  </div>
-                  <span class="td_quote_icon td_accent_color">
-                    <svg width="65" height="46" viewBox="0 0 65 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.05" d="M13.9305 26.6H1.00195V1H26.8591V27.362L17.9579 45H6.26959L14.8233 28.0505L15.5553 26.6H13.9305ZM51.0734 26.6H38.1448V1H64.002V27.362L55.1008 45H43.4124L51.9661 28.0505L52.6982 26.6H51.0734Z" stroke="currentColor" stroke-width="2"/>
-                    </svg>                      
-                  </span> 
-                </div>
-              </div>
-              <div class="td_slide">
-                <div class="td_testimonial td_style_1 td_type_2 td_white_bg td_radius_5">
-                  <div class="td_rating td_mb_20" data-rating="5">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <div class="td_rating_percentage">
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                    </div>
-                  </div>
-                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
-                  <div class="td_testimonial_meta td_mb_24">
-                    <img src="{{ url('assets/frontend/img/home_2/avatar_4.png') }}" alt="">
-                    <div class="td_testimonial_meta_right">
-                      <h3 class="td_fs_20 td_semibold td_mb_2">Arke Marey</h3>
-                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">09th Batch Students</p>
-                    </div>
-                  </div>
-                  <span class="td_quote_icon td_accent_color">
-                    <svg width="65" height="46" viewBox="0 0 65 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.05" d="M13.9305 26.6H1.00195V1H26.8591V27.362L17.9579 45H6.26959L14.8233 28.0505L15.5553 26.6H13.9305ZM51.0734 26.6H38.1448V1H64.002V27.362L55.1008 45H43.4124L51.9661 28.0505L52.6982 26.6H51.0734Z" stroke="currentColor" stroke-width="2"/>
-                    </svg>                      
-                  </span> 
-                </div>
-              </div>
-              <div class="td_slide">
-                <div class="td_testimonial td_style_1 td_type_2 td_white_bg td_radius_5">
-                  <div class="td_rating td_mb_20" data-rating="5">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <div class="td_rating_percentage">
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                    </div>
-                  </div>
-                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
-                  <div class="td_testimonial_meta td_mb_24">
-                    <img src="{{ url('assets/frontend/img/home_1/avatar_1.png') }}" alt="">
-                    <div class="td_testimonial_meta_right">
-                      <h3 class="td_fs_20 td_semibold td_mb_2">Antoni Alex</h3>
-                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">10th Batch Students</p>
-                    </div>
-                  </div>
-                  <span class="td_quote_icon td_accent_color">
-                    <svg width="65" height="46" viewBox="0 0 65 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.05" d="M13.9305 26.6H1.00195V1H26.8591V27.362L17.9579 45H6.26959L14.8233 28.0505L15.5553 26.6H13.9305ZM51.0734 26.6H38.1448V1H64.002V27.362L55.1008 45H43.4124L51.9661 28.0505L52.6982 26.6H51.0734Z" stroke="currentColor" stroke-width="2"/>
-                    </svg>                      
-                  </span> 
-                </div>
-              </div>
-              <div class="td_slide">
-                <div class="td_testimonial td_style_1 td_type_2 td_white_bg td_radius_5">
-                  <div class="td_rating td_mb_20" data-rating="5">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <div class="td_rating_percentage">
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                    </div>
-                  </div>
-                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
-                  <div class="td_testimonial_meta td_mb_24">
-                    <img src="{{ url('assets/frontend/img/home_2/avatar_2.png') }}" alt="">
-                    <div class="td_testimonial_meta_right">
-                      <h3 class="td_fs_20 td_semibold td_mb_2">Revert Alexan</h3>
-                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">15th Batch Students</p>
-                    </div>
-                  </div>
-                  <span class="td_quote_icon td_accent_color">
-                    <svg width="65" height="46" viewBox="0 0 65 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.05" d="M13.9305 26.6H1.00195V1H26.8591V27.362L17.9579 45H6.26959L14.8233 28.0505L15.5553 26.6H13.9305ZM51.0734 26.6H38.1448V1H64.002V27.362L55.1008 45H43.4124L51.9661 28.0505L52.6982 26.6H51.0734Z" stroke="currentColor" stroke-width="2"/>
-                    </svg>                      
-                  </span> 
-                </div>
-              </div>
-              <div class="td_slide">
-                <div class="td_testimonial td_style_1 td_type_2 td_white_bg td_radius_5">
-                  <div class="td_rating td_mb_20" data-rating="4.5">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <div class="td_rating_percentage">
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                    </div>
-                  </div>
-                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
-                  <div class="td_testimonial_meta td_mb_24">
-                    <img src="{{ url('assets/frontend/img/home_2/avatar_3.png') }}" alt="">
-                    <div class="td_testimonial_meta_right">
-                      <h3 class="td_fs_20 td_semibold td_mb_2">Anthonia Alex</h3>
-                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">12th Batch Students</p>
-                    </div>
-                  </div>
-                  <span class="td_quote_icon td_accent_color">
-                    <svg width="65" height="46" viewBox="0 0 65 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.05" d="M13.9305 26.6H1.00195V1H26.8591V27.362L17.9579 45H6.26959L14.8233 28.0505L15.5553 26.6H13.9305ZM51.0734 26.6H38.1448V1H64.002V27.362L55.1008 45H43.4124L51.9661 28.0505L52.6982 26.6H51.0734Z" stroke="currentColor" stroke-width="2"/>
-                    </svg>                      
-                  </span> 
-                </div>
-              </div>
-              <div class="td_slide">
-                <div class="td_testimonial td_style_1 td_type_2 td_white_bg td_radius_5">
-                  <div class="td_rating td_mb_20" data-rating="5">
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <div class="td_rating_percentage">
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                      <i class="fa-solid fa-star fa-fw"></i>
-                    </div>
-                  </div>
-                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
-                  <div class="td_testimonial_meta td_mb_24">
-                    <img src="{{ url('assets/frontend/img/home_2/avatar_4.png') }}" alt="">
-                    <div class="td_testimonial_meta_right">
-                      <h3 class="td_fs_20 td_semibold td_mb_2">Arke Marey</h3>
-                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">09th Batch Students</p>
-                    </div>
-                  </div>
-                  <span class="td_quote_icon td_accent_color">
-                    <svg width="65" height="46" viewBox="0 0 65 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path opacity="0.05" d="M13.9305 26.6H1.00195V1H26.8591V27.362L17.9579 45H6.26959L14.8233 28.0505L15.5553 26.6H13.9305ZM51.0734 26.6H38.1448V1H64.002V27.362L55.1008 45H43.4124L51.9661 28.0505L52.6982 26.6H51.0734Z" stroke="currentColor" stroke-width="2"/>
-                    </svg>                      
-                  </span> 
-                </div>
-              </div>
+              @endforeach
             </div>
           </div>
           <div class="td_height_40 td_height_lg_40"></div>

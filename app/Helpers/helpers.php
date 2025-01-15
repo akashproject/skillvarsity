@@ -190,6 +190,23 @@ if (! function_exists('getCategories')) {
     }
 }
 
+if (! function_exists('getTestimonials')) {
+    function getTestimonials($model=null,$model_id=null){
+
+        $testimonials = Cache::rememberForever('testimonials', function () use($model,$model_id) {
+            $testimonials = DB::table('testimonials');
+            if($model){
+                $testimonials->where('model',$model);
+            } 
+            if($model_id){
+                $testimonials->where('model_id',$model_id);
+            }   
+            return $testimonials->where('status',"1")->orderBy('id', 'DESC')->limit("10")->get();
+        });
+        return $testimonials;
+    }
+}
+
 if (! function_exists('getUtmCampaign')) {
     function getUtmCampaign($params = null){
         if(request()->has('utm_campaign')){
