@@ -241,7 +241,7 @@
         <div class="row td_gap_y_24">
           @foreach($subjects as $subject)
             <div class="col-xxl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-              <a href="courses-grid-with-sidebar.html" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
+              <a href="{{ route('subject-detail',$subject->slug) }}" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
                 <span class="td_iconbox_icon">
                   <img src="{{ url('assets/frontend/img/home_3/category_icon_1.svg') }}" alt="">
                 </span>
@@ -281,63 +281,63 @@
           </div>
         </div>
         <div class="td_height_40 td_height_lg_40"></div>
-        <div class="row">
-          @foreach($courses as $key => $value)
-            <div class="col-md-4 mb-2">
-              <div class="td_card td_style_3 d-block td_radius_10">
-                <div class="row" style="margin-top: 6px;">
-                  <div class="col-8">
-                    <a href="{{ route('course-detail',$value->slug) }}" class="td_card_thumb">
-                      <img src="{{ url('assets/frontend/img/course/course-1.gif')}}" alt="">
-                    </a>
-                  </div>
-                  <div class="col-4">
-                    <span class="td_card_label td_accent_bg td_white_color">Advanced</span>
-                  </div>
+        <div class="row td_gap_y_30 td_row_gap_30">
+          @foreach($courses as $value)
+          <div class="col-lg-4 col-md-6">
+            <div class="td_card td_style_3 d-block td_radius_10">
+              <div class="row" style="margin-top: 6px;">
+                <div class="col-8">
+                  <a href="{{ route('course-detail',$value->slug) }}" class="td_card_thumb">
+                    <img src="{{ url('assets/frontend/img/course/course-1.gif')}}" alt="">
+                  </a>
                 </div>
-                <div class="td_card_info td_white_bg">
-                  <div class="td_card_info_in">
-                    <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
-                      <li>
-                        <img src="{{ url('assets/frontend/img/icons/user_3.svg')}}" alt="">
-                        <span class="td_opacity_7">150 Seats</span>
-                      </li>
-                      <li>
-                        <img src="{{ url('assets/frontend/img/icons/book.svg')}}" alt="">
-                        <span class="td_opacity_7">12 Semesters</span>
-                      </li>
-                    </ul>
-                    <!-- <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Data Analytics</span></a> -->
-                    <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">{{$value->name}}</a></h2>
-                    <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Far far away, behind the word mountains, far from the Consonantia.</p>
-                    <div class="td_card_review">
-                      <div class="td_rating" data-rating="4.5">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <div class="td_rating_percentage">
-                          <i class="fa-solid fa-star fa-fw"></i>
-                          <i class="fa-solid fa-star fa-fw"></i>
-                          <i class="fa-solid fa-star fa-fw"></i>
-                          <i class="fa-solid fa-star fa-fw"></i>
-                          <i class="fa-solid fa-star fa-fw"></i>
-                        </div>
+                <div class="col-4">
+                  <span class="td_card_label td_accent_bg td_white_color">Advanced</span>
+                </div>
+              </div>
+              <div class="td_card_info td_white_bg">
+                <div class="td_card_info_in">
+                  <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
+                    <li>
+                      <img src="{{ url('assets/frontend/img/icons/user_3.svg')}}" alt="">
+                      <span class="td_opacity_7">{{ $value->number_of_enrolled }} Enrolled</span>
+                    </li>
+                    <li>
+                      <img src="{{ url('assets/frontend/img/icons/book.svg')}}" alt="">
+                      <span class="td_opacity_7">{{ $value->no_of_module }} Modules</span>
+                    </li>
+                  </ul>
+                  <!-- <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Data Analytics</span></a> -->
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="{{ route('course-detail',$value->slug) }}">{{$value->name}}</a></h2>
+                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">{{$value->excerpt}}</p>
+                  <div class="td_card_review">
+                    <div class="td_rating" data-rating="4.5">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <div class="td_rating_percentage">
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
                       </div>
-                      <span class="td_heading_color td_opacity_5 td_medium">(5.0/5 Ratings)</span>
                     </div>
-                    <div class="td_card_btn">
-                      <a href="#lead-generate-popup" class="td_btn td_style_1 td_radius_10 td_medium open-popup-link">
-                        <span class="td_btn_in td_white_color td_accent_bg">
-                          <span>Enroll Now</span>
-                        </span>             
-                      </a>
-                    </div>
+                    <span class="td_heading_color td_opacity_5 td_medium">(4.5/5 Ratings)</span>
+                  </div>
+                  <div class="td_card_btn">
+                    <a href="#lead-generate-popup" class="td_btn td_style_1 td_radius_10 td_medium open-popup-link">
+                      <span class="td_btn_in td_white_color td_accent_bg">
+                        <span>Enroll Now</span>
+                      </span>             
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
           @endforeach
         </div>
       </div>

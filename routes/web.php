@@ -158,6 +158,9 @@ Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('w
 
 Route::get('/course/{slug}', [App\Http\Controllers\CourseController::class, 'view'])->name('course-detail');
 Route::get('/university/{slug}', [App\Http\Controllers\UniversityController::class, 'view'])->name('university-detail');
+Route::get('/category/{slug}', [App\Http\Controllers\SubjectController::class, 'view'])->name('subject-detail');
+
+
 Route::post('/submit-mobile-otp', [App\Http\Controllers\IndexController::class, 'submitMobileOtp'])->name('submit-mobile-otp');
 Route::post('/capture-lead', [App\Http\Controllers\IndexController::class, 'captureLead'])->name('insert-lead-records');
 

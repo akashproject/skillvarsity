@@ -3343,6 +3343,9 @@ label {
   min-height: 730px;
   padding: 100px 0 150px;
 }
+.td_card_list li i {
+  color: #890c25;
+}
 @media (max-width: 991px) {
   .td_video_block.td_style_1 {
     min-height: 550px;
