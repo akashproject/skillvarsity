@@ -164,6 +164,4 @@ Route::post('/capture-lead', [App\Http\Controllers\IndexController::class, 'capt
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::middleware(ProtectAgainstSpam::class)->group(function() {
-    Auth::routes();
-});
+Auth::routes();

@@ -15,10 +15,13 @@ let leadSubmitStatus = false;
 
   $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
-
+    console.log(scroll);
+    
      //>=, not <=
-    if (scroll >= 500) {
+    if (scroll > 1300) {
         //clearHeader, not clearheader - caps H
+        $(".course-sidebar").removeClass("sticky");
+    } else {
         $(".course-sidebar").addClass("sticky");
     }
   }); //missing );

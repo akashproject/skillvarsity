@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="col-md-4 position-relative">
-        <div class="td_card td_style_7 course-sidebar">
+        <div class="td_card td_style_7 course-sidebar sticky">
             <h3 class="td_fs_20 td_semibold td_mb_15">Courses Includes:</h3>
             <ul class="td_card_list td_mp_0 td_fs_18 td_medium">
               <li>

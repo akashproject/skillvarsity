@@ -3350,11 +3350,20 @@ label {
   }
 }
 @media (max-width: 767px) {
+  .course-sidebar {
+    display: none;
+  }
   .td_video_block.td_style_1 br {
     display: none;
   }
   .curve-section {
     margin: 0 10px;
+  }
+  .td_page_heading {
+    padding: 0 0 30px !important;
+  }
+  .td_fs_48 {
+    font-size: 30px;
   }
 }
 

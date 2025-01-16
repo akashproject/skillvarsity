@@ -17,11 +17,11 @@
               </clipPath>
               </defs>
             </svg>                  
-            <p>Far far away, behind the word mountains, far from the Consonantia, there live the blind texts.</p>
           </div>
           <ul class="td_footer_address_widget td_medium td_mp_0">
-            <li><i class="fa-solid fa-phone-volume"></i><a href="cal:+23(000)68603">+23 (000) 68 603</a></li>
-            <li><i class="fa-solid fa-location-dot"></i>66 broklyn golden street <br>600 New york. USA</li>
+            <li><i class="fa-solid fa-envelope"></i><a href="tel:+{{ get_theme_setting('email') }}">{{ get_theme_setting('email') }}</a></li>
+            <li><i class="fa-solid fa-phone-volume"></i><a href="tel:+{{ get_theme_setting('mobile') }}">{{ get_theme_setting('mobile') }}</a></li>
+            <li><i class="fa-solid fa-location-dot"></i>{{ get_theme_setting('address') }}</li>
           </ul>
         </div>
       </div>
@@ -42,12 +42,9 @@
         <div class="td_footer_widget">
           <h2 class="td_footer_widget_title td_fs_32 td_white_color td_medium td_mb_30">Courses</h2>
           <ul class="td_footer_widget_menu">
-            <li><a href="course-details.html">Business Coach</a></li>
-            <li><a href="course-details.html">Development Coach</a></li>
-            <li><a href="course-details.html">Testimonials</a></li>
-            <li><a href="course-details.html">Seo Optimization</a></li>
-            <li><a href="course-details.html">Web design</a></li>
-            <li><a href="course-details.html">Life Coach</a></li>
+            @foreach($courses as $course)
+            <li><a href="{{ route('course-detail',$course->slug) }}">{{ $course->name }}</a></li>
+            @endforeach
           </ul>
         </div>
       </div>
@@ -66,16 +63,16 @@
             </form>
           </div>
           <div class="td_footer_social_btns td_fs_20">
-            <a href="#" class="td_center">
+            <a href="{{ get_theme_setting('facebook') }}" class="td_center">
               <i class="fa-brands fa-facebook-f"></i>
             </a>
-            <a href="#" class="td_center">
+            <a href="{{ get_theme_setting('twitter') }}" class="td_center">
               <i class="fa-brands fa-x-twitter"></i>
             </a>
-            <a href="#" class="td_center">
+            <a href="{{ get_theme_setting('instagram') }}" class="td_center">
               <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="#" class="td_center">
+            <a href="{{ get_theme_setting('copyright') }}" class="td_center">
               <i class="fa-brands fa-pinterest-p"></i>
             </a>
           </div>
@@ -86,10 +83,10 @@
   <div class="td_footer_bottom td_fs_18">
     <div class="container">
       <div class="td_footer_bottom_in">
-        <p class="td_copyright mb-0">Copyright ©educve |  All Right Reserved</p>
+        <p class="td_copyright mb-0">© {{ date("Y") }} - {{ get_theme_setting('copyright') }}</p>
         <ul class="td_footer_widget_menu">
-          <li><a href="#"> Terms & Conditions</a></li>
-          <li><a href="#">Privacy & Policy</a></li>
+          <li><a href="{{ url('term-condition') }}"> Terms & Conditions</a></li>
+          <li><a href="{{ url('privacy-policy') }}">Privacy & Policy</a></li>
         </ul>
       </div>
     </div>

@@ -19,7 +19,7 @@
     <section class="td_yellow_bg_4">
       <div class="container-fluid">
         <div class="td_tabs td_style_1">
-          <div class="td_section_heading py-2 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="td_section_heading py-2 wow fadeInUp mb-2" data-wow-duration="1s" data-wow-delay="0.2s">
             <div class="row">
               <div class="td_section_heading_left col-md-8 trendline_title">
                 <h5 class="td_section_title mb-0">Trending Courses</h5>
@@ -49,15 +49,34 @@
                               <h5 class="td_card_title td_semibold td_mb_12"><a href="{{ $course->slug }}">{{ $course->name }}</a></h5>
                               <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
                                 <li>
-                                  <img src="assets/frontend/img/icons/user_3.svg" alt="">
-                                  <span class="td_opacity_7">150 Enrolled</span>
-                                </li>
-                                <li>
                                   <img src="assets/frontend/img/icons/book.svg" alt="">
                                   <span class="td_opacity_7">{{ $course->no_of_module }} Modules</span>
                                 </li>
+                                <li>
+                                  <i class="fa-solid fa-clock"></i>
+                                  <span class="td_opacity_7">{{ $course->duration }}</span>
+                                </li>
                               </ul>
-                              <div class="td_card_price_wrap td_mb_12">
+                              <hr>
+                              <div class="td_card_price_wrap td_mb_12 mt-2">
+                                <ul class="td_card_meta td_mp_0 td_fs_16 td_heading_color">
+                                  <li>
+                                    <img src="assets/frontend/img/icons/user_3.svg" alt="">
+                                    <span class="td_opacity_7">{{ $course->number_of_enrolled }} No of Enrolled</span>
+                                  </li>
+                                </ul>
+                                <a href="#lead-generate-popup" class="td_btn td_style_1 td_type_3 td_radius_10 td_medium td_fs_14 open-popup-link">
+                                  <span class="td_btn_in td_accent_color">
+                                    <span><i class="fa-solid fa-download"></i> Brochure</span>
+                                  </span>             
+                                </a>
+                              </div>
+                              <div class="td_card_btns_wrap">
+                                <a href="{{ route('course-detail',$course->slug) }}" class="td_btn td_style_1 td_type_3 td_radius_10 td_medium td_fs_14">
+                                  <span class="td_btn_in td_accent_color">
+                                    <span>View More</span>
+                                  </span>             
+                                </a>
                                 <div class="td_card_review">
                                   <div class="td_rating" data-rating="4.5">
                                     <i class="fa-regular fa-star"></i>
@@ -73,17 +92,8 @@
                                       <i class="fa-solid fa-star fa-fw"></i>
                                     </div>
                                   </div>
-                                  <span class="td_heading_color td_opacity_5 td_fs_14">(5.0/6 Ratings)</span>
+                                  <span class="td_heading_color td_opacity_5 td_fs_14">(4.5/5 Ratings)</span>
                                 </div>
-                                <span class="td_card_price td_accent_color td_fs_18 td_medium">$39</span>
-                              </div>
-                              <div class="td_card_btns_wrap">
-                                <a href="{{ route('course-detail',$course->slug) }}" class="td_btn td_style_1 td_type_3 td_radius_10 td_medium td_fs_14">
-                                  <span class="td_btn_in td_accent_color">
-                                    <span>View More</span>
-                                  </span>             
-                                </a>
-                                <span class="td_fs_18 td_medium td_heading_color">Robert Anderson</span>
                               </div>
                             </div>
                           </div>
@@ -867,7 +877,7 @@
                 </defs>
               </svg>  
               <div class="td_btn_box_in">
-                <a href="courses-grid-view.html" class="td_btn td_style_1 td_radius_10 td_medium td_fs_18">
+                <a href="#lead-generate-popup" class="td_btn td_style_1 td_radius_10 td_medium td_fs_18 open-popup-link">
                   <span class="td_btn_in td_heading_color td_white_bg">
                     <span>View All Program</span>
                   </span>             
@@ -1073,14 +1083,14 @@
         <div class="td_contact_box td_style_1 td_accent_bg td_radius_10">
           <div class="td_contact_box_left">
             <p class="td_fs_18 td_light td_white_color td_mb_4">Get In Touch:</p>
-            <h3 class="td_fs_36 mb-0 td_white_color"><a href="mailto:info@eduon.com">info@eduon.com</a></h3>
+            <h3 class="td_fs_36 mb-0 td_white_color"><a href="mailto:{{ get_theme_setting('email') }}">{{ get_theme_setting('email') }}</a></h3>
           </div>
           <div class="td_contact_box_or td_fs_24 td_medium td_white_bg td_white_bg td_center rounded-circle td_accent_color">
             or
           </div>
           <div class="td_contact_box_right">
             <p class="td_fs_18 td_light td_white_color td_mb_4">Get In Touch:</p>
-            <h3 class="td_fs_36 mb-0 td_white_color"><a href="tel:+019987698870">+01 998 7698 870</a></h3>
+            <h3 class="td_fs_36 mb-0 td_white_color"><a href="tel:+{{ get_theme_setting('mobile') }}">{{ get_theme_setting('mobile') }}</a></h3>
           </div>
         </div>
       </div>

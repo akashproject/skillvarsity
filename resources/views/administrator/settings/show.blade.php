@@ -162,28 +162,7 @@
 												autofocus
 											/>
 										</div>
-										<div class="mb-3 col-12">
-											<label for="commission_amount" class="form-label">Session Commission Amount</label>
-											<input
-												class="form-control"
-												type="text"
-												name="commission_amount"
-												id="commission_amount" 
-												value="{{ (isset($settings['commission_amount']))?$settings['commission_amount']:'' }}"
-												autofocus
-											/>
-										</div>
-										<div class="mb-3 col-12">
-											<label for="max_discount" class="form-label">Maximum discount</label>
-											<input
-												class="form-control"
-												type="text"
-												name="max_discount"
-												id="max_discount" 
-												value="{{ (isset($settings['max_discount']))?$settings['max_discount']:'' }}"
-												autofocus
-											/>
-										</div>
+										
 										<div class="mb-3 col-12">
 											<label for="footer_about" class="form-label">Footer About</label>
 											<textarea
@@ -201,6 +180,15 @@
 												id="footer_description" 
 												autofocus
 											>{{ (isset($settings['footer_description']))?$settings['footer_description']:'' }}</textarea>
+										</div>
+										<div class="mb-3 col-12">
+											<label for="copyright" class="form-label">Copyright</label>
+											<textarea
+												class="form-control"
+												name="copyright"
+												id="copyright" 
+												autofocus
+											>{{ (isset($settings['copyright']))?$settings['copyright']:'' }}</textarea>
 										</div>
 										
 									</div>
