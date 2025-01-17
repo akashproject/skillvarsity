@@ -185,7 +185,7 @@
 			<div class="border-top">
 				<div class="card-body">
 					<button type="submit" class="btn btn-primary">Submit</button>
-					<input type="hidden" name="course_id" id="course_id" value="" >
+					<input type="hidden" name="course_id" id="course_id" value="{{ $course->id }}" >
 				</div>
 			</div>
 		</form>

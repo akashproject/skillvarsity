@@ -13,6 +13,12 @@
           <h1 class=" td_fs_48 td_mb_10">{{ $contentMain->name }}</h1>
           <div class="mb-0">{{ $contentMain->excerpt }}</div>
         </div>
+        <div class="row mt-3">
+            <h2 class="td_fs_24 td_mb_20">Courses Curriculum</h2>
+            <div class="course_criteria">
+              {!! $contentMain->criteria !!}
+            </div>
+        </div>
       </div>
       <div class="col-md-4 position-relative">
         <div class="td_card td_style_7 course-sidebar sticky">
@@ -108,126 +114,26 @@
   </div>
   <div class="td_page_heading_shape_6 position-absolute td_hover_layer_3"></div>
 </section>
-<!-- End Page Heading Section -->
 <!-- Start Course Details Section -->
 <section>
   <div class="container">
     <div class="row td_gap_y_50">
       <div class="col-lg-8">
+
         <div class="td_course_details">
           
-          <span class="td_course_label td_mb_10">Data Analytics</span>
-          
-          <div class="td_tabs td_style_1 td_mb_50">
-            <ul class="td_tab_links td_style_2 td_type_2 td_mp_0 td_medium td_fs_20 td_heading_color">
-              <li class="active"><a href="#td_tab_1">Overview</a></li>
-              <li><a href="#td_tab_2">Curriculum</a></li>
-              <li><a href="#td_tab_3">Instructor</a></li>
-              <li><a href="#td_tab_4">Reviews</a></li>
-            </ul>
-            <div class="td_tab_body td_fs_18">
-              <div class="td_tab active" id="td_tab_1">
-                <h2 class="td_fs_48 td_mb_20">Courses Descriptions</h2>
-                <p class="mb-0">Eed a little help from our friends from time to time. Although we offer the one-stop convenience of annery integrated range of legal, financial services under one roof, there are occasions when our clients areaneed specia-. That’s why we’ve developed close working relationships with a number of strategic partner. <br><br>When an unknown printer took a galley of type and scrambled it to make a type specimen bookhas a not only five centuries, but also the leap into electronic typesetting.</p>
-              </div>
-              <div class="td_tab" id="td_tab_2">
-                <h2 class="td_fs_48 td_mb_20">Courses Curriculum</h2>
-                <p class="mb-0">Eed a little help from our friends from time to time. Although we offer the one-stop convenience of annery integrated range of legal, financial services under one roof, there are occasions when our clients areaneed specia-. That’s why we’ve developed close working relationships with a number of strategic partner. <br><br>When an unknown printer took a galley of type and scrambled it to make a type specimen bookhas a not only five centuries, but also the leap into electronic typesetting.</p>
-              </div>
-              <div class="td_tab" id="td_tab_3">
-                <h2 class="td_fs_48 td_mb_20">Courses Instructor</h2>
-                <p class="mb-0">Eed a little help from our friends from time to time. Although we offer the one-stop convenience of annery integrated range of legal, financial services under one roof, there are occasions when our clients areaneed specia-. That’s why we’ve developed close working relationships with a number of strategic partner. <br><br>When an unknown printer took a galley of type and scrambled it to make a type specimen bookhas a not only five centuries, but also the leap into electronic typesetting.</p>
-              </div>
-              <div class="td_tab" id="td_tab_4">
-                <h2 class="td_fs_48 td_mb_20">Courses Reviews</h2>
-                <p class="mb-0">Eed a little help from our friends from time to time. Although we offer the one-stop convenience of annery integrated range of legal, financial services under one roof, there are occasions when our clients areaneed specia-. That’s why we’ve developed close working relationships with a number of strategic partner. <br><br>When an unknown printer took a galley of type and scrambled it to make a type specimen bookhas a not only five centuries, but also the leap into electronic typesetting.</p>
-              </div>
+          <div class="row mb-5">
+            <h2 class="td_fs_24 td_mb_20">Courses Descriptions</h2>
+            {!! $contentMain->description !!}
+          </div>
+
+          <div class="td_tabs td_style_1 td_mb_50 "> 
+            <h2 class="td_fs_24 td_mb_30">Main Topics you’ll Learn it?</h2>
+            
+            <div class="course_highlights">
+              {!! $contentMain->highlights !!}
             </div>
-          </div>
-          <h2 class="td_fs_48 td_mb_30">What you’ll Learn it?</h2>
-          <ul class="td_list td_style_2 td_type_2 td_fs_18 td_medium td_heading_color td_mp_0">
-            <li>
-              <svg class="td_accent_color" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="12" fill="currentColor"></circle>
-                <path d="M7.5 14.1136C7.5 14.1136 8.52273 14.1136 9.88636 16.5C9.88636 16.5 13.6765 10.25 17.0455 9" stroke="white" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-              100% Better results
-            </li>
-            <li>
-              <svg class="td_accent_color" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="12" fill="currentColor"></circle>
-                <path d="M7.5 14.1136C7.5 14.1136 8.52273 14.1136 9.88636 16.5C9.88636 16.5 13.6765 10.25 17.0455 9" stroke="white" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-              Building a Bright Future Together
-            </li>
-            <li>
-              <svg class="td_accent_color" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="12" fill="currentColor"></circle>
-                <path d="M7.5 14.1136C7.5 14.1136 8.52273 14.1136 9.88636 16.5C9.88636 16.5 13.6765 10.25 17.0455 9" stroke="white" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-              Budget Friendly Education Theme
-            </li>
-            <li>
-              <svg class="td_accent_color" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="12" fill="currentColor"></circle>
-                <path d="M7.5 14.1136C7.5 14.1136 8.52273 14.1136 9.88636 16.5C9.88636 16.5 13.6765 10.25 17.0455 9" stroke="white" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-              Empowering Children Through Education
-            </li>
-            <li>
-              <svg class="td_accent_color" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="12" fill="currentColor"></circle>
-                <path d="M7.5 14.1136C7.5 14.1136 8.52273 14.1136 9.88636 16.5C9.88636 16.5 13.6765 10.25 17.0455 9" stroke="white" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-              Unlocking Potential Educations
-            </li>
-            <li>
-              <svg class="td_accent_color" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="12" cy="12" r="12" fill="currentColor"></circle>
-                <path d="M7.5 14.1136C7.5 14.1136 8.52273 14.1136 9.88636 16.5C9.88636 16.5 13.6765 10.25 17.0455 9" stroke="white" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"></path>
-              </svg>
-              Growing Genius Elementary School
-            </li>
-          </ul>
-          <div class="td_height_60 td_height_lg_40"></div>
-          <h4 class="td_fs_24 td_semibold td_mb_20">Requirements</h4>
-          <div class="td_requirements_list td_medium td_fs_18">
-            <span class="td_requirement">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.62323 2.73285C3.62323 2.6749 3.67039 2.62807 3.7283 2.62807H17.0304C17.0884 2.62807 17.1355 2.6749 17.1355 2.73285V11.761C17.1355 11.8189 17.0884 11.8657 17.0304 11.8657H10.2019V13.1891H17.0304C17.8182 13.1891 18.459 12.5484 18.459 11.761V2.73285C18.459 1.94541 17.8182 1.30469 17.0304 1.30469H3.72835C2.94061 1.30469 2.2998 1.94545 2.2998 2.73285V5.63045H3.62323V2.73285Z" fill="currentColor"/>
-                <path d="M19.4806 13.7344H10.2017V15.6143H18.6394C19.3908 15.6143 19.9998 15.0054 19.9998 14.2536C19.9998 13.9668 19.7674 13.7344 19.4806 13.7344Z" fill="currentColor"/>
-                <path d="M7.32878 6.95312H1.54968C0.695162 6.95312 0 7.6482 0 8.50276V17.1393C0 17.9938 0.695162 18.689 1.54968 18.689H7.32878C8.18334 18.689 8.87846 17.9938 8.87846 17.1393V8.50276C8.87846 7.6482 8.18334 6.95312 7.32878 6.95312ZM1.32342 8.50276C1.32342 8.37807 1.42486 8.2765 1.54968 8.2765H7.32878C7.45355 8.2765 7.55504 8.37803 7.55504 8.50276V16.5238H1.32342V8.50276ZM4.43912 18.0976C4.23018 18.0976 4.05435 17.9751 3.96533 17.8013C3.92774 17.728 3.90152 17.6481 3.90152 17.56C3.90152 17.263 4.14216 17.0224 4.43917 17.0224C4.73609 17.0224 4.97673 17.263 4.97673 17.56C4.97673 17.648 4.9506 17.728 4.91292 17.8013C4.82377 17.9751 4.64799 18.0976 4.43912 18.0976Z" fill="currentColor"/>
-              </svg>
-              Computer/ Mobile
-            </span>
-            <span class="td_requirement">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_34_14519)">
-                <path d="M19.4841 6.29402C18.7987 5.60863 17.6835 5.60867 16.9979 6.29418C16.7871 6.50523 15.4408 7.85262 15.2351 8.05848V3.41508C15.2351 2.94555 15.0523 2.50414 14.7202 2.17215L13.063 0.514844C12.731 0.182813 12.2896 0 11.82 0H1.75854C0.789287 0 0.000732422 0.788555 0.000732422 1.75781V18.2422C0.000732422 19.2114 0.789287 20 1.75854 20H13.4773C14.4466 20 15.2351 19.2114 15.2351 18.2422V13.0325L19.484 8.77996C20.171 8.09301 20.1712 6.98105 19.4841 6.29402ZM11.7195 1.17188C11.8302 1.17188 12.0435 1.1527 12.2344 1.34348L13.8916 3.00078C14.0776 3.18676 14.0633 3.39055 14.0633 3.51562H11.7195V1.17188ZM14.0632 18.2422C14.0632 18.5653 13.8004 18.8281 13.4773 18.8281H1.75854C1.43546 18.8281 1.17261 18.5653 1.17261 18.2422V1.75781C1.17261 1.43473 1.43546 1.17188 1.75854 1.17188H10.5476V4.10156C10.5476 4.42516 10.81 4.6875 11.1335 4.6875H14.0632V9.23137C14.0632 9.23137 12.3346 10.9615 12.3345 10.9616L11.5062 11.7898C11.4419 11.8541 11.3934 11.9326 11.3647 12.0189L10.536 14.5048C10.4658 14.7154 10.5206 14.9475 10.6776 15.1044C10.8347 15.2616 11.0669 15.3161 11.2772 15.246L13.7631 14.4173C13.8494 14.3886 13.9278 14.3401 13.9921 14.2758L14.0632 14.2047V18.2422ZM12.7492 12.2042L13.5778 13.0328L13.2613 13.3493L12.0183 13.7636L12.4326 12.5207L12.7492 12.2042ZM14.4063 12.204L13.5776 11.3754C14.0189 10.9338 15.9786 8.97234 16.3942 8.55637L17.2229 9.385L14.4063 12.204ZM18.6552 7.95148L18.0512 8.55602L17.2226 7.72738L17.8268 7.12266C18.0554 6.89418 18.427 6.89422 18.6555 7.12266C18.8839 7.35117 18.8851 7.7216 18.6552 7.95148Z" fill="currentColor"/>
-                <path d="M11.1335 5.85938H2.93042C2.60683 5.85938 2.34448 6.12172 2.34448 6.44531C2.34448 6.76891 2.60683 7.03125 2.93042 7.03125H11.1335C11.4571 7.03125 11.7195 6.76891 11.7195 6.44531C11.7195 6.12172 11.4571 5.85938 11.1335 5.85938Z" fill="currentColor"/>
-                <path d="M8.78979 8.20312H2.93042C2.60683 8.20312 2.34448 8.46547 2.34448 8.78906C2.34448 9.11266 2.60683 9.375 2.93042 9.375H8.78979C9.11339 9.375 9.37573 9.11266 9.37573 8.78906C9.37573 8.46547 9.11339 8.20312 8.78979 8.20312Z" fill="currentColor"/>
-                <path d="M8.78979 10.5469H2.93042C2.60683 10.5469 2.34448 10.8092 2.34448 11.1328C2.34448 11.4564 2.60683 11.7188 2.93042 11.7188H8.78979C9.11339 11.7188 9.37573 11.4564 9.37573 11.1328C9.37573 10.8092 9.11339 10.5469 8.78979 10.5469Z" fill="currentColor"/>
-                <path d="M8.78979 12.8906H2.93042C2.60683 12.8906 2.34448 13.153 2.34448 13.4766C2.34448 13.8002 2.60683 14.0625 2.93042 14.0625H8.78979C9.11339 14.0625 9.37573 13.8002 9.37573 13.4766C9.37573 13.153 9.11339 12.8906 8.78979 12.8906Z" fill="currentColor"/>
-                <path d="M11.1335 16.4844H7.61792C7.29433 16.4844 7.03198 16.7467 7.03198 17.0703C7.03198 17.3939 7.29433 17.6562 7.61792 17.6562H11.1335C11.4571 17.6562 11.7195 17.3939 11.7195 17.0703C11.7195 16.7467 11.4571 16.4844 11.1335 16.4844Z" fill="currentColor"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_34_14519">
-                <rect width="20" height="20" fill="white"/>
-                </clipPath>
-                </defs>
-              </svg>                    
-              Paper/ Pencil
-            </span>
-            <span class="td_requirement">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18.3 7.59844C13.7 2.99844 6.3 2.99844 1.7 7.59844C1.3 7.99844 0.7 7.99844 0.3 7.59844C-0.1 7.19844 -0.1 6.59844 0.3 6.19844C5.7 0.798438 14.4 0.798438 19.7 6.19844C20.1 6.59844 20.1 7.19844 19.7 7.59844C19.3 7.99844 18.7 7.99844 18.3 7.59844Z" fill="currentColor"/>
-                <path d="M15.4 10.3984C12.4 7.49844 7.6 7.49844 4.7 10.3984C4.3 10.7984 3.7 10.7984 3.3 10.3984C2.9 9.99844 2.9 9.39844 3.3 8.99844C7 5.19844 13.1 5.19844 16.8 8.99844C17.2 9.39844 17.2 9.99844 16.8 10.3984C16.4 10.7984 15.8 10.7984 15.4 10.3984Z" fill="currentColor"/>
-                <path d="M12.6 13.3969C11.2 11.9969 9 11.9969 7.7 13.3969C7.3 13.7969 6.7 13.7969 6.3 13.3969C5.9 12.9969 5.9 12.2969 6.3 11.8969C8.4 9.59687 11.9 9.59687 14 11.8969C14.4 12.2969 14.4 12.9969 14 13.3969C13.6 13.7969 13 13.7969 12.6 13.3969Z" fill="currentColor"/>
-                <path d="M10.1002 17.9016C11.1495 17.9016 12.0002 17.0509 12.0002 16.0016C12.0002 14.9522 11.1495 14.1016 10.1002 14.1016C9.05085 14.1016 8.2002 14.9522 8.2002 16.0016C8.2002 17.0509 9.05085 17.9016 10.1002 17.9016Z" fill="currentColor"/>
-              </svg>                    
-              Internet Connect
-            </span>
-          </div>
+          </div>          
         </div>
       </div>
       <div class="col-lg-4">
@@ -237,6 +143,17 @@
   </div>
 </section>
 <!-- End Course Details Section -->
+
+<section class="td_page_heading" style="background: #eceddb;">
+  <div class="container-fluid">
+    <div class="container">
+        <div class="row mb-5">
+          <h2 class="td_fs_40 td_mb_20">This Course Syllabus</h2>
+          <p class="mb-0">Eed a little help from our friends from time to time. Although we offer the one-stop convenience of annery integrated range of legal, financial services under one roof, there are occasions when our clients areaneed specia-. That’s why we’ve developed close working relationships with a number of strategic partner. <br><br>When an unknown printer took a galley of type and scrambled it to make a type specimen bookhas a not only five centuries, but also the leap into electronic typesetting.</p>
+        </div>
+    </div>
+  </div>
+</section>
 <!-- Start Popular Courses -->
 <section>
   <div class="td_height_60 td_height_lg_60"></div>
