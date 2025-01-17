@@ -163,7 +163,7 @@ Route::get('/category/{slug}', [App\Http\Controllers\SubjectController::class, '
 
 Route::post('/submit-mobile-otp', [App\Http\Controllers\IndexController::class, 'submitMobileOtp'])->name('submit-mobile-otp');
 Route::post('/capture-lead', [App\Http\Controllers\IndexController::class, 'captureLead'])->name('insert-lead-records');
-
+Route::post('/save-contact', [App\Http\Controllers\IndexController::class, 'saveContact'])->name('save-contact');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

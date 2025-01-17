@@ -19,22 +19,4 @@ class PageController extends Controller
         }
     }
 
-    public function saveContact(Request $request){
-        try {
-            $data = $request->all();
-            $validatedData = $request->validate([
-                'name' => 'required',
-                'email' => 'required',
-                'mobile' => 'required',
-                'message' => 'required',
-            ]);
-           
-            Contact::create($data);
-
-            return redirect()->back()->with('message', 'Request has been submitted successfully!');
-        } catch(\Illuminate\Database\QueryException $e){
-            //throw $th;
-            var_dump($e);
-        }
-    }
 }

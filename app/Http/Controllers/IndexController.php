@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Trait\afterLeadSubmit;
+use App\Models\Contact;
 
 class IndexController extends Controller
 {
@@ -81,5 +82,27 @@ class IndexController extends Controller
         } catch (\Illuminate\Database\QueryException $e) {
             return response()->json($e, $this->_statusOK);
         }
+    }
+
+    public function saveContact(Request $request)
+    {
+        try {
+            $postData = $request->all();
+            $validatedData = $request->validate([
+                "contact_first_name" => "required",
+                "contact_last_name" => "required",
+                "contact_email" => "required",
+                "contact_subject" => "required",
+                "contact_message" => "required",
+            ]);
+
+            Contact::create($postData);
+
+            return redirect()->back()->with('message', 'Request has been submitted successfully!');
+
+        } catch (\Illuminate\Database\QueryException $e) {
+            return response()->json($e, $this->_statusOK);
+        }
+        
     }
 }
