@@ -48,6 +48,19 @@
 							</div>
 						</div>
 						<div class="form-group row mb-2">
+							<label for="courses" class="col-sm-3 text-right control-label col-form-label">Select Course</label>
+							<div class="col-sm-9">
+								<div class="course-content" >
+									@foreach($courses as $course)
+										<p> 
+											<input type="checkbox" name="courses[]" value="{{$course->id}}" id="admin-course_{{$course->id}}" > 
+											<ladel for="admin-course_{{$course->id}}">{{$course->name}} </label>
+										</p>
+									@endforeach
+								</div>
+							</div>
+						</div>
+						<div class="form-group row mb-2">
 							<label for="location" class="col-sm-3 text-right control-label col-form-label">Location</label>
 							<div class="col-sm-9">
 								<textarea class="form-control" name="location" id="location" placeholder="Enter location Here" ></textarea>
@@ -178,7 +191,7 @@
 			<div class="border-top">
 				<div class="card-body">
 					<button type="submit" class="btn btn-primary">Submit</button>
-					<input type="hidden" name="course_id" id="course_id" value="" >
+					<input type="hidden" name="university_id" id="university_id" value="" >
 				</div>
 			</div>
 		</form>

@@ -206,12 +206,16 @@
               <div class="td_mb_40">
                 <ul class="td_list td_style_5 td_mp_0">
                   <li>
-                    <h3 class="td_fs_24 td_mb_8">Graduate Program</h3>
-                    <p class="td_fs_18 mb-0">Browse the Undergraduate Degrees</p>
+                    <h3 class="td_fs_24 td_mb_8">3 Years Classroom Training</h3>
+                    <p class="td_fs_16 mb-0">Gain in-depth knowledge with rigorous, industry-focused learning</p>
                   </li>
                   <li>
-                    <h3 class="td_fs_24 td_mb_8">Undergraduate Program</h3>
-                    <p class="td_fs_18 mb-0">Browse the Undergraduate Degrees</p>
+                    <h3 class="td_fs_24 td_mb_8">1 Year Paid Internship</h3>
+                    <p class="td_fs_16 mb-0">Earn while you learn with hands-on professional experience.</p>
+                  </li>
+                  <li>
+                    <h3 class="td_fs_24 td_mb_8">100% Placement Assistance</h3>
+                    <p class="td_fs_16 mb-0">Secure your future with guaranteed career support.</p>
                   </li>
                 </ul>
               </div>
@@ -235,10 +239,9 @@
             </div>
             <div class="td_tabs">
               <ul class="td_tab_links td_style_1 td_mp_0 td_fs_20 td_medium td_heading_color wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-                <li class="active"><a href="#tab_1">Undergraduate</a></li>
-                <li><a href="#tab_2">Graduate</a></li>
-                <li><a href="#tab_3">Online</a></li>
-                <li><a href="#tab_4">Short Course</a></li>
+                @foreach($subjects as $key => $subject)
+                <li class="{{($key == 1)?'active':''}}"><a href="#tab_1">{{ $subject->name }}</a></li>
+                @endforeach
               </ul>
             </div>
           </div>
@@ -247,96 +250,63 @@
                 <div class="td_tab_body" style="background: #ccc;padding: 20px;border-radius: 24px;">
                   <div class="td_tab active td_slider_container" id="tab_1">
                     <div class="row td_gap_y_24 td_slider_wrapper">
+                      @foreach($courses as $value)
                       <div class="col-lg-6 col-md-6 wow fadeInUp td_slider" data-wow-duration="1s" data-wow-delay="0.2s">
-                        <div class="td_card td_style_3 d-block td_radius_10">
-                          <div class="td_card_info td_white_bg">
-                            <div class="td_card_info_in">
-                              <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
-                                <li>
-                                  <img src="assets/frontend/img/icons/user_3.svg" alt="">
-                                  <span class="td_opacity_7">150 Seats</span>
-                                </li>
-                                <li>
-                                  <img src="assets/frontend/img/icons/book.svg" alt="">
-                                  <span class="td_opacity_7">12 Semesters</span>
-                                </li>
-                              </ul>
-                              <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Data Analytics</span></a>
-                              <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Starting Reputed Education & Build your Skills</a></h2>
-                              <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Far far away, behind the word mountains, far from the Consonantia.</p>
-                              <div class="td_card_review">
-                                <div class="td_rating" data-rating="4.5">
-                                  <i class="fa-regular fa-star"></i>
-                                  <i class="fa-regular fa-star"></i>
-                                  <i class="fa-regular fa-star"></i>
-                                  <i class="fa-regular fa-star"></i>
-                                  <i class="fa-regular fa-star"></i>
-                                  <div class="td_rating_percentage">
-                                    <i class="fa-solid fa-star fa-fw"></i>
-                                    <i class="fa-solid fa-star fa-fw"></i>
-                                    <i class="fa-solid fa-star fa-fw"></i>
-                                    <i class="fa-solid fa-star fa-fw"></i>
-                                    <i class="fa-solid fa-star fa-fw"></i>
-                                  </div>
+                      <div class="td_card td_style_3 d-block td_radius_10">
+                        <div class="row" style="margin-top: 6px;">
+                          <div class="col-8">
+                            <a href="{{ route('course-detail',$value->slug) }}" class="td_card_thumb">
+                              <img src="{{ url('assets/frontend/img/course/course-1.gif')}}" alt="">
+                            </a>
+                          </div>
+                          <div class="col-4">
+                            <span class="td_card_label td_accent_bg td_white_color">Advanced</span>
+                          </div>
+                        </div>
+                        <div class="td_card_info td_white_bg">
+                          <div class="td_card_info_in">
+                            <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
+                              <li>
+                                <img src="{{ url('assets/frontend/img/icons/user_3.svg')}}" alt="">
+                                <span class="td_opacity_7">{{ $value->number_of_enrolled }} Enrolled</span>
+                              </li>
+                              <li>
+                                <img src="{{ url('assets/frontend/img/icons/book.svg')}}" alt="">
+                                <span class="td_opacity_7">{{ $value->no_of_module }} Modules</span>
+                              </li>
+                            </ul>
+                            <!-- <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Data Analytics</span></a> -->
+                            <h2 class="td_card_title td_fs_24 td_mb_16"><a href="{{ route('course-detail',$value->slug) }}">{{$value->name}}</a></h2>
+                            <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">{{ $value->excerpt}}</p>
+                            <div class="td_card_review">
+                              <div class="td_rating" data-rating="4.5">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <div class="td_rating_percentage">
+                                  <i class="fa-solid fa-star fa-fw"></i>
+                                  <i class="fa-solid fa-star fa-fw"></i>
+                                  <i class="fa-solid fa-star fa-fw"></i>
+                                  <i class="fa-solid fa-star fa-fw"></i>
+                                  <i class="fa-solid fa-star fa-fw"></i>
                                 </div>
-                                <span class="td_heading_color td_opacity_5 td_medium">(5.0/5 Ratings)</span>
                               </div>
-                              <div class="td_card_btn">
-                                <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
-                                  <span class="td_btn_in td_white_color td_accent_bg">
-                                    <span>Enroll Now</span>
-                                  </span>             
-                                </a>
-                              </div>
+                              <span class="td_heading_color td_opacity_5 td_medium">(4.5/5 Ratings)</span>
+                            </div>
+                            <div class="td_card_btn">
+                              <a href="#lead-generate-popup" class="td_btn td_style_1 td_radius_10 td_medium open-popup-link">
+                                <span class="td_btn_in td_white_color td_accent_bg">
+                                  <span>Enroll Now</span>
+                                </span>             
+                              </a>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-6 col-md-6 wow fadeInUp td_slider" data-wow-duration="1s" data-wow-delay="0.25s">
-                        <div class="td_card td_style_3 d-block td_radius_10">
-                          <div class="td_card_info td_white_bg">
-                            <div class="td_card_info_in">
-                              <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
-                                <li>
-                                  <img src="assets/frontend/img/icons/user_3.svg" alt="">
-                                  <span class="td_opacity_7">100 Seats</span>
-                                </li>
-                                <li>
-                                  <img src="assets/frontend/img/icons/book.svg" alt="">
-                                  <span class="td_opacity_7">20 Semesters</span>
-                                </li>
-                              </ul>
-                              <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Software Engeneer</span></a>
-                              <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Master Technology & Elevate Your Career</a></h2>
-                              <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Unlock the power of technology to drive your career forward.</p>
-                              <div class="td_card_review">
-                                <div class="td_rating" data-rating="5">
-                                  <i class="fa-regular fa-star"></i>
-                                  <i class="fa-regular fa-star"></i>
-                                  <i class="fa-regular fa-star"></i>
-                                  <i class="fa-regular fa-star"></i>
-                                  <i class="fa-regular fa-star"></i>
-                                  <div class="td_rating_percentage">
-                                    <i class="fa-solid fa-star fa-fw"></i>
-                                    <i class="fa-solid fa-star fa-fw"></i>
-                                    <i class="fa-solid fa-star fa-fw"></i>
-                                    <i class="fa-solid fa-star fa-fw"></i>
-                                    <i class="fa-solid fa-star fa-fw"></i>
-                                  </div>
-                                </div>
-                                <span class="td_heading_color td_opacity_5 td_medium">(5.0/10 Ratings)</span>
-                              </div>
-                              <div class="td_card_btn">
-                                <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
-                                  <span class="td_btn_in td_white_color td_accent_bg">
-                                    <span>Enroll Now</span>
-                                  </span>             
-                                </a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
                       </div>
+                      @endforeach
                     </div>
                   </div>
                   <div class="td_tab" id="tab_2">

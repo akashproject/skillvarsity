@@ -24,7 +24,6 @@ class UniversityController extends Controller
         } catch(\Illuminate\Database\QueryException $e){
             //throw $th;
         }
-        
     }
 
     public function add() {
@@ -37,6 +36,7 @@ class UniversityController extends Controller
     {
         try {
             $university = University::find($id);
+            $university->courses = json_decode($university->courses);
             $courses = Course::all();
             $states = State::all();
             $cities = City::where('state_id', $university->state_id)->orderBy('name', 'asc')->get();
@@ -53,11 +53,11 @@ class UniversityController extends Controller
                 'slug' => 'required',
             ]);
 
-
-            if($data['course_id'] <= 0){
+            $data['courses'] = isset($data['courses'])?json_encode($data['courses']):null;
+            if($data['university_id'] <= 0){
                 $course = University::create($data);
             } else {
-                $course = University::findOrFail($data['course_id']);
+                $course = University::findOrFail($data['university_id']);
                 $course->update($data);
             }
 

@@ -22,3 +22,10 @@
 .file-content {
     display: inline-block;
 }
+.course-content {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.course-content p {
+    margin: 7px 12px;
+}

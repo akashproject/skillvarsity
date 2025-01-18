@@ -2,7 +2,7 @@
 @section('content')
 <div class="col-12">
 	<div class="card">
-		<form class="form-horizontal" method="post" action="{{ route('admin-save-course') }}" enctype="multipart/form-data">
+		<form class="form-horizontal" method="post" action="{{ route('admin-save-university') }}" enctype="multipart/form-data">
 			@csrf
 			<div class="card-body">
 				@if ($errors->any())
@@ -48,57 +48,41 @@
 							</div>
 						</div>
 						<div class="form-group row mb-2">
-							<label for="course_video_title" class="col-sm-3 text-right control-label col-form-label">Video Title</label>
+							<label for="courses" class="col-sm-3 text-right control-label col-form-label">Select Course</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" name="course_video_title" id="course_video_title" placeholder="Enter Video Title Here" value="{{ $university->course_video_title }}">
+								<div class="course-content" >
+									@foreach($courses as $course)
+										<p> 
+											<input type="checkbox" name="courses[]" value="{{$course->id}}" id="admin-course_{{$course->id}}" {{ (isset($university->courses != null) && in_array($course->id,$university->courses))?'checked' : '' }} > 
+											<ladel for="admin-course_{{$course->id}}">{{$course->name}} </label>
+										</p>
+									@endforeach
+								</div>
 							</div>
 						</div>
 						<div class="form-group row mb-2">
-							<label for="course_video_link" class="col-sm-3 text-right control-label col-form-label">Video Link</label>
+							<label for="location" class="col-sm-3 text-right control-label col-form-label">Location</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" name="course_video_link" id="course_video_link" placeholder="Enter Video Title Here" value="{{ $university->course_video_link }}" >
+								<textarea class="form-control" name="location" id="location" placeholder="Enter location Here" >{{ $university->location }}</textarea>
 							</div>
 						</div>
 						<div class="form-group row mb-2">
-							<label for="duration" class="col-sm-3 text-right control-label col-form-label">Course Duration</label>
+							<label for="state" class="col-sm-3 text-right control-label col-form-label">Select State</label>
 							<div class="col-sm-9">
-								<input type="text" class="form-control" name="duration" id="duration" placeholder="Enter Course Duration" value="{{ $university->duration }}" >
+								<select name="state_id" id="state_id" class="select2 form-control custom-select" style="width: 100%; height:36px;" onChange="getCitiesByStateId(this);">	
+									<option value="">Select State</option>
+									@foreach ($states as $value)
+									<option value="{{ $value->id }}" > {{ $value->name }} </option>
+									@endforeach
+								</select>
 							</div>
 						</div>
-						<div class="form-group row mb-2">
-							<label for="number_of_enrolled" class="col-sm-3 text-right control-label col-form-label">No Of Enrolled</label>
+						<div class="form-group row">
+							<label for="state" class="col-sm-3 text-right control-label col-form-label">Select City</label>
 							<div class="col-sm-9">
-								<input type="number" class="form-control" name="number_of_enrolled" id="number_of_enrolled" placeholder="Enter No Of Module" value="{{ $university->number_of_enrolled }}" >
-							</div>
-						</div>
-						<div class="form-group row mb-2">
-							<label for="number_of_rating" class="col-sm-3 text-right control-label col-form-label">No Of Rating</label>
-							<div class="col-sm-9">
-								<input type="number" class="form-control" name="number_of_rating" id="number_of_rating" placeholder="Enter No Of Module" value="{{ $university->number_of_rating }}" >
-							</div>
-						</div>
-						<div class="form-group row mb-2">
-							<label for="no_of_module" class="col-sm-3 text-right control-label col-form-label">No Of Module</label>
-							<div class="col-sm-9">
-								<input type="number" class="form-control" name="no_of_module" id="no_of_module" placeholder="Enter No Of Module" value="{{ $university->no_of_module }}" >
-							</div>
-						</div>
-						<div class="form-group row mb-2">
-							<label for="no_of_module" class="col-sm-3 text-left control-label col-form-label">Curriculum</label>
-							<div class="col-sm-9">
-								<a href="{{ url('administrator/university-curriculum') }}/{{ $university->id }}" class="btn btn-primary">Curriculum Detail</a>
-							</div>
-						</div>
-						<div class="form-group row mb-2">
-							<label for="highlights" class="col-sm-3 text-right control-label col-form-label">Course highlights</label>
-							<div class="col-sm-9">
-								<textarea class="form-control editor" name="highlights" id="highlights" placeholder="Enter Highlights" >{{ $university->highlights }}</textarea>
-							</div>
-						</div>
-						<div class="form-group row mb-2">
-							<label for="criteria" class="col-sm-3 text-right control-label col-form-label">Course criteria</label>
-							<div class="col-sm-9">
-								<textarea class="form-control editor" name="criteria" id="criteria" placeholder="Enter Course Criteria" >{{ $university->criteria }}</textarea>
+								<select name="city_id" id="city_id" class="select2 form-control custom-select" style="width: 100%; height:36px;">	
+									<option value="">Select City</option>
+								</select>
 							</div>
 						</div>	
 						
@@ -185,7 +169,7 @@
 			<div class="border-top">
 				<div class="card-body">
 					<button type="submit" class="btn btn-primary">Submit</button>
-					<input type="hidden" name="course_id" id="course_id" value="" >
+					<input type="hidden" name="university_id" id="university_id" value="{{ $university->id }}" >
 				</div>
 			</div>
 		</form>
