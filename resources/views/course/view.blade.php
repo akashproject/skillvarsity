@@ -147,10 +147,14 @@
 <section class="td_page_heading" style="background: #eceddb;">
   <div class="container-fluid">
     <div class="container">
-        <div class="row mb-5">
-          <h2 class="td_fs_40 td_mb_20">This Course Syllabus</h2>
-          <p class="mb-0">Eed a little help from our friends from time to time. Although we offer the one-stop convenience of annery integrated range of legal, financial services under one roof, there are occasions when our clients areaneed specia-. That’s why we’ve developed close working relationships with a number of strategic partner. <br><br>When an unknown printer took a galley of type and scrambled it to make a type specimen bookhas a not only five centuries, but also the leap into electronic typesetting.</p>
+      <div class="syllabus_content_wrapper">
+        <h2 class="td_fs_40 td_mb_20">This Course Syllabus</h2>
+        <div class="row mb-5 course_syllabus">
+          <div class="col-md-8">
+            {!! $contentMain->syllabus !!}
+          </div>
         </div>
+      </div>
     </div>
   </div>
 </section>

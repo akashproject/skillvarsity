@@ -4,8 +4,8 @@
     <section class="td_hero td_style_1 td_center td_bg_filed">
       <div class="container">
         <div class="td_hero_text wow fadeInRight" data-wow-duration="0.9s" data-wow-delay="0.35s">
-          <h1 class="td_hero_title td_fs_64 td_mb_12"><span>Educve</span> - The Best Place to Invest. </h1>
-          <p class="td_hero_subtitle td_fs_18 td_opacity_7">Search from 5000+ varied courses from industry important domains..</p>
+          <h1 class="td_hero_title td_fs_64 td_mb_12">Dream University Just a Click Away. </h1>
+          <p class="td_hero_subtitle td_fs_18 td_opacity_7">Explore a list of unique power-packed graduation programs.</p>
         </div>
       </div>
       <div class="td_lines">
@@ -200,8 +200,8 @@
             <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
               <div class="td_section_heading td_style_1 td_mb_30">
                 <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">About us</p>
-                <h2 class="td_section_title td_fs_48 mb-0">The largest & Most Diverse Universities in the United Emirates</h2>
-                <p class="td_section_subtitle td_fs_18 mb-0">Far far away, behind the word mountains, far from the Consonantia, there live the blind texts. Separated they marks grove right at the coast of the Semantics a large language ocean</p>
+                <h2 class="td_section_title td_fs_30 mb-0">Choosing the right college is a crucial life decision that shouldn't go wrong.</h2>
+                <p class="td_section_subtitle td_fs_14 mb-0">ICA Edu Skills, a leader in job-oriented education, has partnered with top Indian universities to offer unique graduation programs designed to prepare students for real-world jobs. These programs include 3 years of intensive classroom learning and a 1-year paid internship. Through the Unifind portal, students can search, compare, and connect with top universities to enroll in these career-focused courses.</p>
               </div>
               <div class="td_mb_40">
                 <ul class="td_list td_style_5 td_mp_0">

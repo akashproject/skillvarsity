@@ -14923,3 +14923,52 @@ div#otp_target {
   content: url('../img/icons/checked-24.png');
   margin-right: 10px;
 }
+.syllabus_content_wrapper {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 30px;
+}
+.course_syllabus h3 {
+  margin: 0;
+}
+.course_syllabus ul {
+  position: relative;
+  margin-bottom: 30px;
+}
+.course_syllabus:before {
+  content: ".";
+  height: auto;
+  width: 2px;
+  background: #890909cc;
+  margin-right: 10px;
+  margin-left: 14px;
+  color: #89090900;
+}
+.course_syllabus ul li {
+  font-size: 18px;
+  margin: 15px 0;
+  position: relative;
+  list-style: none;
+  color: #181818;
+}
+.course_syllabus ul li::before {
+  left: -21px;
+  content: '';
+  width: 6px;
+  height: 6px;
+  top: 8px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: #890c25;
+}
+
+.course_syllabus ul li::after {
+  left: -26px;
+  content: '';
+  width: 16px;
+  height: 16px;
+  top: 3px;
+  border-radius: 100%;
+  position: absolute;
+  border: 1px solid #890c25;
+}

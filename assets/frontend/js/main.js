@@ -18,7 +18,7 @@ let leadSubmitStatus = false;
     console.log(scroll);
     
      //>=, not <=
-    if (scroll > 1300) {
+    if (scroll > 1800) {
         //clearHeader, not clearheader - caps H
         $(".course-sidebar").removeClass("sticky");
     } else {
