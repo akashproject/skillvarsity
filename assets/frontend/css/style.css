@@ -14198,7 +14198,7 @@ button.td_icon_btn:hover {
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
-  width: auto;
+  width: 50%;
 }
 @media (max-width: 991px) {
   .td_features.td_style_1 .td_features_content,

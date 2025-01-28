@@ -89,7 +89,7 @@
 								<div class="course-content" >
 									@foreach($subjects as $subject)
 										<p> 
-											<input type="checkbox" name="subjects[]" value="{{$subject->id}}" id="admin-subject_{{$subject->id}}" {{ (($course->subjects !== null) && in_array($subject->id,$university->subjects))?'checked' : '' }} > 
+											<input type="checkbox" name="subjects[]" value="{{$subject->id}}" id="admin-subject_{{$subject->id}}" {{ (($course->subjects !== null) && in_array($subject->id,$course->subjects))?'checked' : '' }} > 
 											<ladel for="admin-subject_{{$subject->id}}">{{$subject->name}} </label>
 										</p>
 									@endforeach

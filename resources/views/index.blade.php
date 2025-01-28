@@ -134,7 +134,7 @@
               </svg> 
             </span>             
           </a>
-          <a href="signup.html" class="td_btn td_style_1 td_radius_10 td_medium td_fs_20 wow fadeInUp" data-wow-duration="0.9s" data-wow-delay="0.35s">
+          <a href="#lead-generate-popup" class="td_btn td_style_1 td_radius_10 td_medium td_fs_20 wow fadeInUp open-popup-link" data-wow-duration="0.9s" data-wow-delay="0.35s">
             <span class="td_btn_in td_white_color td_accent_bg">
               <span>Request Info</span>
               <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -144,7 +144,7 @@
               </svg> 
             </span>             
           </a>
-          <a href="#" class="td_btn td_style_1 td_radius_10 td_medium td_fs_20 wow fadeInUp" data-wow-duration="0.9s" data-wow-delay="0.35s">
+          <a href="#lead-generate-popup" class="td_btn td_style_1 td_radius_10 td_medium td_fs_20 wow fadeInUp open-popup-link" data-wow-duration="0.9s" data-wow-delay="0.35s">
             <span class="td_btn_in td_white_color td_accent_bg">
               <span>Chat With Us</span>
             <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -711,10 +711,10 @@
             </div>
           </div>
           <div class="col-md-8">
-            <div class="row td_gap_y_24">
+            <div class="row td_gap_y_10">
               @foreach($subjects as $subject)
               <div class="col-lg-4 col-md-6 wow bounceInDown flip-rotate-anime" data-wow-duration="1s" data-wow-delay="0.2s">
-                <a href="{{ $subject->slug }}" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
+                <a href="{{ $subject->slug }}" class="td_iconbox td_style_3 td_fs_14 td_semibold td_radius_10 td_white_bg td_heading_color">
                   <span class="td_iconbox_icon">
                     <img src="assets/frontend/img/home_3/category_icon_1.svg" alt="">
                   </span>
@@ -735,7 +735,7 @@
       <div class="container">
         <div class="td_features td_style_1 td_hobble">
           <div class="td_features_thumb">
-            <img src="https://dummyimage.com/300x400" alt="" class="td_radius_10 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+            <img src="{{ url('assets/frontend/img/home_1/about_img_1.jpg') }}" alt="" class="td_radius_10 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
           </div>
           <div class="td_features_content td_white_bg td_radius_10 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.25s">
             <div class="td_section_heading td_style_1">

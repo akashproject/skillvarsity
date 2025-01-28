@@ -29,6 +29,7 @@ class CourseController extends Controller
     {
         try {
             $course = Course::find($id);
+            $course->subjects = json_decode($course->subjects);
             return view('administrator.courses.show',compact('course'));
         } catch(\Illuminate\Database\QueryException $e){
         }        
@@ -42,7 +43,7 @@ class CourseController extends Controller
                 'slug' => 'required',
                 'no_of_module' => 'required',
             ]);
-
+            
 
             if($data['course_id'] <= 0){
                 $course = Course::create($data);
