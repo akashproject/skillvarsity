@@ -115,6 +115,16 @@ let menu, animate;
 
   // Auto update menu collapsed/expanded based on the themeConfig
   window.Helpers.setCollapsed(true, false);
+
+  $(".image-thumbnail-container").on("click",'.image-thumbnail',function(){
+    imageId = $(this).attr("data-id");
+    imagePath = $(this).children("img").attr("src");
+    if (!BulkSelect) {
+        $(".image-thumbnail").removeClass("active");
+    }
+    $(this).toggleClass("active");
+  });
+
 })();
 
 function getCitiesByStateId(event){

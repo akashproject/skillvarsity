@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Media;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
-use Image;
+use Intervention\Image\Facades\Image;
 
 class MediaController extends Controller
 {
@@ -30,7 +30,7 @@ class MediaController extends Controller
 
     public function view($id){
         try {
-            $mediaPath = config('constant.absoluteMediaPath');
+            $mediaPath = env('APP_URL').'public/upload';
             $file = Media::findOrFail($id);
             return view('administrator.media.show',compact('mediaPath','file'));
         } catch(\Illuminate\Database\QueryException $e){
@@ -39,6 +39,7 @@ class MediaController extends Controller
 
     public function save(Request $request) {
         try {
+            
             $data = $request->all();
             // Check is file exist        
             if (!$request->hasFile('file')) {
@@ -47,7 +48,7 @@ class MediaController extends Controller
 
             $request->validate([
                 'file' => 'required|mimes:jpeg,jfif,webp,png,jpg,gif,svg,doc,docx,pdf,mp4,m3u8,flv,wmv,avi,mov,3gp',
-            ]); 
+            ]);
             
             $fileData = $request->file('file');
             $today = date("Y-m-d");
@@ -59,9 +60,8 @@ class MediaController extends Controller
                 'description' => "",
                 'extension' => $request->file->extension(),
                 'size' => number_format((float)($request->file->getSize()/1024), 2, '.', ''),
-                'path' => config('constant.relativeMediaPath').'/'.$today,
+                'path' => 'public/upload'.'/'.$today,
             );
-
             
             $fileName = $this->rename(str_replace(" ","-",strtolower($request->file->getClientOriginalName())));
             
@@ -71,14 +71,14 @@ class MediaController extends Controller
             }
 
             $imageType = array("jpeg","png","jpg","jfif","webp");
-            if(in_array($fileDataArray['extension'], $imageType)){
-                $image = Image::make($fileData->getRealPath());
-                $dimension = $image->width().'x'.$image->height();
-                if($image->width() >= 768){
-                    $this->resizeMobile('profile',$fileName,$request);
-                }
-                $image->resize(120, 120)->save(public_path('upload/'.date("Y-m-d")).'/'."thumb_".$fileName);
-            }
+            // if(in_array($fileDataArray['extension'], $imageType)){
+            //     $image = Image::make($fileData->getRealPath());
+            //     $dimension = $image->width().'x'.$image->height();
+            //     if($image->width() >= 768){
+            //         $this->resizeMobile('profile',$fileName,$request);
+            //     }
+            //     $image->resize(120, 120)->save(public_path('upload/'.date("Y-m-d")).'/'."thumb_".$fileName);
+            // }
 
             if(!$request->file('file')->move(public_path('upload/'.date("Y-m-d")),$fileName)){
                 return false;

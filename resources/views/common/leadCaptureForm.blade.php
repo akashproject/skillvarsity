@@ -46,7 +46,7 @@
                     </div>
                     <div class="lead_steps step_2">
                         <h3 class="td_mb_20 td_fs_24 td_semibold">We’ve sent you an OTP</h3>
-                        <p class="td_fs_14 m-0">On your phone number <a href="javascript:void(0)" class="backstep">+91 62905-65997 <i class="fa-solid fa-pencil" ></i> </a></p>
+                        <p class="td_fs_14 m-0">On your phone number <a href="javascript:void(0)" class="backstep">+91 <span class="submitted_lead_mobile_no">62905-65997</span> <i class="fa-solid fa-pencil" ></i> </a></p>
                         <div id="otp_target"></div>
                         <label id="otp_target-error" class="otp_error" style="display:none">Please Enter valid OTP</label>
                         <div class="otp-content">

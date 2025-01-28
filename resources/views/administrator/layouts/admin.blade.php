@@ -102,7 +102,7 @@
 <script src="{{ url('assets/administrator/vendor/libs/perfect-scrollbar/perfect-scrollbar.js') }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.0/dropzone.js"></script>
 <script src="{{ url('assets/administrator/vendor/js/menu.js') }}"></script>
-<script src="{{ url('assets/administrator/vendor/js/custom.js') }}"></script>
+<!-- <script src="{{ url('assets/administrator/vendor/js/custom.js') }}"></script> -->
 <!-- endbuild -->
 
 <!-- Vendors JS -->

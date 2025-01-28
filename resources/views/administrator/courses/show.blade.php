@@ -84,9 +84,16 @@
 							</div>
 						</div>
 						<div class="form-group row mb-2">
-							<label for="no_of_module" class="col-sm-3 text-left control-label col-form-label">Curriculum</label>
+							<label for="no_of_module" class="col-sm-3 text-left control-label col-form-label">Subjects</label>
 							<div class="col-sm-9">
-								<a href="{{ url('administrator/university-curriculum') }}/{{ $course->id }}" class="btn btn-primary">Curriculum Detail</a>
+								<div class="course-content" >
+									@foreach($subjects as $subject)
+										<p> 
+											<input type="checkbox" name="subjects[]" value="{{$subject->id}}" id="admin-subject_{{$subject->id}}" {{ (($course->subjects !== null) && in_array($subject->id,$university->subjects))?'checked' : '' }} > 
+											<ladel for="admin-subject_{{$subject->id}}">{{$subject->name}} </label>
+										</p>
+									@endforeach
+								</div>
 							</div>
 						</div>
 						<div class="form-group row mb-2">

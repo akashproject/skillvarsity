@@ -28,9 +28,10 @@ class IndexController extends Controller
             $lastdigit = substr($_POST['mobile'], -4);
 
             $curl = curl_init();
+            $tel = "https://api.st-messaging.com/fe/api/v1/send?username=icaedu1.trans&password=Password@123&unicode=true&from=ICAEDU&to=".$_POST["mobile"]."&text=".$otpvalue."+is+your+One+Time+Password+%28OTP%29+for+course+enquiry+at+ICA+Edu+Skills+Pvt+Ltd.+for+the+mobile+number+xxxxxx".$lastdigit.".+Thank+you+for+your+inquiry.%0D%0A&dltContentId=1207173138503092263&dltPrincipalEntityId=1201159245568554682";
 
             curl_setopt_array($curl, array(
-            CURLOPT_URL => 'https://mysmsshop.in/V2/http-api.php?apikey=8bhPdcPVJabXWdla&senderid=ICAEDU&number='.$_POST['mobile'].'&message='.$otpvalue.'%20is%20your%20One%20Time%20Password%20(OTP)%20for%20online%20course%20enquiry%20at%20ICA%20Edu%20Skills%20Pvt%20Ltd.%20for%20the%20mobile%20number%20xxxxxx'.$lastdigit.'.%20Thank%20you%20for%20your%20inquiry.%20PLS%20DO%20NOT%20SHARE%20IT%20WITH%20ANYONE%20APART%20FROM%20ICA%20representative.',
+            CURLOPT_URL => $tel,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_ENCODING => '',
             CURLOPT_MAXREDIRS => 10,

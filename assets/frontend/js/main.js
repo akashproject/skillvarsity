@@ -130,6 +130,13 @@ let leadSubmitStatus = false;
 		sendMobileOtp(formId);
 	});
   
+  jQuery(".backstep").on('click',function(){
+    let form = jQuery(this).closest("form");
+    let formId = $(form).attr('id');
+    jQuery("#" + formId + " .lead_steps").removeClass("active");
+    jQuery("#" + formId + " .lead_steps.step_1").addClass("active");
+  });
+
   /*--------------------------------------------------------------
     2. Mobile Menu
   --------------------------------------------------------------*/
@@ -699,8 +706,10 @@ let leadSubmitStatus = false;
 			},
 			success: function(result) {
 				if (result) {
-					console.log(result);
+          console.log(mobileNo);
+          
           jQuery("#" + formId + " .formFieldOtpResponse").val(result.otp_value);
+          jQuery("#" + formId + " .submitted_lead_mobile_no").text(mobileNo);
           jQuery("#" + formId + " .lead_steps").removeClass("active");
 					jQuery("#" + formId + " .lead_steps.step_2").addClass("active");
 					return true;

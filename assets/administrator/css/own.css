@@ -25,6 +25,8 @@
 .course-content {
     border: 1px solid #ccc;
     padding: 5px;
+    height: 260px;
+    overflow: hidden scroll;
 }
 .course-content p {
     margin: 7px 12px;

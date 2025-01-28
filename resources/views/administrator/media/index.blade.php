@@ -52,7 +52,7 @@
                         <img src="{{ url('assets/img/pdf.png') }}" alt="{{$value->alternative}}" style="width:100%">
                         @break
                         @default
-                        <img src="{{ getSizedImage($value->id,'thumb') }}" alt="{{$value->alternative}}" style="width:100%">                       
+                        <img src="{{ getSizedImage($value->id) }}" alt="{{$value->alternative}}" style="width:100%">                       
                     @endswitch
                         <span > {{$value->filename}} </span>
                     </a>

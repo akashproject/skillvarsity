@@ -7,6 +7,16 @@ use App\Models\Setting;
 use App\Models\Review;
 use App\Models\Tag;
 
+$customGlobalVeriable = [
+    'default' => env('IMAGE_SIZE', 'thumbnail'),
+    'imageSize' => [
+        'thumbnail' => [120,120],
+        'profile' => ['width'=>227,'height'=>220],
+    ],
+    'absoluteMediaPath' => env('APP_URL').'public/upload',
+    'relativeMediaPath' => 'public/upload',
+];
+
 if (! function_exists('check_device')) {
     function check_device($param = null){
         $device = "";
@@ -32,9 +42,10 @@ if (! function_exists('getSizedImage')) {
     function getSizedImage($id,$size = null) {
         $size = ($size)?$size.'_':"";
         $media = DB::table('media')->where('id',$id)->first();
-       
         if($media){
-            return $filename = env('APP_URL').$media->path.'/'.$size.$media->filename;
+            $filename = env('APP_URL').$media->path.'/'.$size.$media->filename;
+            return $filename;
+            //return $filename = env('APP_URL').$media->path.'/'.$size.$media->filename;
         } else {
             return false;
         }
