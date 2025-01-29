@@ -17,6 +17,7 @@ use Spatie\Honeypot\ProtectAgainstSpam;
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE, PATCH');
 header('Access-Control-Allow-Headers: Content-Type, X-Auth-Token, Origin, Authorization');
+Auth::routes();
 
 Route::get('/index/clear-cache', function() {
     echo $exitCode = Artisan::call('cache:clear');
@@ -172,5 +173,3 @@ Route::post('/capture-lead', [App\Http\Controllers\IndexController::class, 'capt
 Route::post('/save-contact', [App\Http\Controllers\IndexController::class, 'saveContact'])->name('save-contact');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Auth::routes();

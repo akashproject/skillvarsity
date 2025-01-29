@@ -5,6 +5,8 @@ use Jenssegers\Agent\Facades\Agent;
 use App\Models\Media;
 use App\Models\Setting;
 use App\Models\Review;
+use App\Models\State;
+use App\Models\City;
 use App\Models\Tag;
 
 $customGlobalVeriable = [

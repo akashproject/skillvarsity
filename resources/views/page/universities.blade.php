@@ -87,8 +87,7 @@
                     <div class="td_card td_style_5 td_type_3">
                       <a href="{{ route('university-detail',$value->slug) }}" class="td_card_thumb">
                         <span class="td_card_thumb_in td_radius_10">
-                          <img src="{{ url('assets/frontend/img/university/tiu.png')}}" alt="">
-                          <!-- <span class="td_card_label td_fs_14 td_white_color td_accent_bg">New</span> -->
+                          <img src="{{ (($value->featured_image !== null))?getSizedImage($value->featured_image):'' }}" alt="">
                         </span>
                       </a>
                     <div class="td_card_content">
@@ -99,11 +98,11 @@
                         <ul class="td_card_meta td_mp_0 td_fs_14 td_heading_color">
                           <li>
                             <img src="{{ url('assets/frontend/img/icons/location.png')}}" alt="">
-                            <span class="td_opacity_7">Kolkata, West Bengal</span>
+                            <span class="td_opacity_7">{{ $value->city }}, {{ print_r($value->state) }}</span>
                           </li>
                           <li>
-                              <img src="{{ url('assets/frontend/img/icons/book.svg')}}" alt="">
-                              <span class="td_opacity_7">Private</span>
+                            <img src="{{ url('assets/frontend/img/icons/book.svg')}}" alt="">
+                            <span class="td_opacity_7">Private</span>
                           </li>
                         </ul>
                         <hr>

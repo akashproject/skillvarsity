@@ -71,7 +71,7 @@
 									<option value="">Update Status</option>
 									<option value="1" selected> Publish</option>
 									<option value="0" > Private </option>
-								<select>
+								</select>
 							</div>
 						</div>
 

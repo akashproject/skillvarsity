@@ -5,6 +5,11 @@
 'use strict';
 
 let menu, animate;
+let imageId;
+let imagePath;
+let fieldId;
+let BulkSelect = false
+let lectureField;
 
 (function () {
   // Initialize menu
@@ -122,25 +127,32 @@ let menu, animate;
     mainClass: 'mfp-fade'
   });
 
-  $(".image-thumbnail-container").on("click",'.image-thumbnail',function(){
-    imageId = $(this).attr("data-id");
-    imagePath = $(this).children("img").attr("src");
+  jQuery(".image-thumbnail-container").on("click",'.image-thumbnail',function(){
+    imageId = jQuery(this).attr("data-id");
+    console.log(imageId);
+    imagePath = jQuery(this).children("img").attr("src");
     if (!BulkSelect) {
-        $(".image-thumbnail").removeClass("active");
+      jQuery(".image-thumbnail").removeClass("active");
     }
-    $(this).toggleClass("active");
+    jQuery(this).toggleClass("active");
   });
 
-  $(".image-profile").on("click",function(){
-    fieldId = $(this).children("input").attr("id");
+  jQuery(".image-profile").on("click",function(){
+    fieldId = jQuery(this).children("input").attr("id");
   });
 
-  $(".removeImage").on("click",function(){
-      $(this).parent().children().children("img").attr("src","https://dummyimage.com/150x150?text=Add%20Image");
-      $(this).parent().children().children("input").val("");
+  jQuery(".removeImage").on("click",function(){
+    jQuery(this).parent().children().children("img").attr("src","https://dummyimage.com/150x150?text=Add%20Image");
+      jQuery(this).parent().children().children("input").val("");
   });
 
 })();
+
+function setMedia(){
+  $("#"+fieldId).val(imageId);
+  $("#"+fieldId).parent().children("img").attr("src",imagePath)
+  $.magnificPopup.close();
+}
 
 function getCitiesByStateId(event){
   let state_id = event.value;

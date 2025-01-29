@@ -53,7 +53,7 @@
 								<div class="course-content" >
 									@foreach($courses as $course)
 										<p> 
-											<input type="checkbox" name="courses[]" value="{{$course->id}}" id="admin-course_{{$course->id}}" {{ (isset($university->courses != null) && in_array($course->id,$university->courses))?'checked' : '' }} > 
+											<input type="checkbox" name="courses[]" value="{{$course->id}}" id="admin-course_{{$course->id}}" {{ (($university->courses != null) && in_array($course->id,$university->courses))?'checked' : '' }} > 
 											<ladel for="admin-course_{{$course->id}}">{{$course->name}} </label>
 										</p>
 									@endforeach
@@ -69,10 +69,10 @@
 						<div class="form-group row mb-2">
 							<label for="state" class="col-sm-3 text-right control-label col-form-label">Select State</label>
 							<div class="col-sm-9">
-								<select name="state_id" id="state_id" class="select2 form-control custom-select" style="width: 100%; height:36px;" onChange="getCitiesByStateId(this);">	
+								<select name="state" id="state_id" class="select2 form-control custom-select" style="width: 100%; height:36px;" onChange="getCitiesByStateId(this);">	
 									<option value="">Select State</option>
 									@foreach ($states as $value)
-									<option value="{{ $value->id }}" > {{ $value->name }} </option>
+									<option value="{{ $value->id }}" {{ ( $university->state ==  $value->id )? 'selected' : '' }}> {{ $value->name }} </option>
 									@endforeach
 								</select>
 							</div>
@@ -80,8 +80,11 @@
 						<div class="form-group row">
 							<label for="state" class="col-sm-3 text-right control-label col-form-label">Select City</label>
 							<div class="col-sm-9">
-								<select name="city_id" id="city_id" class="select2 form-control custom-select" style="width: 100%; height:36px;">	
+								<select name="city" id="city_id" class="select2 form-control custom-select" style="width: 100%; height:36px;">	
 									<option value="">Select City</option>
+									@foreach ($cities as $value)
+										<option value="{{ $value->id }}" {{ ( $university->city ==  $value->id )? 'selected' : '' }} > {{ $value->name }} </option>
+									@endforeach
 								</select>
 							</div>
 						</div>	
@@ -97,19 +100,19 @@
 									<option value="">Update Status</option>
 									<option value="1" selected> Publish</option>
 									<option value="0" > Private </option>
-								<select>
+								</select>
 							</div>
 						</div>
 						<div class="form-group row mb-2">
-							<label for="tags" class="col-md-6 text-left control-label col-form-label">Featured Image</label>
-							<div class="col-sm-6 text-center">
-								<a href="#imageBox" class="image-profile open-popup-link">
-									<img src="https://dummyimage.com/150x150?text=Add%20Image" alt="">
-									<input type="hidden" name="featured_image" id="featured_image" value="" >	
+							<label for="tags" class="col-md-12 text-left control-label col-form-label">Featured Image</label>
+							<div class="col-sm-12 text-right">
+								<a href="#imageBox" class="image-profile open-popup-link" style="display:block">
+									<img src="{{ (($university->featured_image !== null))?getSizedImage($university->featured_image):'https://dummyimage.com/250x250?text=Add%20Image' }}" alt="" style="width:50%">
+									<input type="hidden" name="featured_image" id="featured_image" value="{{ $university->featured_image }}" >	
 								</a>	
 								@if(isset($university->featured_image))
 									<a href="javascript:void(0)" class="removeImage" style="color: #c90f0f;font-weight: 600;"> Remove Image </a>	
-								@endif
+								@endif					
 							</div>
 						</div>
 					</div>

@@ -1,6 +1,9 @@
 .dropzone {
     border-style: dotted;
 }
+.image-thumbnail.active {
+    border: 2px solid #6e6de5;
+}
 .image-thumbnail {
     width: 114px;
     margin: 3px;
@@ -39,4 +42,10 @@
     max-width: 98%;
     margin: 20px auto;
     transition: 1s all;
-  }
+}
+.text-right {
+    text-align: right !important;
+}
+.add-media {
+    margin-bottom: 20px;
+}

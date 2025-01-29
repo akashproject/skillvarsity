@@ -123,7 +123,7 @@
 
 									<option value="0" {{ ( $page->enable_otp ==  '0' )? 'selected' : '' }}> No </option>
 
-								<select>
+								</select>
 
 							</div>
 
@@ -143,7 +143,7 @@
 
 									<option value="0" {{ ( $page->status ==  '0' )? 'selected' : '' }}> Private </option>
 
-								<select>
+								</select>
 
 							</div>
 
