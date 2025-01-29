@@ -31,3 +31,12 @@
 .course-content p {
     margin: 7px 12px;
 }
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 22px 10px 0 10px;
+    width: auto;
+    max-width: 98%;
+    margin: 20px auto;
+    transition: 1s all;
+  }

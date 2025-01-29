@@ -116,6 +116,12 @@ let menu, animate;
   // Auto update menu collapsed/expanded based on the themeConfig
   window.Helpers.setCollapsed(true, false);
 
+  jQuery('.open-popup-link').magnificPopup({
+    type: 'inline',
+    midClick: true,
+    mainClass: 'mfp-fade'
+  });
+
   $(".image-thumbnail-container").on("click",'.image-thumbnail',function(){
     imageId = $(this).attr("data-id");
     imagePath = $(this).children("img").attr("src");
@@ -123,6 +129,15 @@ let menu, animate;
         $(".image-thumbnail").removeClass("active");
     }
     $(this).toggleClass("active");
+  });
+
+  $(".image-profile").on("click",function(){
+    fieldId = $(this).children("input").attr("id");
+  });
+
+  $(".removeImage").on("click",function(){
+      $(this).parent().children().children("img").attr("src","https://dummyimage.com/150x150?text=Add%20Image");
+      $(this).parent().children().children("input").val("");
   });
 
 })();

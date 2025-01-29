@@ -8,7 +8,7 @@
 
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'Baazar') }}</title>
+    <title>{{ config('app.name', 'Eduvarsity') }}</title>
 
     <!-- Scripts -->
     <!-- Fonts -->
@@ -18,8 +18,6 @@
       href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-
-
     <!-- Styles -->
     <!-- Icons. Uncomment required icon fonts -->
     <link rel="stylesheet" href="{{ url('assets/administrator/vendor/fonts/boxicons.css') }}" />
@@ -27,6 +25,7 @@
     <link rel="stylesheet" href="{{ url('assets/administrator/vendor/libs/datatables-bs5/responsive.bootstrap5.css') }}">
    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.0/min/dropzone.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/magnific-popup.min.css" rel="stylesheet">
     <!-- Core CSS -->
     <link rel="stylesheet" href="{{ url('assets/administrator/vendor/css/core.css') }}" class="template-customizer-core-css" />
     <link rel="stylesheet" href="{{ url('assets/administrator/vendor/css/theme-default.css') }}" class="template-customizer-theme-css" />
@@ -58,7 +57,6 @@
 
 		@endif
         
-       
           @if(auth()->check())
             <!-- Layout container -->
             <div class="layout-page">
@@ -78,7 +76,7 @@
             @yield('content')
             </div>
             <!-- / Content -->
-            
+            @include('administrator.includes.footer')
             <div class="content-backdrop fade"></div>
           </div>
           <!-- Content wrapper -->
@@ -92,7 +90,6 @@
 <script>
     let globalUrl = "{{ env("APP_URL") }}"
 </script>
-
 <!-- Core JS -->
 <!-- build:js assets/vendor/js/core.js -->
 <script src="{{ url('assets/administrator/vendor/libs/jquery/jquery.js') }}"></script>
@@ -100,6 +97,7 @@
 <script src="{{ url('assets/administrator/vendor/libs/popper/popper.js') }}"></script>
 <script src="{{ url('assets/administrator/vendor/js/bootstrap.js') }}"></script>
 <script src="{{ url('assets/administrator/vendor/libs/perfect-scrollbar/perfect-scrollbar.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.0/dropzone.js"></script>
 <script src="{{ url('assets/administrator/vendor/js/menu.js') }}"></script>
 <!-- <script src="{{ url('assets/administrator/vendor/js/custom.js') }}"></script> -->
@@ -130,7 +128,7 @@
     Dropzone.options.dropzonewidget = { 
         maxFilesize: 150, // 2 MB
         success: function(file, response){ // Dropzone upload response
-            var html = '<div class="file-content text-center"><a href="#imageBox" class="image-thumbnail open-popup-link" data-id="'+response.id+'"><img src="'+`${globalUrl}`+response.path+'/thumb_'+response.filename+'" alt="" style="width:100%"><span> '+response.name+' </span></a><a target="_blank" href="'+`${globalUrl}`+'administrator/view-file/'+response.id+'" style="display:block">Edit</a></div>';
+            var html = '<div class="file-content text-center"><a href="#imageBox" class="image-thumbnail open-popup-link" data-id="'+response.id+'"><img src="'+`${globalUrl}`+response.path+'/'+response.filename+'" alt="" style="width:100%"><span> '+response.name+' </span></a><a target="_blank" href="'+`${globalUrl}`+'administrator/view-file/'+response.id+'" style="display:block">Edit</a></div>';
             $(".image-thumbnail-container").prepend(html);
         }
     };

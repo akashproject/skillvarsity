@@ -18,6 +18,11 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE, PATCH');
 header('Access-Control-Allow-Headers: Content-Type, X-Auth-Token, Origin, Authorization');
 
+Route::get('/index/clear-cache', function() {
+    echo $exitCode = Artisan::call('cache:clear');
+    // return what you want
+});
+
 Route::group(['prefix' => 'administrator', 'namespace' => 'Admin'], function () {
 
     Route::get('/signin', [App\Http\Controllers\Auth\LoginController::class, 'showLoginForm'])->name('login');
@@ -152,6 +157,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/profile', [App\Http\Controllers\UserController::class, 'profile'])->name('profile');
     //Certificate
 });
+
 
 Route::get('/{slug}', [App\Http\Controllers\PageController::class, 'index'])->where('slug', '([A-Za-z0-9\-]+)');
 Route::get('/', [App\Http\Controllers\IndexController::class, 'index'])->name('website');

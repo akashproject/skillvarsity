@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Media;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
-use Intervention\Image\Facades\Image;
+use Image;
 
 class MediaController extends Controller
 {
