@@ -8,16 +8,7 @@ use App\Models\Review;
 use App\Models\State;
 use App\Models\City;
 use App\Models\Tag;
-
-$customGlobalVeriable = [
-    'default' => env('IMAGE_SIZE', 'thumbnail'),
-    'imageSize' => [
-        'thumbnail' => [120,120],
-        'profile' => ['width'=>227,'height'=>220],
-    ],
-    'absoluteMediaPath' => env('APP_URL').'public/upload',
-    'relativeMediaPath' => 'public/upload',
-];
+use App\Models\Recruiter;
 
 if (! function_exists('check_device')) {
     function check_device($param = null){
@@ -145,6 +136,28 @@ if (! function_exists('getStateById')) {
         try {
             $state = State::findOrFail($id);
             return $state;
+        } catch(\Illuminate\Database\QueryException $e){
+            throw $e;
+        }
+    }
+}
+
+if (! function_exists('getCityById')) {
+    function getCityById($id){
+        try {
+            $city = City::findOrFail($id);
+            return $city;
+        } catch(\Illuminate\Database\QueryException $e){
+            throw $e;
+        }
+    }
+}
+
+if (! function_exists('getRecruiters')) {
+    function getRecruiters(){
+        try {
+            $recruiters = Recruiter::all();
+            return $recruiters;
         } catch(\Illuminate\Database\QueryException $e){
             throw $e;
         }

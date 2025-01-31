@@ -90,15 +90,14 @@
                           <img src="{{ (($value->featured_image !== null))?getSizedImage($value->featured_image):'' }}" alt="">
                         </span>
                       </a>
-                    <div class="td_card_content">
-                        
+                      <div class="td_card_content">
                         <h4 class="td_card_title td_fs_20 td_semibold td_mb_12 m-0" >
                           <a href="{{ route('university-detail',$value->slug) }}">{{$value->name}}</a>
                         </h4>
                         <ul class="td_card_meta td_mp_0 td_fs_14 td_heading_color">
                           <li>
                             <img src="{{ url('assets/frontend/img/icons/location.png')}}" alt="">
-                            <span class="td_opacity_7">{{ $value->city }}, {{ print_r($value->state) }}</span>
+                            <span class="td_opacity_7">{{ getCityById($value->city)->name }}, {{ getStateById($value->state)->name }}</span>
                           </li>
                           <li>
                             <img src="{{ url('assets/frontend/img/icons/book.svg')}}" alt="">
@@ -156,7 +155,7 @@
                             <span class="td_heading_color td_opacity_5 td_fs_14">(3.5/5 Ratings)</span>
                           </div>
                         </div>
-                    </div>
+                      </div>
                     </div>
                 </div>
               @endforeach

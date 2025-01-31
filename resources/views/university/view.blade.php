@@ -6,7 +6,7 @@
         <div class="td_hero_text wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
           <p class="td_hero_subtitle_up td_fs_18 td_accent_color td_spacing_1 td_semibold text-uppercase td_mb_14">100 % Quality Qurantee</p>
           <h1 class="td_hero_title td_fs_64 td_mb_20">Build The Skills with {{ $contentMain->name }} </h1>
-          <p class="td_hero_subtitle td_fs_18 td_heading_color td_opacity_7 td_mb_30">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          <p class="td_hero_subtitle td_fs_18 td_heading_color td_opacity_7 td_mb_30">{{$contentMain->exerpt }}</p>
           <div class="td_btns_group">
             <a href="courses-grid-view.html" class="td_btn td_style_1 td_radius_30 td_medium">
               <span class="td_btn_in td_white_color td_accent_bg">
@@ -149,6 +149,84 @@
       </div>
     </section>
     <!-- End Rate Section -->
+     <!-- Start Courses Section -->
+    <section>
+      <div class="td_height_112 td_height_lg_75"></div>
+      <div class="container">
+        <div class="td_section_heading td_style_1 td_type_1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+          <div class="td_section_heading_left">
+            <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">Our Latest courses</p>
+            <h2 class="td_section_title td_fs_48 mb-0">Pick Our Latest Courses <br>and Build your Skills </h2>
+          </div>
+          <div class="td_section_heading_right">
+            <p class="td_section_subtitle td_fs_18 td_mb_16 td_heading_color td_opacity_9">Far far away, behind the word mountains, far from the Conson antia, there live the blind texts. Separated they marks</p>
+            
+          </div>
+        </div>
+        <div class="td_height_40 td_height_lg_40"></div>
+        <div class="row td_gap_y_30 td_row_gap_30">
+          @foreach($universityCourses as $value)
+          <div class="col-lg-4 col-md-6">
+            <div class="td_card td_style_3 d-block td_radius_10">
+              <div class="row" style="margin-top: 6px;">
+                <div class="col-8">
+                  <a href="{{ route('course-detail',$value->slug) }}" class="td_card_thumb">
+                    <img src="{{ url('assets/frontend/img/course/course-1.gif')}}" alt="">
+                  </a>
+                </div>
+                <div class="col-4">
+                  <span class="td_card_label td_accent_bg td_white_color">Advanced</span>
+                </div>
+              </div>
+              <div class="td_card_info td_white_bg">
+                <div class="td_card_info_in">
+                  <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
+                    <li>
+                      <img src="{{ url('assets/frontend/img/icons/user_3.svg')}}" alt="">
+                      <span class="td_opacity_7">{{ $value->number_of_enrolled }} Enrolled</span>
+                    </li>
+                    <li>
+                      <img src="{{ url('assets/frontend/img/icons/book.svg')}}" alt="">
+                      <span class="td_opacity_7">{{ $value->no_of_module }} Modules</span>
+                    </li>
+                  </ul>
+                  <!-- <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Data Analytics</span></a> -->
+                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="{{ route('course-detail',$value->slug) }}">{{$value->name}}</a></h2>
+                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">{{$value->excerpt}}</p>
+                  <div class="td_card_review">
+                    <div class="td_rating" data-rating="4.5">
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <div class="td_rating_percentage">
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                        <i class="fa-solid fa-star fa-fw"></i>
+                      </div>
+                    </div>
+                    <span class="td_heading_color td_opacity_5 td_medium">(4.5/5 Ratings)</span>
+                  </div>
+                  <div class="td_card_btn">
+                    <a href="#lead-generate-popup" class="td_btn td_style_1 td_radius_10 td_medium open-popup-link">
+                      <span class="td_btn_in td_white_color td_accent_bg">
+                        <span>Enroll Now</span>
+                      </span>             
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          @endforeach
+        </div>
+      </div>
+      <div class="td_height_120 td_height_lg_80"></div>
+    </section>
+    <!-- End Courses Section -->
     <!-- Start About Section -->
     <section class="td_shape_section_9">
       <div class="td_shape_position_1 position-absolute">
@@ -254,96 +332,6 @@
       <div class="td_height_120 td_height_lg_80"></div>
     </section>
     <!-- End Category Section -->
-    <!-- Start Courses Section -->
-    <section>
-      <div class="td_height_112 td_height_lg_75"></div>
-      <div class="container">
-        <div class="td_section_heading td_style_1 td_type_1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-          <div class="td_section_heading_left">
-            <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">Our Latest courses</p>
-            <h2 class="td_section_title td_fs_48 mb-0">Pick Our Latest Courses <br>and Build your Skills </h2>
-          </div>
-          <div class="td_section_heading_right">
-            <p class="td_section_subtitle td_fs_18 td_mb_16 td_heading_color td_opacity_9">Far far away, behind the word mountains, far from the Conson antia, there live the blind texts. Separated they marks</p>
-            <a href="courses-grid-with-sidebar.html" class="td_btn td_style_2 td_heading_color td_medium td_mb_10">
-              See all Courses 
-              <i>
-                <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M15.1575 4.34302L3.84375 15.6567" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M15.157 11.4142C15.157 11.4142 16.0887 5.2748 15.157 4.34311C14.2253 3.41142 8.08594 4.34314 8.08594 4.34314" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>  
-                <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M15.1575 4.34302L3.84375 15.6567" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M15.157 11.4142C15.157 11.4142 16.0887 5.2748 15.157 4.34311C14.2253 3.41142 8.08594 4.34314 8.08594 4.34314" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-              </i>
-            </a>
-          </div>
-        </div>
-        <div class="td_height_40 td_height_lg_40"></div>
-        <div class="row td_gap_y_30 td_row_gap_30">
-          @foreach($courses as $value)
-          <div class="col-lg-4 col-md-6">
-            <div class="td_card td_style_3 d-block td_radius_10">
-              <div class="row" style="margin-top: 6px;">
-                <div class="col-8">
-                  <a href="{{ route('course-detail',$value->slug) }}" class="td_card_thumb">
-                    <img src="{{ url('assets/frontend/img/course/course-1.gif')}}" alt="">
-                  </a>
-                </div>
-                <div class="col-4">
-                  <span class="td_card_label td_accent_bg td_white_color">Advanced</span>
-                </div>
-              </div>
-              <div class="td_card_info td_white_bg">
-                <div class="td_card_info_in">
-                  <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
-                    <li>
-                      <img src="{{ url('assets/frontend/img/icons/user_3.svg')}}" alt="">
-                      <span class="td_opacity_7">{{ $value->number_of_enrolled }} Enrolled</span>
-                    </li>
-                    <li>
-                      <img src="{{ url('assets/frontend/img/icons/book.svg')}}" alt="">
-                      <span class="td_opacity_7">{{ $value->no_of_module }} Modules</span>
-                    </li>
-                  </ul>
-                  <!-- <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Data Analytics</span></a> -->
-                  <h2 class="td_card_title td_fs_24 td_mb_16"><a href="{{ route('course-detail',$value->slug) }}">{{$value->name}}</a></h2>
-                  <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">{{$value->excerpt}}</p>
-                  <div class="td_card_review">
-                    <div class="td_rating" data-rating="4.5">
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <i class="fa-regular fa-star"></i>
-                      <div class="td_rating_percentage">
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                        <i class="fa-solid fa-star fa-fw"></i>
-                      </div>
-                    </div>
-                    <span class="td_heading_color td_opacity_5 td_medium">(4.5/5 Ratings)</span>
-                  </div>
-                  <div class="td_card_btn">
-                    <a href="#lead-generate-popup" class="td_btn td_style_1 td_radius_10 td_medium open-popup-link">
-                      <span class="td_btn_in td_white_color td_accent_bg">
-                        <span>Enroll Now</span>
-                      </span>             
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          @endforeach
-        </div>
-      </div>
-      <div class="td_height_120 td_height_lg_80"></div>
-    </section>
-    <!-- End Courses Section -->
     <!-- Start Certificate Section -->
     <section class="td_heading_bg td_shape_section_9">
       <div class="td_shape_position_3 position-absolute"></div>

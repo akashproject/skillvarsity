@@ -59,9 +59,9 @@
 							<label for="tags" class="col-md-6 text-left control-label col-form-label">Featured Image</label>
 							<div class="col-sm-6 text-center">
 								<a href="#imageBox" class="image-profile open-popup-link">
-									<img src="{{ (isset($recruiter->featured_image))?getSizedImage('',$recruiter->featured_image):'https://dummyimage.com/250x250?text=Add%20Image' }}" alt="" style="width:100%">
+									<img src="{{ (isset($recruiter->featured_image))?getSizedImage($recruiter->featured_image):'https://dummyimage.com/250x250?text=Add%20Image' }}" alt="" style="width:100%">
 									<input type="hidden" name="featured_image" id="featured_image" value="" >	
-								</a>	
+								</a>
 								@if(isset($recruiter->featured_image))
 									<a href="javascript:void(0)" class="removeImage" style="color: #c90f0f;font-weight: 600;"> Remove Image </a>	
 								@endif					

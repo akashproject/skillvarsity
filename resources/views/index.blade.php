@@ -622,6 +622,159 @@
           <div class="col-lg-7 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
             <div class="td_full_width">
               <div class="td_slider td_style_1 td_slider_gap_24 td_remove_overflow">
+                <div class="td_slider_container" data-autoplay="0" data-loop="1" data-speed="800" data-center="0" data-variable-width="1" data-slides-per-view="responsive" data-xs-slides="2" data-sm-slides="2" data-md-slides="2" data-lg-slides="2" data-add-slides="3">
+                  <div class="td_slider_wrapper">
+                    <div class="td_slide">
+                      <div class="td_testimonial td_style_1 td_type_2 td_white_bg td_radius_5">
+                        <div class="td_rating td_mb_20" data-rating="5">
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <div class="td_rating_percentage">
+                            <i class="fa-solid fa-star fa-fw"></i>
+                            <i class="fa-solid fa-star fa-fw"></i>
+                            <i class="fa-solid fa-star fa-fw"></i>
+                            <i class="fa-solid fa-star fa-fw"></i>
+                            <i class="fa-solid fa-star fa-fw"></i>
+                          </div>
+                        </div>
+                        <blockquote class="td_testimonial_text td_fs_20 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
+                        <div class="td_testimonial_meta td_mb_24">
+                          <img src="assets/img/home_2/avatar_2.png" alt="">
+                          <div class="td_testimonial_meta_right">
+                            <h3 class="td_fs_20 td_semibold td_mb_2">Revert Alexan</h3>
+                            <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">15th Batch Students</p>
+                          </div>
+                        </div>
+                        <span class="td_quote_icon td_accent_color">
+                          <svg width="66" height="49" viewBox="0 0 66 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.7" d="M59.3083 24.7533L59.5477 23.7101L58.594 24.196C56.8371 25.0911 54.9022 25.6333 52.8104 25.6333C45.7993 25.6333 40.1208 20.0011 40.1208 13.0667C40.1208 6.13225 45.7993 0.5 52.8104 0.5C59.8215 0.5 65.5 6.13225 65.5 13.0667V19.5743C65.5 35.5242 52.4088 48.5 36.2974 48.5C34.7517 48.5 33.5 47.2533 33.5 45.7333C33.5 44.2134 34.7517 42.9667 36.2974 42.9667C47.5163 42.9667 56.9202 35.1632 59.3083 24.7533Z" stroke="currentColor"/>
+                            <path opacity="0.7" d="M26.3083 24.7533L26.5477 23.7101L25.594 24.196C23.8371 25.0911 21.9022 25.6333 19.8104 25.6333C12.7993 25.6333 7.12077 20.0011 7.12077 13.0667C7.12077 6.13226 12.7993 0.5 19.8104 0.5C26.8215 0.5 32.5 6.13226 32.5 13.0667V19.5743C32.5 35.5242 19.4088 48.5 3.2974 48.5C1.75166 48.5 0.5 47.2533 0.5 45.7333C0.5 44.2134 1.75166 42.9667 3.2974 42.9667C14.5163 42.9667 23.9202 35.1632 26.3083 24.7533Z" stroke="currentColor"/>
+                          </svg>                                                 
+                        </span> 
+                      </div>
+                    </div>
+                    <div class="td_slide">
+                      <div class="td_testimonial td_style_1 td_type_2 td_white_bg td_radius_5">
+                        <div class="td_rating td_mb_20" data-rating="4.5">
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <div class="td_rating_percentage">
+                            <i class="fa-solid fa-star fa-fw"></i>
+                            <i class="fa-solid fa-star fa-fw"></i>
+                            <i class="fa-solid fa-star fa-fw"></i>
+                            <i class="fa-solid fa-star fa-fw"></i>
+                            <i class="fa-solid fa-star fa-fw"></i>
+                          </div>
+                        </div>
+                        <blockquote class="td_testimonial_text td_fs_20 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
+                        <div class="td_testimonial_meta td_mb_24">
+                          <img src="assets/img/home_2/avatar_3.png" alt="">
+                          <div class="td_testimonial_meta_right">
+                            <h3 class="td_fs_20 td_semibold td_mb_2">Anthonia Alex</h3>
+                            <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">12th Batch Students</p>
+                          </div>
+                        </div>
+                        <span class="td_quote_icon td_accent_color">
+                          <svg width="66" height="49" viewBox="0 0 66 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.7" d="M59.3083 24.7533L59.5477 23.7101L58.594 24.196C56.8371 25.0911 54.9022 25.6333 52.8104 25.6333C45.7993 25.6333 40.1208 20.0011 40.1208 13.0667C40.1208 6.13225 45.7993 0.5 52.8104 0.5C59.8215 0.5 65.5 6.13225 65.5 13.0667V19.5743C65.5 35.5242 52.4088 48.5 36.2974 48.5C34.7517 48.5 33.5 47.2533 33.5 45.7333C33.5 44.2134 34.7517 42.9667 36.2974 42.9667C47.5163 42.9667 56.9202 35.1632 59.3083 24.7533Z" stroke="currentColor"/>
+                            <path opacity="0.7" d="M26.3083 24.7533L26.5477 23.7101L25.594 24.196C23.8371 25.0911 21.9022 25.6333 19.8104 25.6333C12.7993 25.6333 7.12077 20.0011 7.12077 13.0667C7.12077 6.13226 12.7993 0.5 19.8104 0.5C26.8215 0.5 32.5 6.13226 32.5 13.0667V19.5743C32.5 35.5242 19.4088 48.5 3.2974 48.5C1.75166 48.5 0.5 47.2533 0.5 45.7333C0.5 44.2134 1.75166 42.9667 3.2974 42.9667C14.5163 42.9667 23.9202 35.1632 26.3083 24.7533Z" stroke="currentColor"/>
+                          </svg>                                                 
+                        </span> 
+                      </div>
+                    </div>
+                    <div class="td_slide">
+                      <div class="td_testimonial td_style_1 td_type_2 td_white_bg td_radius_5">
+                        <div class="td_rating td_mb_20" data-rating="5">
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <div class="td_rating_percentage">
+                            <i class="fa-solid fa-star fa-fw"></i>
+                            <i class="fa-solid fa-star fa-fw"></i>
+                            <i class="fa-solid fa-star fa-fw"></i>
+                            <i class="fa-solid fa-star fa-fw"></i>
+                            <i class="fa-solid fa-star fa-fw"></i>
+                          </div>
+                        </div>
+                        <blockquote class="td_testimonial_text td_fs_20 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
+                        <div class="td_testimonial_meta td_mb_24">
+                          <img src="assets/img/home_2/avatar_4.png" alt="">
+                          <div class="td_testimonial_meta_right">
+                            <h3 class="td_fs_20 td_semibold td_mb_2">Arke Marey</h3>
+                            <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">09th Batch Students</p>
+                          </div>
+                        </div>
+                        <span class="td_quote_icon td_accent_color">
+                          <svg width="66" height="49" viewBox="0 0 66 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.7" d="M59.3083 24.7533L59.5477 23.7101L58.594 24.196C56.8371 25.0911 54.9022 25.6333 52.8104 25.6333C45.7993 25.6333 40.1208 20.0011 40.1208 13.0667C40.1208 6.13225 45.7993 0.5 52.8104 0.5C59.8215 0.5 65.5 6.13225 65.5 13.0667V19.5743C65.5 35.5242 52.4088 48.5 36.2974 48.5C34.7517 48.5 33.5 47.2533 33.5 45.7333C33.5 44.2134 34.7517 42.9667 36.2974 42.9667C47.5163 42.9667 56.9202 35.1632 59.3083 24.7533Z" stroke="currentColor"/>
+                            <path opacity="0.7" d="M26.3083 24.7533L26.5477 23.7101L25.594 24.196C23.8371 25.0911 21.9022 25.6333 19.8104 25.6333C12.7993 25.6333 7.12077 20.0011 7.12077 13.0667C7.12077 6.13226 12.7993 0.5 19.8104 0.5C26.8215 0.5 32.5 6.13226 32.5 13.0667V19.5743C32.5 35.5242 19.4088 48.5 3.2974 48.5C1.75166 48.5 0.5 47.2533 0.5 45.7333C0.5 44.2134 1.75166 42.9667 3.2974 42.9667C14.5163 42.9667 23.9202 35.1632 26.3083 24.7533Z" stroke="currentColor"/>
+                          </svg>                                                 
+                        </span>  
+                      </div>
+                    </div>
+                    <div class="td_slide">
+                      <div class="td_testimonial td_style_1 td_type_2 td_white_bg td_radius_5">
+                        <div class="td_rating td_mb_20" data-rating="5">
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <i class="fa-regular fa-star"></i>
+                          <div class="td_rating_percentage">
+                            <i class="fa-solid fa-star fa-fw"></i>
+                            <i class="fa-solid fa-star fa-fw"></i>
+                            <i class="fa-solid fa-star fa-fw"></i>
+                            <i class="fa-solid fa-star fa-fw"></i>
+                            <i class="fa-solid fa-star fa-fw"></i>
+                          </div>
+                        </div>
+                        <blockquote class="td_testimonial_text td_fs_20 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
+                        <div class="td_testimonial_meta td_mb_24">
+                          <img src="assets/img/home_1/avatar_1.png" alt="">
+                          <div class="td_testimonial_meta_right">
+                            <h3 class="td_fs_20 td_semibold td_mb_2">Antoni Alex</h3>
+                            <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">10th Batch Students</p>
+                          </div>
+                        </div>
+                        <span class="td_quote_icon td_accent_color">
+                          <svg width="66" height="49" viewBox="0 0 66 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.7" d="M59.3083 24.7533L59.5477 23.7101L58.594 24.196C56.8371 25.0911 54.9022 25.6333 52.8104 25.6333C45.7993 25.6333 40.1208 20.0011 40.1208 13.0667C40.1208 6.13225 45.7993 0.5 52.8104 0.5C59.8215 0.5 65.5 6.13225 65.5 13.0667V19.5743C65.5 35.5242 52.4088 48.5 36.2974 48.5C34.7517 48.5 33.5 47.2533 33.5 45.7333C33.5 44.2134 34.7517 42.9667 36.2974 42.9667C47.5163 42.9667 56.9202 35.1632 59.3083 24.7533Z" stroke="currentColor"/>
+                            <path opacity="0.7" d="M26.3083 24.7533L26.5477 23.7101L25.594 24.196C23.8371 25.0911 21.9022 25.6333 19.8104 25.6333C12.7993 25.6333 7.12077 20.0011 7.12077 13.0667C7.12077 6.13226 12.7993 0.5 19.8104 0.5C26.8215 0.5 32.5 6.13226 32.5 13.0667V19.5743C32.5 35.5242 19.4088 48.5 3.2974 48.5C1.75166 48.5 0.5 47.2533 0.5 45.7333C0.5 44.2134 1.75166 42.9667 3.2974 42.9667C14.5163 42.9667 23.9202 35.1632 26.3083 24.7533Z" stroke="currentColor"/>
+                          </svg>                                                 
+                        </span> 
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="td_height_40 td_height_lg_30"></div>
+                <div class="td_slider_arrows td_style_1 td_type_2">
+                  <div class="td_left_arrow td_accent_bg td_radius_10 td_center td_white_color">
+                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.00194 6.00024L17.002 6.00024" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M6.00191 1C6.00191 1 1.00196 4.68244 1.00195 6.00004C1.00194 7.31763 6.00195 11 6.00195 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                            
+                  </div>
+                  <div class="td_right_arrow td_accent_bg td_radius_10 td_center td_white_color">
+                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.002 5.99976L1.00195 5.99976" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M12.002 11C12.002 11 17.0019 7.31756 17.002 5.99996C17.002 4.68237 12.002 1 12.002 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                               
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-lg-7 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
+            <div class="td_full_width">
+              <div class="td_slider td_style_1 td_slider_gap_24 td_remove_overflow">
                 <div class="td_slider_container" data-autoplay="1" data-loop="3" data-speed="800" data-center="0" data-variable-width="3" data-slides-per-view="responsive" data-xs-slides="3" data-sm-slides="3" data-md-slides="3" data-lg-slides="3" data-add-slides="3">
                   <div class="td_slider_wrapper">
                     @foreach($universities as $university)
@@ -690,13 +843,13 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="td_height_120 td_height_lg_80"></div>
     </section>
     <!-- End Testimonials Section -->
-     <!-- Start Category Section -->
+    <!-- Start Category Section -->
     <section class="curve-section light-purple">
       <div class="container-fluid">
         <div class="row pt-5">
@@ -719,6 +872,38 @@
                     <img src="assets/frontend/img/home_3/category_icon_1.svg" alt="">
                   </span>
                   <span class="td_iconbox_title">{{ $subject->name }}</span>
+                </a>
+              </div>
+              @endforeach
+            </div>
+          </div>
+        </div>        
+      </div>
+      <div class="td_height_120 td_height_lg_80"></div>
+    </section>
+    <!-- End Category Section -->
+    <!-- Start Category Section -->
+    <section class="curve-section td_yellow_bg_4">
+      <div class="container-fluid">
+        <div class="row pt-5">
+          <div class="col-md-4">
+            <div class="td_section_heading td_style_1 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+              <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">Browse Recruter</p>
+              <h2 class="td_section_title td_fs_48 mb-0 text-white">List of Top Conmapies </h2>
+              <div class="text-left mt-3" style="margin-left: 50px;">
+                <p class="text-white">Receive unbiased and personalized course recommendations from across India and the world. Filter, compare and enrol for a course that fits your unique needs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="row td_gap_y_10">
+              @foreach(getRecruiters() as $recruiter)
+              <div class="col-lg-4 col-md-6 wow bounceInDown flip-rotate-anime" data-wow-duration="1s" data-wow-delay="0.2s">
+                <a href="javascript:void(0)" class="td_iconbox td_style_3 td_fs_14 td_semibold td_radius_10 td_white_bg td_heading_color">
+                  <span class="td_iconbox_icon">
+                    <img src="{{ getSizedImage($recruiter->id) }}" alt="">
+                  </span>
+                  <span class="td_iconbox_title">{{ $recruiter->name }}</span>
                 </a>
               </div>
               @endforeach
