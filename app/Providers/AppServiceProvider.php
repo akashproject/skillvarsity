@@ -49,6 +49,7 @@ class AppServiceProvider extends ServiceProvider
             // Header Menu
            
             $primaryMenu[url('contact')] = "Contact";
+            $primaryMenu[url('gallery')] = "Gallery";
             
             $view->with('primaryMenu', $primaryMenu);
 

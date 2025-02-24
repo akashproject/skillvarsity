@@ -14972,3 +14972,8 @@ div#otp_target {
   position: absolute;
   border: 1px solid #890c25;
 }
+
+.gallery-image {
+  border: 1px solid #890c2554;
+  padding: 2px;
+}

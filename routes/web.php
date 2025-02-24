@@ -140,6 +140,12 @@ Route::group(['prefix' => 'administrator', 'namespace' => 'Admin'], function () 
         Route::get('/view-recruiter/{id}', [App\Http\Controllers\Administrator\RecruiterController::class, 'show'])->name('admin-view-recruiter');
         Route::post('/save-recruiter', [App\Http\Controllers\Administrator\RecruiterController::class, 'save'])->name('admin-save-recruiter');
         
+        //Gallery
+        Route::get('/galleries', [App\Http\Controllers\Administrator\GalleryController::class, 'index'])->name('admin-gallery');
+        Route::get('/add-gallery', [App\Http\Controllers\Administrator\GalleryController::class, 'add'])->name('admin-add-gallery');
+        Route::get('/view-gallery/{id}', [App\Http\Controllers\Administrator\GalleryController::class, 'show'])->name('admin-view-gallery');
+        Route::get('/delete-gallery/{id}', [App\Http\Controllers\Administrator\GalleryController::class, 'delete'])->name('admin-delete-gallery');
+        Route::post('/save-gallery', [App\Http\Controllers\Administrator\GalleryController::class, 'save'])->name('admin-save-gallery');
     });
 
     Route::group(['middleware' => ['role:super-admin']], function () {

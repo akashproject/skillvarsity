@@ -612,14 +612,13 @@
       </div>
       <div class="container">
         <div class="row td_gap_y_40 mt-5">
-          <div class="col-lg-5 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
+          <div class="col-lg-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
             <div class="td_section_heading td_style_1">
               <h2 class="td_section_title td_fs_48 td_mb_20">Learners Say About Educve</h2>
               <p class="td_section_subtitle td_fs_18 mb-0">Far far away, behind the word mountains, far from <br>the Conson antia, there live the blind texts. <br>Separated they marks</p>
-              
             </div>
           </div>
-          <div class="col-lg-7 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
+          <div class="col-lg-8 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
             <div class="td_full_width">
               <div class="td_slider td_style_1 td_slider_gap_24 td_remove_overflow">
                 <div class="td_slider_container" data-autoplay="0" data-loop="1" data-speed="800" data-center="0" data-variable-width="1" data-slides-per-view="responsive" data-xs-slides="2" data-sm-slides="2" data-md-slides="2" data-lg-slides="2" data-add-slides="3">
@@ -924,7 +923,7 @@
           </div>
           <div class="td_features_content td_white_bg td_radius_10 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.25s">
             <div class="td_section_heading td_style_1">
-              <h2 class="td_section_title td_fs_48 mb-0">Campus is your Dream Lifestyle</h2>
+              <h2 class="td_section_title td_fs_48 mb-0">What makes our programs unique?</h2>
             </div>
             <div class="td_height_50 td_height_lg_50"></div>
             <ul class="td_feature_list td_mp_0">
@@ -939,8 +938,8 @@
                   </svg>                    
                 </div>
                 <div class="td_feature_info">
-                  <h3 class="td_fs_32 td_semibold td_mb_15">Smart Hostel</h3>
-                  <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Behind the word mountains, far from the Conso there live the blind texts</p>
+                  <h3 class="td_fs_32 td_semibold td_mb_15">Hands-on Learning</h3>
+                  <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Gain practical expertise with industry-focused training.</p>
                 </div>
               </li>
               <li>
@@ -964,8 +963,8 @@
                   </svg>                                      
                 </div>
                 <div class="td_feature_info">
-                  <h3 class="td_fs_32 td_semibold td_mb_15">Student Life</h3>
-                  <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Behind the word mountains, far from the Conso there live the blind texts</p>
+                  <h3 class="td_fs_32 td_semibold td_mb_15">Paid Internship</h3>
+                  <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">1-year real-world experience while earning.</p>
                 </div>
               </li>
               <li>
@@ -977,8 +976,8 @@
                   </svg>              
                 </div>
                 <div class="td_feature_info">
-                  <h3 class="td_fs_32 td_semibold td_mb_15">Arts & Clubs</h3>
-                  <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Behind the word mountains, far from the Conso there live the blind texts</p>
+                  <h3 class="td_fs_32 td_semibold td_mb_15">Guaranteed Placement</h3>
+                  <p class="td_fs_14 td_heading_color td_opacity_7 mb-0">Secure a job with 100% placement assistance.</p>
                 </div>
               </li>
               
@@ -1017,7 +1016,7 @@
             <div class="td_height_57 td_height_lg_0"></div>
             <div class="td_section_heading td_style_1">
               <h2 class="td_section_title td_fs_48 mb-0 td_white_color">Navigate</h2>
-              <p class="td_section_subtitle td_fs_18 mb-0 td_white_color td_opacity_7">Far far away, behind the word mountains, far from the Consonantia, there live the blind texts. Separated they marks grove right at the coast of the Semantics</p>
+              <p class="td_section_subtitle td_fs_18 mb-0 td_white_color td_opacity_7">Experience a journey of learning, growth, and career success. With hands-on training, expert guidance, and real-world exposure, we prepare you for a future full of opportunities.</p>
             </div>
             <div class="td_btn_box">
               <svg width="299" height="315" viewBox="0 0 299 315" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1034,7 +1033,7 @@
               <div class="td_btn_box_in">
                 <a href="#lead-generate-popup" class="td_btn td_style_1 td_radius_10 td_medium td_fs_18 open-popup-link">
                   <span class="td_btn_in td_heading_color td_white_bg">
-                    <span>View All Program</span>
+                    <span>Life with Us</span>
                   </span>             
                 </a> 
               </div>             
@@ -1049,7 +1048,7 @@
                   </a>
                   <div class="td_card_info">
                     <h2 class="td_card_title mb-0 td_fs_18 td_semibold td_white_color">
-                      <a href="course-details.html">Campus Student Life</a>
+                      <a href="course-details.html">Placement</a>
                     </h2>
                     <a href="course-details.html" class="td_card_btn">
                       <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1070,7 +1069,7 @@
                   </a>
                   <div class="td_card_info">
                     <h2 class="td_card_title mb-0 td_fs_18 td_semibold td_white_color">
-                      <a href="course-details.html">Recreations & Wellness</a>
+                      <a href="course-details.html">Gallery</a>
                     </h2>
                     <a href="course-details.html" class="td_card_btn">
                       <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1093,7 +1092,7 @@
                   </a>
                   <div class="td_card_info">
                     <h2 class="td_card_title mb-0 td_fs_18 td_semibold td_white_color">
-                      <a href="course-details.html">Arts & Cultural Program</a>
+                      <a href="course-details.html">Events</a>
                     </h2>
                     <a href="course-details.html" class="td_card_btn">
                       <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1114,7 +1113,7 @@
                   </a>
                   <div class="td_card_info">
                     <h2 class="td_card_title mb-0 td_fs_18 td_semibold td_white_color">
-                      <a href="course-details.html">Sports & Fitness</a>
+                      <a href="course-details.html">Testimonials</a>
                     </h2>
                     <a href="course-details.html" class="td_card_btn">
                       <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">

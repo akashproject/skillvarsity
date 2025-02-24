@@ -9,6 +9,7 @@ use App\Models\State;
 use App\Models\City;
 use App\Models\Tag;
 use App\Models\Recruiter;
+use App\Models\Gallery;
 
 if (! function_exists('check_device')) {
     function check_device($param = null){
@@ -165,13 +166,27 @@ if (! function_exists('getRecruiters')) {
 }
 
 if (! function_exists('getGallery')) {
-    function getGallery($course_id=null, $center_id=null){
+    function getGallery(){
         $gallery = DB::table('gallery');
-        if($center_id){
-            $gallery->where("center_id",$center_id);
-        } 
-        $gallery = $gallery->get();       
+        $gallery = $gallery->get();
         return $gallery;
+    }
+}
+
+if(! function_exists('getGalleryImage')){
+    function getGalleryImage(){
+        $gallery = Gallery::first();
+        $slug = (request()->has('gallery-slug'))?request()->get('gallery-slug'):$gallery->slug;
+        $directoryPath = public_path('gallery/'.$slug);
+        $fileNames = [];
+        if (File::isDirectory($directoryPath)) {
+            $fileNames = File::files($directoryPath);
+        }
+        $galleryImg=[];
+        foreach ($fileNames as $file) {
+            $galleryImg[] = url('public/gallery').'/'.$slug.'/'.pathinfo($file, PATHINFO_FILENAME).'.'.pathinfo($file, PATHINFO_EXTENSION);
+        }
+        return $galleryImg;
     }
 }
 
