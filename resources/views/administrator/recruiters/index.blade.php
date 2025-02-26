@@ -25,17 +25,29 @@
 							<tr>
 								<th>Name</th>								
 								<th>Status</th>
-								<th>Options</th>
+								<th>Option</th>
 							</tr>
 						</thead>
 						<tbody>
 							@foreach ($recruiters as $value)
 							<tr>
 								<td>{{ $value->name }}</td>																													
-								<td>{{ ($value->status== 1)?"Active":"Deactivate" }}</td>													
-								<td>									
-									<a href="{{ url('administrator/view-recruiter') }}/{{ $value->id }}" class="btn btn-primary btn-lg">Edit</a>
-									<!-- <a href="{{ url('administrator/delete-review') }}/{{ $value->id }}" class="btn btn-danger btn-lg" onclick="return confirm('Are you sure?')"; >Delete </a> -->
+								<td>{{ ($value->status== 1)?"Active":"Deactivate" }}</td>
+								<td>
+									<div class="d-inline-block text-nowrap">
+										@can('update')
+										<a href="{{ route('admin-view-recruiter',$value->id) }}" class="btn btn-sm btn-icon"><i class="bx bx-edit"></i></a>
+										@endcan
+										@can('delete')
+										<a href="{{ route('admin-delete-recruiter',$value->id) }}" onclick="return confirm('Are you sure?')"; class="btn btn-sm btn-icon delete-record">
+											<i class="bx bx-trash"></i>
+										</a>
+										@endcan
+										<button class="btn btn-sm btn-icon dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
+											<i class="bx bx-dots-vertical-rounded me-2"></i>
+										</button>
+										
+									</div>
 								</td>
 							</tr>
 							@endforeach							

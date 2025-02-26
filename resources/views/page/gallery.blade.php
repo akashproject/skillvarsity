@@ -14,7 +14,7 @@
                   </div>
                 </div>
                 <div class="col-md-4 position-relative">
-                    <img src="{{ url('assets/frontend/img/course-banner.gif') }}" >
+                    <img src="{{ url('assets/frontend/img/gallery-banner.gif') }}" >
                 </div>
             </div>    
         </div>
@@ -62,7 +62,7 @@
                             @foreach(getGalleryImage() as $value)
                             <div class="col-md-4 mb-2">
                                 <div class="gallery-image">
-                                    <a href="#{{ $value}}">
+                                    <a href="#{{$value}}">
                                         <img src="{{ $value}}">
                                     </a>
                                 </div>

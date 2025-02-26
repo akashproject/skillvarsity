@@ -51,4 +51,10 @@ class RecruiterController extends Controller
             var_dump($e->getMessage()); 
         }
     }
+
+    public function delete($id) {
+        $recruiter = Recruiter::findOrFail($id);
+        $recruiter->delete();
+        return redirect()->back()->with('message', 'Recruiter deleted successfully!');
+    }
 }

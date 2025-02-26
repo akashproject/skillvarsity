@@ -250,6 +250,8 @@ let leadSubmitStatus = false;
           var smPoint = parseInt($ts.attr('data-sm-slides'), 10);
           var xsPoing = parseInt($ts.attr('data-xs-slides'), 10);
         }
+        console.log(lgPoint,mdPoint,smPoint,xsPoing);
+        
         var fadeVar = parseInt($($ts).attr('data-fade-slide'));
         fadeVar === 1 ? (fadeVar = true) : (fadeVar = false);
         $slickActive.slick({

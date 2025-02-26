@@ -14977,3 +14977,15 @@ div#otp_target {
   border: 1px solid #890c2554;
   padding: 2px;
 }
+.justified-center {
+  justify-content: center;
+}
+.masonry-grid {
+  width: auto;
+}
+
+.placement-redious-grid {
+  width: 150px;
+  margin: 0 5px;
+  display: inline-flex;
+}

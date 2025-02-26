@@ -228,7 +228,7 @@
     </section>
     <!-- End About Section -->
     <!-- Start Popular Courses -->
-    <section class="td_gray_bg_3 scrollSnap curve-section">
+    <!-- <section class="td_gray_bg_3 scrollSnap curve-section">
       <div class="td_height_30 td_height_lg_30"></div>
       <div class="container-fluid">
         <div class="row">
@@ -275,7 +275,6 @@
                                 <span class="td_opacity_7">{{ $value->no_of_module }} Modules</span>
                               </li>
                             </ul>
-                            <!-- <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Data Analytics</span></a> -->
                             <h2 class="td_card_title td_fs_24 td_mb_16"><a href="{{ route('course-detail',$value->slug) }}">{{$value->name}}</a></h2>
                             <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">{{ $value->excerpt}}</p>
                             <div class="td_card_review">
@@ -603,7 +602,7 @@
           <div class="td_height_30 td_height_lg_30"></div>
       </div>
       <div class="td_height_30 td_height_lg_80"></div>
-    </section>
+    </section> -->
     <!-- End Popular Courses -->
     <!-- Start Testimonials Section -->
     <section class="td_gray_bg_9 td_shape_section_10 curve-section">
@@ -612,218 +611,66 @@
       </div>
       <div class="container">
         <div class="row td_gap_y_40 mt-5">
-          <div class="col-lg-4 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
+          <div class="col-lg-5 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
             <div class="td_section_heading td_style_1">
-              <h2 class="td_section_title td_fs_48 td_mb_20">Learners Say About Educve</h2>
-              <p class="td_section_subtitle td_fs_18 mb-0">Far far away, behind the word mountains, far from <br>the Conson antia, there live the blind texts. <br>Separated they marks</p>
+              <h2 class="td_section_title td_fs_48 td_mb_20">List Of Universities</h2>
+              <p class="td_section_subtitle td_fs_18 mb-0">Here is a comprehensive list of universities, including institutions from various regions and disciplines. These universities offer a wide range of academic programs, research opportunities, and extracurricular activities to support students in their educational journey</p>
             </div>
           </div>
-          <div class="col-lg-8 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
+          <div class="col-lg-7 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
             <div class="td_full_width">
-              <div class="td_slider td_style_1 td_slider_gap_24 td_remove_overflow">
-                <div class="td_slider_container" data-autoplay="0" data-loop="1" data-speed="800" data-center="0" data-variable-width="1" data-slides-per-view="responsive" data-xs-slides="2" data-sm-slides="2" data-md-slides="2" data-lg-slides="2" data-add-slides="3">
+             <div class="td_slider td_style_1 td_slider_gap_24 td_remove_overflow">
+                <div class="td_slider_container" data-autoplay="0" data-loop="3" data-speed="800" data-center="0" data-variable-width="3" data-slides-per-view="responsive" data-xs-slides="4" data-sm-slides="4" data-md-slides="4" data-lg-slides="5" data-add-slides="4">
                   <div class="td_slider_wrapper">
-                    <div class="td_slide">
-                      <div class="td_testimonial td_style_1 td_type_2 td_white_bg td_radius_5">
-                        <div class="td_rating td_mb_20" data-rating="5">
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <div class="td_rating_percentage">
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                          </div>
-                        </div>
-                        <blockquote class="td_testimonial_text td_fs_20 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
-                        <div class="td_testimonial_meta td_mb_24">
-                          <img src="assets/img/home_2/avatar_2.png" alt="">
-                          <div class="td_testimonial_meta_right">
-                            <h3 class="td_fs_20 td_semibold td_mb_2">Revert Alexan</h3>
-                            <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">15th Batch Students</p>
-                          </div>
-                        </div>
-                        <span class="td_quote_icon td_accent_color">
-                          <svg width="66" height="49" viewBox="0 0 66 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.7" d="M59.3083 24.7533L59.5477 23.7101L58.594 24.196C56.8371 25.0911 54.9022 25.6333 52.8104 25.6333C45.7993 25.6333 40.1208 20.0011 40.1208 13.0667C40.1208 6.13225 45.7993 0.5 52.8104 0.5C59.8215 0.5 65.5 6.13225 65.5 13.0667V19.5743C65.5 35.5242 52.4088 48.5 36.2974 48.5C34.7517 48.5 33.5 47.2533 33.5 45.7333C33.5 44.2134 34.7517 42.9667 36.2974 42.9667C47.5163 42.9667 56.9202 35.1632 59.3083 24.7533Z" stroke="currentColor"/>
-                            <path opacity="0.7" d="M26.3083 24.7533L26.5477 23.7101L25.594 24.196C23.8371 25.0911 21.9022 25.6333 19.8104 25.6333C12.7993 25.6333 7.12077 20.0011 7.12077 13.0667C7.12077 6.13226 12.7993 0.5 19.8104 0.5C26.8215 0.5 32.5 6.13226 32.5 13.0667V19.5743C32.5 35.5242 19.4088 48.5 3.2974 48.5C1.75166 48.5 0.5 47.2533 0.5 45.7333C0.5 44.2134 1.75166 42.9667 3.2974 42.9667C14.5163 42.9667 23.9202 35.1632 26.3083 24.7533Z" stroke="currentColor"/>
-                          </svg>                                                 
-                        </span> 
-                      </div>
-                    </div>
-                    <div class="td_slide">
-                      <div class="td_testimonial td_style_1 td_type_2 td_white_bg td_radius_5">
-                        <div class="td_rating td_mb_20" data-rating="4.5">
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <div class="td_rating_percentage">
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                          </div>
-                        </div>
-                        <blockquote class="td_testimonial_text td_fs_20 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
-                        <div class="td_testimonial_meta td_mb_24">
-                          <img src="assets/img/home_2/avatar_3.png" alt="">
-                          <div class="td_testimonial_meta_right">
-                            <h3 class="td_fs_20 td_semibold td_mb_2">Anthonia Alex</h3>
-                            <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">12th Batch Students</p>
-                          </div>
-                        </div>
-                        <span class="td_quote_icon td_accent_color">
-                          <svg width="66" height="49" viewBox="0 0 66 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.7" d="M59.3083 24.7533L59.5477 23.7101L58.594 24.196C56.8371 25.0911 54.9022 25.6333 52.8104 25.6333C45.7993 25.6333 40.1208 20.0011 40.1208 13.0667C40.1208 6.13225 45.7993 0.5 52.8104 0.5C59.8215 0.5 65.5 6.13225 65.5 13.0667V19.5743C65.5 35.5242 52.4088 48.5 36.2974 48.5C34.7517 48.5 33.5 47.2533 33.5 45.7333C33.5 44.2134 34.7517 42.9667 36.2974 42.9667C47.5163 42.9667 56.9202 35.1632 59.3083 24.7533Z" stroke="currentColor"/>
-                            <path opacity="0.7" d="M26.3083 24.7533L26.5477 23.7101L25.594 24.196C23.8371 25.0911 21.9022 25.6333 19.8104 25.6333C12.7993 25.6333 7.12077 20.0011 7.12077 13.0667C7.12077 6.13226 12.7993 0.5 19.8104 0.5C26.8215 0.5 32.5 6.13226 32.5 13.0667V19.5743C32.5 35.5242 19.4088 48.5 3.2974 48.5C1.75166 48.5 0.5 47.2533 0.5 45.7333C0.5 44.2134 1.75166 42.9667 3.2974 42.9667C14.5163 42.9667 23.9202 35.1632 26.3083 24.7533Z" stroke="currentColor"/>
-                          </svg>                                                 
-                        </span> 
-                      </div>
-                    </div>
-                    <div class="td_slide">
-                      <div class="td_testimonial td_style_1 td_type_2 td_white_bg td_radius_5">
-                        <div class="td_rating td_mb_20" data-rating="5">
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <div class="td_rating_percentage">
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                          </div>
-                        </div>
-                        <blockquote class="td_testimonial_text td_fs_20 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
-                        <div class="td_testimonial_meta td_mb_24">
-                          <img src="assets/img/home_2/avatar_4.png" alt="">
-                          <div class="td_testimonial_meta_right">
-                            <h3 class="td_fs_20 td_semibold td_mb_2">Arke Marey</h3>
-                            <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">09th Batch Students</p>
-                          </div>
-                        </div>
-                        <span class="td_quote_icon td_accent_color">
-                          <svg width="66" height="49" viewBox="0 0 66 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.7" d="M59.3083 24.7533L59.5477 23.7101L58.594 24.196C56.8371 25.0911 54.9022 25.6333 52.8104 25.6333C45.7993 25.6333 40.1208 20.0011 40.1208 13.0667C40.1208 6.13225 45.7993 0.5 52.8104 0.5C59.8215 0.5 65.5 6.13225 65.5 13.0667V19.5743C65.5 35.5242 52.4088 48.5 36.2974 48.5C34.7517 48.5 33.5 47.2533 33.5 45.7333C33.5 44.2134 34.7517 42.9667 36.2974 42.9667C47.5163 42.9667 56.9202 35.1632 59.3083 24.7533Z" stroke="currentColor"/>
-                            <path opacity="0.7" d="M26.3083 24.7533L26.5477 23.7101L25.594 24.196C23.8371 25.0911 21.9022 25.6333 19.8104 25.6333C12.7993 25.6333 7.12077 20.0011 7.12077 13.0667C7.12077 6.13226 12.7993 0.5 19.8104 0.5C26.8215 0.5 32.5 6.13226 32.5 13.0667V19.5743C32.5 35.5242 19.4088 48.5 3.2974 48.5C1.75166 48.5 0.5 47.2533 0.5 45.7333C0.5 44.2134 1.75166 42.9667 3.2974 42.9667C14.5163 42.9667 23.9202 35.1632 26.3083 24.7533Z" stroke="currentColor"/>
-                          </svg>                                                 
-                        </span>  
-                      </div>
-                    </div>
-                    <div class="td_slide">
-                      <div class="td_testimonial td_style_1 td_type_2 td_white_bg td_radius_5">
-                        <div class="td_rating td_mb_20" data-rating="5">
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <i class="fa-regular fa-star"></i>
-                          <div class="td_rating_percentage">
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                            <i class="fa-solid fa-star fa-fw"></i>
-                          </div>
-                        </div>
-                        <blockquote class="td_testimonial_text td_fs_20 td_medium td_heading_color td_mb_30 td_opacity_9">Far far away, behind the mountains, far from the Conson antia, there live the blind texts. Separated they marks word for a live new.</blockquote>
-                        <div class="td_testimonial_meta td_mb_24">
-                          <img src="assets/img/home_1/avatar_1.png" alt="">
-                          <div class="td_testimonial_meta_right">
-                            <h3 class="td_fs_20 td_semibold td_mb_2">Antoni Alex</h3>
-                            <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">10th Batch Students</p>
-                          </div>
-                        </div>
-                        <span class="td_quote_icon td_accent_color">
-                          <svg width="66" height="49" viewBox="0 0 66 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.7" d="M59.3083 24.7533L59.5477 23.7101L58.594 24.196C56.8371 25.0911 54.9022 25.6333 52.8104 25.6333C45.7993 25.6333 40.1208 20.0011 40.1208 13.0667C40.1208 6.13225 45.7993 0.5 52.8104 0.5C59.8215 0.5 65.5 6.13225 65.5 13.0667V19.5743C65.5 35.5242 52.4088 48.5 36.2974 48.5C34.7517 48.5 33.5 47.2533 33.5 45.7333C33.5 44.2134 34.7517 42.9667 36.2974 42.9667C47.5163 42.9667 56.9202 35.1632 59.3083 24.7533Z" stroke="currentColor"/>
-                            <path opacity="0.7" d="M26.3083 24.7533L26.5477 23.7101L25.594 24.196C23.8371 25.0911 21.9022 25.6333 19.8104 25.6333C12.7993 25.6333 7.12077 20.0011 7.12077 13.0667C7.12077 6.13226 12.7993 0.5 19.8104 0.5C26.8215 0.5 32.5 6.13226 32.5 13.0667V19.5743C32.5 35.5242 19.4088 48.5 3.2974 48.5C1.75166 48.5 0.5 47.2533 0.5 45.7333C0.5 44.2134 1.75166 42.9667 3.2974 42.9667C14.5163 42.9667 23.9202 35.1632 26.3083 24.7533Z" stroke="currentColor"/>
-                          </svg>                                                 
-                        </span> 
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="td_height_40 td_height_lg_30"></div>
-                <div class="td_slider_arrows td_style_1 td_type_2">
-                  <div class="td_left_arrow td_accent_bg td_radius_10 td_center td_white_color">
-                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.00194 6.00024L17.002 6.00024" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M6.00191 1C6.00191 1 1.00196 4.68244 1.00195 6.00004C1.00194 7.31763 6.00195 11 6.00195 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                            
-                  </div>
-                  <div class="td_right_arrow td_accent_bg td_radius_10 td_center td_white_color">
-                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17.002 5.99976L1.00195 5.99976" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M12.002 11C12.002 11 17.0019 7.31756 17.002 5.99996C17.002 4.68237 12.002 1 12.002 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                               
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-lg-7 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
-            <div class="td_full_width">
-              <div class="td_slider td_style_1 td_slider_gap_24 td_remove_overflow">
-                <div class="td_slider_container" data-autoplay="1" data-loop="3" data-speed="800" data-center="0" data-variable-width="3" data-slides-per-view="responsive" data-xs-slides="3" data-sm-slides="3" data-md-slides="3" data-lg-slides="3" data-add-slides="3">
-                  <div class="td_slider_wrapper">
-                    @foreach($universities as $university)
-                    <div class="td_slide">
-                      <div class="td_card td_style_3 d-block td_radius_10">
-                        <div class="td_card_info td_white_bg">
-                          <div class="td_card_info_in">
-                            <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
-                              <li>
-                                <img src="assets/frontend/img/icons/user_3.svg" alt="">
-                                <span class="td_opacity_7">150 Seats</span>
-                              </li>
-                              <li>
-                                <img src="assets/frontend/img/icons/book.svg" alt="">
-                                <span class="td_opacity_7">12 Semesters</span>
-                              </li>
-                            </ul>
-                            <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Data Analytics</span></a>
-                            <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">{{ $university->name }}</a></h2>
-                            <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20"> {{ $university->excerpt }}</p>
-                            <div class="td_card_review">
-                              <div class="td_rating" data-rating="4.5">
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <div class="td_rating_percentage">
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                  <i class="fa-solid fa-star fa-fw"></i>
-                                </div>
+                   @foreach($universities as $key => $value)
+                    <div class="td_card td_style_3 d-block td_radius_10">
+                      <a href="course-details.html" class="td_card_thumb">
+                        <img src="{{ (($value->featured_image !== null))?getSizedImage($value->featured_image):'' }}" alt="">
+                      </a>
+                      <div class="td_card_info td_white_bg">
+                        <div class="td_card_info_in">
+                          <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
+                            <li>
+                              <img src="assets/img/icons/user_3.svg" alt="">
+                              <span class="td_opacity_7">150 Seats</span>
+                            </li>
+                            <li>
+                              <img src="assets/img/icons/book.svg" alt="">
+                              <span class="td_opacity_7">12 Semesters</span>
+                            </li>
+                          </ul>
+                          <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Data Analytics</span></a>
+                          <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Starting Reputed Education & Build your Skills</a></h2>
+                          <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Far far away, behind the word mountains, far from the Consonantia.</p>
+                          <div class="td_card_review">
+                            <div class="td_rating" data-rating="4.5">
+                              <i class="fa-regular fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+                              <i class="fa-regular fa-star"></i>
+                              <div class="td_rating_percentage">
+                                <i class="fa-solid fa-star fa-fw"></i>
+                                <i class="fa-solid fa-star fa-fw"></i>
+                                <i class="fa-solid fa-star fa-fw"></i>
+                                <i class="fa-solid fa-star fa-fw"></i>
+                                <i class="fa-solid fa-star fa-fw"></i>
                               </div>
-                              <span class="td_heading_color td_opacity_5 td_medium">(5.0/5 Ratings)</span>
                             </div>
-                            <div class="td_card_btn">
-                              <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
-                                <span class="td_btn_in td_white_color td_accent_bg">
-                                  <span>Enroll Now</span>
-                                </span>             
-                              </a>
-                            </div>
+                            <span class="td_heading_color td_opacity_5 td_medium">(5.0/5 Ratings)</span>
+                          </div>
+                          <div class="td_card_btn">
+                            <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                              <span class="td_btn_in td_white_color td_accent_bg">
+                                <span>Enroll Now</span>
+                              </span>             
+                            </a>
                           </div>
                         </div>
                       </div>
                     </div>
                     @endforeach
-                  </div>
+                    </div>
                 </div>
                 <div class="td_height_40 td_height_lg_30"></div>
                 <div class="td_slider_arrows td_style_1 td_type_2">
@@ -842,7 +689,7 @@
                 </div>
               </div>
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
       <div class="td_height_120 td_height_lg_80"></div>
@@ -863,10 +710,13 @@
             </div>
           </div>
           <div class="col-md-8">
-            <div class="row td_gap_y_10">
+            @php
+              $colorArray = ['#ddffde','#ffd4d4','#ffbecb','#fff0c3']
+            @endphp
+            <div class="row td_gap_y_10 justified-center">
               @foreach($subjects as $subject)
-              <div class="col-lg-4 col-md-6 wow bounceInDown flip-rotate-anime" data-wow-duration="1s" data-wow-delay="0.2s">
-                <a href="{{ $subject->slug }}" class="td_iconbox td_style_3 td_fs_14 td_semibold td_radius_10 td_white_bg td_heading_color">
+              <div class="masonry-grid wow bounceInDown flip-rotate-anime" data-wow-duration="1s" data-wow-delay="0.2s" >
+                <a href="{{ $subject->slug }}" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
                   <span class="td_iconbox_icon">
                     <img src="assets/frontend/img/home_3/category_icon_1.svg" alt="">
                   </span>
@@ -895,14 +745,11 @@
             </div>
           </div>
           <div class="col-md-8">
-            <div class="row td_gap_y_10">
+            <div class="placement-grid-container td_gap_y_10">
               @foreach(getRecruiters() as $recruiter)
-              <div class="col-lg-4 col-md-6 wow bounceInDown flip-rotate-anime" data-wow-duration="1s" data-wow-delay="0.2s">
-                <a href="javascript:void(0)" class="td_iconbox td_style_3 td_fs_14 td_semibold td_radius_10 td_white_bg td_heading_color">
-                  <span class="td_iconbox_icon">
-                    <img src="{{ getSizedImage($recruiter->id) }}" alt="">
-                  </span>
-                  <span class="td_iconbox_title">{{ $recruiter->name }}</span>
+              <div class="placement-redious-grid" data-wow-duration="1s" data-wow-delay="0.2s">
+                <a href="javascript:void(0)" class="placement-grid-img">
+                  <img src="{{ getSizedImage($recruiter->featured_image) }}" alt="">
                 </a>
               </div>
               @endforeach
@@ -1135,91 +982,6 @@
       <div class="td_height_30 td_height_lg_30"></div>
     </section>
     <!-- End Campus Life -->
-    <!-- Start Departments Section -->
-    <section class="scrollSnap curve-section">
-      <div class="td_height_30 td_height_lg_30"></div>
-      <div class="container">
-        <div class="td_section_heading td_style_1 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-          <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">Departments</p>
-          <h2 class="td_section_title td_fs_48 mb-0">Popular Departments</h2>
-          <p class="td_section_subtitle td_fs_18 mb-0">Far far away, behind the word mountains, far from the Consonantia, there live <br>the blind texts. Separated they marks grove right at the coast</p>
-        </div>
-        <div class="td_height_50 td_height_lg_50"></div>
-        <div class="td_iconbox_1_wrap">
-          <div class="td_iconbox td_style_1 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-            <div class="td_iconbox_icon td_accent_color td_mb_10">
-              <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_34_2239)">
-                <path d="M86.126 63.5156H46.4883L74.5107 91.5381C75.7496 92.777 77.8014 92.666 78.8801 91.2854C84.4443 84.1625 87.9336 75.7453 89.0367 66.7844C89.2508 65.0453 87.8783 63.5156 86.126 63.5156Z" fill="#890C25"/>
-                <path d="M37.3424 62.6603C36.793 62.1109 36.4842 61.3656 36.4842 60.5887V24.5742C36.4842 22.7795 34.8828 21.3922 33.1109 21.6781C14.3254 24.7105 -0.0588036 41.0676 0.00018075 60.709C0.0650245 82.3125 17.708 99.9478 39.3113 100.003C47.7394 100.024 55.7699 97.414 62.4678 92.5601C63.9219 91.5062 64.0768 89.3945 62.8068 88.1248L37.3424 62.6603Z" fill="#890C25"/>
-                <path d="M99.985 54.4305C97.0867 25.7699 74.2301 2.9135 45.5695 0.0150621C43.841 -0.159743 42.3438 1.20959 42.3438 2.9469V57.6563H97.0531C98.7904 57.6563 100.16 56.159 99.985 54.4305Z" fill="#890C25"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_34_2239">
-                <rect width="100" height="100" fill="white"/>
-                </clipPath>
-                </defs>
-              </svg>                          
-            </div>
-            <h3 class="td_iconbox_title mb-0 td_medium td_fs_36">Economics</h3>
-          </div>
-          <div class="td_iconbox td_style_1 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
-            <div class="td_iconbox_icon td_accent_color td_mb_10">
-              <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_34_2246)">
-                <path d="M50 26.5625C53.4518 26.5625 56.25 23.7643 56.25 20.3125C56.25 16.8607 53.4518 14.0625 50 14.0625C46.5482 14.0625 43.75 16.8607 43.75 20.3125C43.75 23.7643 46.5482 26.5625 50 26.5625Z" fill="#890C25"/>
-                <path d="M84.375 34.375C86.9638 34.375 89.0625 32.2763 89.0625 29.6875C89.0625 27.0987 86.9638 25 84.375 25C81.7862 25 79.6875 27.0987 79.6875 29.6875C79.6875 32.2763 81.7862 34.375 84.375 34.375Z" fill="#890C25"/>
-                <path d="M43.75 6.25H46.875V11.4844C48.8945 10.7552 51.1055 10.7552 53.125 11.4844V6.25H56.25C57.0788 6.25 57.8737 5.92076 58.4597 5.33471C59.0458 4.74866 59.375 3.9538 59.375 3.125C59.375 2.2962 59.0458 1.50134 58.4597 0.915291C57.8737 0.32924 57.0788 0 56.25 0L43.75 0C42.9212 0 42.1263 0.32924 41.5403 0.915291C40.9542 1.50134 40.625 2.2962 40.625 3.125C40.625 3.9538 40.9542 4.74866 41.5403 5.33471C42.1263 5.92076 42.9212 6.25 43.75 6.25Z" fill="#890C25"/>
-                <path d="M32.8125 89.0625V90.625H67.1875V89.0625C67.1875 87.8193 66.6936 86.627 65.8146 85.7479C64.9355 84.8689 63.7432 84.375 62.5 84.375H37.5C36.2568 84.375 35.0645 84.8689 34.1854 85.7479C33.3064 86.627 32.8125 87.8193 32.8125 89.0625Z" fill="#890C25"/>
-                <path d="M70.3125 93.75H29.6875C28.8587 93.75 28.0638 94.0792 27.4778 94.6653C26.8917 95.2513 26.5625 96.0462 26.5625 96.875V98.4375C26.5625 98.8519 26.7271 99.2493 27.0201 99.5424C27.3132 99.8354 27.7106 100 28.125 100H71.875C72.2894 100 72.6868 99.8354 72.9799 99.5424C73.2729 99.2493 73.4375 98.8519 73.4375 98.4375V96.875C73.4375 96.0462 73.1083 95.2513 72.5222 94.6653C71.9362 94.0792 71.1413 93.75 70.3125 93.75Z" fill="#890C25"/>
-                <path d="M56.1133 27.4094L64.1352 31.9937C65.0799 32.533 66.1489 32.8168 67.2367 32.8172H77.2258C76.789 31.8333 76.5633 30.7687 76.5633 29.6922C76.5633 28.6157 76.789 27.5511 77.2258 26.5672H67.2367L59.2195 21.9844C58.8371 24.0955 57.7404 26.0109 56.1133 27.4094Z" fill="#890C25"/>
-                <path d="M99.8438 58.7047L89.05 35.9062C88.2135 36.5409 87.2566 36.9986 86.2375 37.2516L96.7078 59.3734H72.0422L82.5203 37.2516C81.5012 36.9986 80.5443 36.5409 79.7078 35.9062L68.9062 58.7047C68.8048 58.9131 68.7514 59.1416 68.75 59.3734C68.75 63.5174 70.3962 67.4917 73.3265 70.422C76.2567 73.3522 80.231 74.9984 84.375 74.9984C88.519 74.9984 92.4933 73.3522 95.4235 70.422C98.3538 67.4917 100 63.5174 100 59.3734C99.9986 59.1416 99.9452 58.9131 99.8438 58.7047Z" fill="#890C25"/>
-                <path d="M15.625 34.375C18.2138 34.375 20.3125 32.2763 20.3125 29.6875C20.3125 27.0987 18.2138 25 15.625 25C13.0362 25 10.9375 27.0987 10.9375 29.6875C10.9375 32.2763 13.0362 34.375 15.625 34.375Z" fill="#890C25"/>
-                <path d="M31.25 59.3734C31.2486 59.1416 31.1952 58.9131 31.0938 58.7047L20.3 35.9062C19.4612 36.5419 18.5015 36.9996 17.4797 37.2516L27.9578 59.3734H3.29219L13.7703 37.2516C12.7485 36.9996 11.7888 36.5419 10.95 35.9062L0.15625 58.7047C0.0548166 58.9131 0.00142284 59.1416 0 59.3734C0 63.5174 1.6462 67.4917 4.57646 70.422C7.50671 73.3522 11.481 74.9984 15.625 74.9984C19.769 74.9984 23.7433 73.3522 26.6735 70.422C29.6038 67.4917 31.25 63.5174 31.25 59.3734Z" fill="#890C25"/>
-                <path d="M32.7625 32.8172C33.8503 32.8168 34.9193 32.533 35.8641 31.9937L43.8859 27.4094C42.2589 26.0109 41.1621 24.0955 40.7797 21.9844L32.7625 26.5672H22.7734C23.2102 27.5511 23.4359 28.6157 23.4359 29.6922C23.4359 30.7687 23.2102 31.8333 22.7734 32.8172H32.7625Z" fill="#890C25"/>
-                <path d="M46.875 29.1406V81.25H53.125V29.1406C51.1055 29.8698 48.8945 29.8698 46.875 29.1406Z" fill="#890C25"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_34_2246">
-                <rect width="100" height="100" fill="white"/>
-                </clipPath>
-                </defs>
-              </svg>                               
-            </div>
-            <h3 class="td_iconbox_title mb-0 td_medium td_fs_36">Economics</h3>
-          </div>
-          <div class="td_iconbox td_style_1 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-            <div class="td_iconbox_icon td_accent_color td_mb_10">
-              <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_34_2260)">
-                <path d="M5.48785 47.2141C5.57737 47.3052 5.7193 47.4286 5.90882 47.5794C7.61285 43.6278 10.187 38.6697 14.0782 33.4915C17.629 28.7665 21.2798 25.1826 24.3483 22.5665C22.0604 25.6036 19.3395 29.835 17.0838 35.2697C14.4927 41.5133 13.4266 47.1487 12.9693 51.2673C18.4435 53.1278 25.9903 53.5834 32.6137 46.8036C44.0548 35.0923 30.8709 20.0044 50.9693 6.50035C50.9693 6.50035 25.1346 -0.710944 8.64995 16.1616C-7.83634 33.0358 4.04753 45.7657 5.48785 47.2141Z" fill="#890C25"/>
-                <path d="M87.7621 60.4129C87.7621 60.4129 105.67 40.1975 98.1581 17.6983C90.6476 -4.80005 74.1065 0.292695 72.1863 0.949953C72.0661 0.991082 71.8911 1.06528 71.6758 1.1685C74.5742 3.29834 79.9734 7.90076 83.4653 15.7096C85.5186 20.3008 86.2436 24.5072 86.5032 27.5016C84.3379 24.0201 81.2694 19.7741 77.0258 15.4701C72.8218 11.2064 68.6758 8.11447 65.2686 5.92495C61.1806 10.0604 57.404 16.704 60.4242 25.7443C65.6379 41.3604 84.8371 36.1419 87.7621 60.4129Z" fill="#890C25"/>
-                <path d="M78.6168 75.7887C77.0144 70.1645 73.0934 63.6073 63.8281 61.9347C47.8241 59.0452 43.0814 78.6234 20.7031 69.529C20.7031 69.529 29.5394 95.1855 52.5967 99.35C75.6539 103.515 79.2249 86.3597 79.5805 84.3363C79.6023 84.2081 79.6233 84.0202 79.6378 83.7774C75.7031 85.0371 69.9459 86.3855 62.9241 86.3419C57.1023 86.3057 52.2249 85.3234 48.6459 84.3097C52.9322 84.1234 58.4757 83.4726 64.7039 81.6403C70.4007 79.9645 75.0684 77.7726 78.6168 75.7887Z" fill="#890C25"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_34_2260">
-                <rect width="100" height="100" fill="white"/>
-                </clipPath>
-                </defs>
-              </svg>                            
-            </div>
-            <h3 class="td_iconbox_title mb-0 td_medium td_fs_36">Economics</h3>
-          </div>
-          <div class="td_iconbox td_style_1 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
-            <div class="td_iconbox_icon td_accent_color td_mb_10">
-              <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M26.5625 21.875V57.8125H43.75V51.7812L60.9375 44.0781V37.4844L26.5625 21.875ZM40.625 42.1875H34.375V35.9375H40.625V42.1875Z" fill="#890C25"/>
-                <path d="M6.25 60.9375V85.9375H43.75V60.9375H6.25ZM21.875 76.5625H15.625V70.3125H21.875V76.5625Z" fill="#890C25"/>
-                <path d="M46.875 53.8125V85.9375H76.5625V70.3125H85.9375V85.9375H93.75V32.8125L46.875 53.8125ZM65.625 76.5625H59.375V70.3125H65.625V76.5625Z" fill="#890C25"/>
-              </svg>                               
-            </div>
-            <h3 class="td_iconbox_title mb-0 td_medium td_fs_36">Economics</h3>
-          </div>
-        </div>
-      </div>
-      <div class="td_height_120 td_height_lg_80"></div>
-    </section>
-    <!-- End Departments Section -->
     <!-- Start Video Section -->
     <section class="scrollSnap curve-section">
       <div class="td_video_block td_style_1 td_accent_bg td_bg_filed td_center text-center" data-src="assets/frontend/img/home_1/video_bg.jpg">
@@ -1250,77 +1012,104 @@
       </div>
     </section>
     <!-- End Video Section -->
-    <!-- Start Testimonial Section -->
-    <section class="td_heading_bg td_hobble scrollSnap curve-section">
-      <div class="td_height_30 td_height_lg_30"></div>
+    <!-- Start Testimonials Section -->
+    <section class="td_shape_section_9 td_hobble">
+      <div class="td_shape_position_4 position-absolute td_hover_layer_3">
+        <img src="{{ url('assets/frontend/img/home_3/testimonial_shape_1.svg') }}" alt="">
+      </div>
+      <div class="td_shape_position_5 position-absolute td_accent_color td_hover_layer_5">
+        <svg width="242" height="231" viewBox="0 0 242 231" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g filter="url(#filter0_d_34_832)">
+          <path d="M127.325 39.3635C128.652 37.8865 131.088 39.0374 130.79 41.0006L125.127 78.2822C124.952 79.4327 125.793 80.4889 126.953 80.5768L169.471 83.7988C171.566 83.9575 172.03 86.8264 170.092 87.6379L134.887 102.378C133.625 102.906 133.254 104.518 134.159 105.545L161.133 136.154C162.555 137.768 160.776 140.182 158.814 139.301L119.833 121.805C118.666 121.281 117.315 121.972 117.055 123.224L109.608 159.155C109.196 161.139 106.436 161.325 105.763 159.414L92.3189 121.263C91.949 120.214 90.7938 119.668 89.7483 120.048L51.7387 133.888C49.8354 134.581 48.2261 132.33 49.4973 130.753L72.5265 102.184C73.3289 101.188 73.004 99.7059 71.8589 99.1372L33.5908 80.133C31.6643 79.1763 32.3994 76.269 34.549 76.3429L75.3234 77.7447C76.6912 77.7918 77.701 76.482 77.3078 75.1712L66.3403 38.615C65.7365 36.6024 68.2476 35.1394 69.7007 36.6572L99.1874 67.4574C99.9921 68.298 101.342 68.2767 102.12 67.4112L127.325 39.3635Z" fill="currentColor"/>
+          <path d="M127.511 39.5306C128.672 38.2382 130.804 39.2453 130.543 40.9631L124.88 78.2447C124.683 79.539 125.629 80.7272 126.934 80.8261L169.452 84.048C171.285 84.187 171.692 86.6972 169.996 87.4073L134.791 102.147C133.371 102.742 132.954 104.555 133.972 105.71L160.945 136.319C162.19 137.731 160.633 139.844 158.916 139.073L119.935 121.577C118.623 120.988 117.103 121.764 116.811 123.173L109.363 159.105C109.003 160.84 106.588 161.003 105.999 159.331L92.5546 121.18C92.1386 119.999 90.839 119.385 89.6628 119.814L51.6532 133.653C49.9878 134.259 48.5797 132.29 49.692 130.91L72.7211 102.341C73.6238 101.221 73.2584 99.5531 71.9701 98.9133L33.702 79.9091C32.0163 79.072 32.6595 76.5281 34.5405 76.5928L75.3148 77.9946C76.8535 78.0475 77.9896 76.574 77.5472 75.0993L66.5798 38.5432C66.0514 36.7821 68.2486 35.502 69.5201 36.8301L99.0068 67.6303C99.9122 68.576 101.431 68.552 102.306 67.5783L127.511 39.5306Z" stroke="currentColor" stroke-width="0.5"/>
+          </g>
+          <g clip-path="url(#clip0_34_832)">
+          <path d="M117.885 90.793C117.885 87.5059 115.219 84.8398 111.932 84.8398C108.645 84.8398 105.979 87.5059 105.979 90.793C105.979 94.0801 108.645 96.7461 111.932 96.7461C112.916 96.7461 113.824 96.4883 114.645 96.0664C113.59 100.707 109.436 104.187 104.479 104.187C103.658 104.187 102.99 104.855 102.99 105.676C102.99 106.496 103.658 107.164 104.479 107.164C111.873 107.164 117.885 101.152 117.885 93.7578V90.793Z" fill="white"/>
+          <path d="M103.018 90.793C103.018 87.5059 100.352 84.8398 97.0645 84.8398C93.7773 84.8398 91.1113 87.5059 91.1113 90.793C91.1113 94.0801 93.7773 96.7461 97.0645 96.7461C98.0488 96.7461 98.957 96.4883 99.7773 96.0664C98.7227 100.707 94.5684 104.187 89.6113 104.187C88.791 104.187 88.123 104.855 88.123 105.676C88.123 106.496 88.791 107.164 89.6113 107.164C97.0059 107.164 103.018 101.152 103.018 93.7578V90.793Z" fill="white"/>
+          </g>
+          <defs>
+          <filter id="filter0_d_34_832" x="2.47656" y="6.02954" width="238.844" height="224.72" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+          <feOffset dx="20" dy="20"/>
+          <feGaussianBlur stdDeviation="25"/>
+          <feComposite in2="hardAlpha" operator="out"/>
+          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.104167 0 0 0 0.15 0"/>
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_34_832"/>
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_34_832" result="shape"/>
+          </filter>
+          <clipPath id="clip0_34_832">
+          <rect width="30" height="30" fill="white" transform="matrix(-1 0 0 -1 118.002 111)"/>
+          </clipPath>
+          </defs>
+        </svg>          
+      </div>
+      <div class="td_height_112 td_height_lg_75"></div>
       <div class="container">
         <div class="td_section_heading td_style_1 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-          <h2 class="td_section_title td_fs_48 mb-0 td_white_color">Start your journey With Us</h2>
-          <p class="td_section_subtitle td_fs_18 mb-0 td_white_color td_opacity_7">Education is a dynamic and evolving field that plays a crucial <br>role in shaping individuals and societies. While significant <br>challenges, </p>
+          <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">Testimonials</p>
+          <h2 class="td_section_title td_fs_48 mb-0">What Our Students Say About <br>Our Services</h2>
         </div>
         <div class="td_height_50 td_height_lg_50"></div>
-        <div class="row align-items-center td_gap_y_40">
-          
-          <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-            <div class="td_testimonial_img_wrap">
-              <img src="assets/frontend/img/home_1/testimonial_img.png" alt="" class="td_testimonial_img">
-              <span class="td_testimonial_img_shape_1"><span></span></span>
-              <span class="td_testimonial_img_shape_2 td_accent_color td_hover_layer_3">
-                <svg width="145" height="165" viewBox="0 0 145 165" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M145.003 25.9077L139.516 27.7024L143.814 31.5573L145.003 25.9077ZM69.5244 11.4999L69.2176 11.1051L69.5244 11.4999ZM69.5244 53.0379L69.3973 53.5215L69.5244 53.0379ZM141.65 28.8989C135.031 35.2997 125.943 38.4375 116.315 39.2654C106.688 40.0931 96.561 38.607 87.9207 35.8021C79.2649 32.9923 72.1739 28.8832 68.5572 24.5234C66.753 22.3484 65.8508 20.1579 65.9824 18.0635C66.1133 15.9807 67.2739 13.8818 69.8312 11.8948L69.2176 11.1051C66.5057 13.2123 65.1383 15.552 64.9844 18.0007C64.8313 20.4378 65.8877 22.8715 67.7876 25.1618C71.5792 29.7325 78.8783 33.9182 87.6119 36.7533C96.361 39.5934 106.622 41.1025 116.4 40.2617C126.177 39.4211 135.511 36.2268 142.346 29.6178L141.65 28.8989ZM69.8312 11.8948C76.1217 7.00714 81.1226 4.09865 85.0169 2.71442C88.9178 1.32781 91.6197 1.49918 93.4091 2.61867C95.1994 3.73872 96.231 5.90455 96.5629 8.8701C96.894 11.8276 96.5159 15.4895 95.5803 19.4474C93.7094 27.3612 89.6393 36.3356 84.7843 42.9886C82.3565 46.3156 79.7503 49.0371 77.1481 50.7594C74.545 52.4823 72.001 53.1717 69.6515 52.5543L69.3973 53.5215C72.1238 54.238 74.964 53.4042 77.7 51.5933C80.437 49.7818 83.1248 46.9592 85.5921 43.578C90.5275 36.8148 94.6527 27.7176 96.5534 19.6775C97.5035 15.6584 97.9053 11.8728 97.5567 8.75886C97.2091 5.65298 96.1014 3.12347 93.9395 1.77091C91.7766 0.417783 88.7131 0.33927 84.6819 1.77217C80.6441 3.20744 75.5463 6.18784 69.2176 11.1051L69.8312 11.8948ZM69.6515 52.5543C56.6241 49.1307 47.457 52.0938 41.14 58.6639C34.8623 65.1932 31.4678 75.2154 29.7777 85.7878C28.0854 96.3743 28.0905 107.589 28.673 116.58C28.9644 121.078 29.4007 125.024 29.843 128.065C30.2827 131.086 30.7341 133.255 31.0666 134.168L32.0062 133.825C31.7138 133.023 31.2736 130.952 30.8326 127.921C30.3942 124.908 29.9607 120.988 29.6709 116.516C29.0912 107.568 29.0886 96.4337 30.7652 85.9456C32.444 75.4434 35.7949 65.6661 41.8608 59.357C47.8875 53.0888 56.6625 50.1748 69.3973 53.5215L69.6515 52.5543Z" fill="white"/>
-                  <circle cx="34" cy="150" r="15" fill="currentColor"/>
-                  <circle cx="15" cy="137" r="15" fill="currentColor"/>
-                  <circle cx="24" cy="144" r="15" fill="white"/>
-                </svg>                  
-              </span>
-            </div>
-          </div>
-          <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-            <div class="td_slider td_style_1">
-              <div class="td_slider_container" data-autoplay="0" data-loop="1" data-speed="800" data-center="0" data-variable-width="0" data-slides-per-view="1">
-                <div class="td_slider_wrapper">
-                  @foreach(getTestimonials() as $key => $testimonial)
-                  <div class="td_slide">
-                    <div class="td_testimonial td_style_1 td_white_bg td_radius_5">
-                      <span class="td_quote_icon td_accent_color">
-                        <svg width="65" height="46" viewBox="0 0 65 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path opacity="0.05" d="M13.9286 26.6H1V1H26.8571V27.362L17.956 45H6.26764L14.8213 28.0505L15.5534 26.6H13.9286ZM51.0714 26.6H38.1429V1H64V27.362L55.0988 45H43.4105L51.9642 28.0505L52.6962 26.6H51.0714Z" fill="currentColor" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                      </span>              
-                      <div class="td_testimonial_meta td_mb_24">
-                        <img src="assets/frontend/img/home_1/avatar_1.png" alt="">
-                        <div class="td_testimonial_meta_right">
-                          <h3 class="td_fs_24 td_semibold td_mb_2">{{$testimonial->name}}</h3>
-                          <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">{{$testimonial->dasignation}}</p>
-                        </div>
-                      </div>
-                      <blockquote class="td_testimonial_text td_fs_20 td_medium td_heading_color td_mb_24 td_opacity_9">{!!$testimonial->comment!!}</blockquote>
-                      <div class="td_rating" data-rating="5">
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        <div class="td_rating_percentage">
-                          <i class="fa-solid fa-star fa-fw"></i>
-                          <i class="fa-solid fa-star fa-fw"></i>
-                          <i class="fa-solid fa-star fa-fw"></i>
-                          <i class="fa-solid fa-star fa-fw"></i>
-                          <i class="fa-solid fa-star fa-fw"></i>
-                        </div>
-                      </div>
+        <div class="td_slider td_style_1 td_slider_gap_24 td_remove_overflow wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+          <div class="td_slider_container" data-autoplay="0" data-loop="1" data-speed="800" data-center="0" data-variable-width="0" data-slides-per-view="responsive" data-xs-slides="1" data-sm-slides="2" data-md-slides="2" data-lg-slides="2" data-add-slides="3">
+            <div class="td_slider_wrapper">
+              @foreach(getTestimonials() as $key => $testimonial)
+              <div class="td_slide">
+                <div class="td_testimonial td_style_1 td_type_2 td_white_bg td_radius_5">
+                  <div class="td_rating td_mb_20" data-rating="5">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <div class="td_rating_percentage">
+                      <i class="fa-solid fa-star fa-fw"></i>
+                      <i class="fa-solid fa-star fa-fw"></i>
+                      <i class="fa-solid fa-star fa-fw"></i>
+                      <i class="fa-solid fa-star fa-fw"></i>
+                      <i class="fa-solid fa-star fa-fw"></i>
                     </div>
                   </div>
-                  @endforeach
+                  <blockquote class="td_testimonial_text td_fs_18 td_medium td_heading_color td_mb_30 td_opacity_9">{!! $testimonial->comment !!}</blockquote>
+                  <div class="td_testimonial_meta td_mb_24">
+                    <img src="{{ url('assets/frontend/img/home_1/avatar_1.png') }}" alt="">
+                    <div class="td_testimonial_meta_right">
+                      <h3 class="td_fs_20 td_semibold td_mb_2">{!! $testimonial->name !!}</h3>
+                      <p class="td_fs_14 mb-0 td_heading_color td_opacity_7">10th Batch Students</p>
+                    </div>
+                  </div>
+                  <span class="td_quote_icon td_accent_color">
+                    <svg width="65" height="46" viewBox="0 0 65 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.05" d="M13.9305 26.6H1.00195V1H26.8591V27.362L17.9579 45H6.26959L14.8233 28.0505L15.5553 26.6H13.9305ZM51.0734 26.6H38.1448V1H64.002V27.362L55.1008 45H43.4124L51.9661 28.0505L52.6982 26.6H51.0734Z" stroke="currentColor" stroke-width="2"/>
+                    </svg>                      
+                  </span> 
                 </div>
               </div>
+              @endforeach
+            </div>
+          </div>
+          <div class="td_height_40 td_height_lg_40"></div>
+          <div class="td_slider_arrows td_style_1">
+            <div class="td_left_arrow td_accent_bg rounded-circle td_center td_white_color">
+              <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.00194 6.00024L17.002 6.00024" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6.00191 1C6.00191 1 1.00196 4.68244 1.00195 6.00004C1.00194 7.31763 6.00195 11 6.00195 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                            
+            </div>
+            <div class="td_right_arrow td_accent_bg rounded-circle td_center td_white_color">
+              <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.002 5.99976L1.00195 5.99976" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12.002 11C12.002 11 17.0019 7.31756 17.002 5.99996C17.002 4.68237 12.002 1 12.002 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                               
             </div>
           </div>
         </div>
       </div>
-      <div class="td_height_120 td_height_lg_80"></div>
     </section>
-    <!-- End Testimonial Section -->
+
+    
+    <!-- End Testimonials Section -->
     <!-- Start Blog Section -->
     <section class="scrollSnap curve-section">
       <div class="td_height_112 td_height_lg_75"></div>
@@ -1338,7 +1127,7 @@
           <div class="col-xl-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
             <div class="td_post td_style_1 td_type_1">
               <a href="blog-details.html" class="td_post_thumb d-block">
-                <img src="assets/frontend/img/home_2/post_1.jpg" alt="">
+                <img src="assets/frontend/img/home_1/post_1.jpg" alt="">
                 <span class="td_post_label">Learning</span>
               </a>
               <div class="td_post_info">
@@ -1361,7 +1150,7 @@
           <div class="col-xl-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
             <div class="td_post td_style_1 td_type_1">
               <a href="blog-details.html" class="td_post_thumb d-block">
-                <img src="assets/frontend/img/home_2/post_2.jpg" alt="">
+                <img src="assets/frontend/img/home_1/post_2.jpg" alt="">
                 <span class="td_post_label">Remote</span>
               </a>
               <div class="td_post_info">
@@ -1384,7 +1173,7 @@
           <div class="col-xl-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
             <div class="td_post td_style_1 td_type_1">
               <a href="blog-details.html" class="td_post_thumb d-block">
-                <img src="assets/frontend/img/home_2/post_3.jpg" alt="">
+                <img src="assets/frontend/img/home_1/post_3.jpg" alt="">
                 <span class="td_post_label">Reading</span>
               </a>
               <div class="td_post_info">
@@ -1407,7 +1196,7 @@
           <div class="col-xl-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
             <div class="td_post td_style_1 td_type_1">
               <a href="blog-details.html" class="td_post_thumb d-block">
-                <img src="assets/frontend/img/home_2/post_3.jpg" alt="">
+                <img src="assets/frontend/img/home_1/post_3.jpg" alt="">
                 <span class="td_post_label">Learning</span>
               </a>
               <div class="td_post_info">

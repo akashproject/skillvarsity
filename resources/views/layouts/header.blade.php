@@ -120,14 +120,7 @@
 					</form>
 				</div>
 			</div>
-			<button class="td_circle_btn td_center td_wishlist_btn" type="button">
-				<img src="{{ url('assets/frontend/img/icons/love.svg')}}" alt="">
-				<span class="td_circle_btn_label">0</span>
-			</button>
-			<button class="td_circle_btn td_center" type="button">
-				<img src="{{ url('assets/frontend/img/icons/cart.svg')}}" alt="">  
-				<span class="td_circle_btn_label">0</span>                                                       
-			</button>
+			
 			</div>
 		</div>
 		</div>

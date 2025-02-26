@@ -139,7 +139,7 @@ Route::group(['prefix' => 'administrator', 'namespace' => 'Admin'], function () 
         Route::get('/add-recruiter', [App\Http\Controllers\Administrator\RecruiterController::class, 'add'])->name('admin-add-recruiter');
         Route::get('/view-recruiter/{id}', [App\Http\Controllers\Administrator\RecruiterController::class, 'show'])->name('admin-view-recruiter');
         Route::post('/save-recruiter', [App\Http\Controllers\Administrator\RecruiterController::class, 'save'])->name('admin-save-recruiter');
-        
+        Route::get('/delete-recruiter/{id}', [App\Http\Controllers\Administrator\RecruiterController::class, 'delete'])->name('admin-delete-recruiter');
         //Gallery
         Route::get('/galleries', [App\Http\Controllers\Administrator\GalleryController::class, 'index'])->name('admin-gallery');
         Route::get('/add-gallery', [App\Http\Controllers\Administrator\GalleryController::class, 'add'])->name('admin-add-gallery');
