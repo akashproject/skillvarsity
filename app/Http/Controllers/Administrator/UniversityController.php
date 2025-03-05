@@ -19,6 +19,7 @@ class UniversityController extends Controller
     {
         try {
             $universities = University::all();
+            dd($universities);
             return view('administrator.universities.index',compact('universities'));
 
         } catch(\Illuminate\Database\QueryException $e){

@@ -48,6 +48,12 @@
 							</div>
 						</div>
 						<div class="form-group row mb-2">
+							<label for="facilities" class="col-sm-3 text-right control-label col-form-label">Facilities</label>
+							<div class="col-sm-9">
+								<textarea class="form-control editor" name="facilities"  id="facilities" placeholder="Enter facilities Here" >{{ $university->facilities }}</textarea>
+							</div>
+						</div>
+						<div class="form-group row mb-2">
 							<label for="courses" class="col-sm-3 text-right control-label col-form-label">Select Course</label>
 							<div class="col-sm-9">
 								<div class="course-content" >

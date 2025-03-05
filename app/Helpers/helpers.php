@@ -121,6 +121,17 @@ if (! function_exists('get_reviews_ratings')) {
     }
 }
 
+if (! function_exists('getUniversitiesByCourseId')) {
+    function getUniversitiesByCourseId($course_id){
+        try {
+            $universities = DB::table('universities')->where("courses",'LIKE','%"'.$course_id.'"%')->where('status','1')->get();
+        return $universities;
+        } catch(\Illuminate\Database\QueryException $e){
+            throw $e;
+        }
+    }
+}
+
 if (! function_exists('getStates')) {
     function getStates(){
         try {

@@ -604,32 +604,39 @@
       <div class="td_height_30 td_height_lg_80"></div>
     </section> -->
     <!-- End Popular Courses -->
-    <!-- Start Testimonials Section -->
-    <section class="td_gray_bg_9 td_shape_section_10 curve-section">
-      <div class="td_shape_position_3 position-absolute">
-        <img src="assets/frontend/img/home_5/testimonial_shape_1.svg" alt="">
-      </div>
+
+    <!-- Start Popular Courses -->
+    <section class="td_gray_bg_3">
+      <div class="td_height_112 td_height_lg_75"></div>
       <div class="container">
-        <div class="row td_gap_y_40 mt-5">
-          <div class="col-lg-5 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
-            <div class="td_section_heading td_style_1">
-              <h2 class="td_section_title td_fs_48 td_mb_20">List Of Universities</h2>
-              <p class="td_section_subtitle td_fs_18 mb-0">Here is a comprehensive list of universities, including institutions from various regions and disciplines. These universities offer a wide range of academic programs, research opportunities, and extracurricular activities to support students in their educational journey</p>
-            </div>
-          </div>
-          <div class="col-lg-7 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
-            <div class="td_full_width">
-             <div class="td_slider td_style_1 td_slider_gap_24 td_remove_overflow">
-                <div class="td_slider_container" data-autoplay="0" data-loop="3" data-speed="800" data-center="0" data-variable-width="3" data-slides-per-view="responsive" data-xs-slides="4" data-sm-slides="4" data-md-slides="4" data-lg-slides="5" data-add-slides="4">
-                  <div class="td_slider_wrapper">
-                   @foreach($universities as $key => $value)
-                    <div class="td_card td_style_3 d-block td_radius_10">
+        <div class="td_section_heading td_style_1 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.15s">
+          <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">Popular Courses</p>
+          <h2 class="td_section_title td_fs_48 mb-0">Academic Courses</h2>
+        </div>
+        <div class="td_height_30 td_height_lg_30"></div>
+        <div class="td_tabs">
+          <ul class="td_tab_links td_style_1 td_mp_0 td_fs_20 td_medium td_heading_color wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+            @foreach($courses as $key => $value)
+            <li class="{{ ($key == '0')?'active':'' }}"><a href="#tab_{{$value->id}}">{{ $value->name }}</a></li>
+            @endforeach
+          </ul>
+          <div class="td_height_50 td_height_lg_50"></div>
+          <div class="td_tab_body">
+            @foreach($courses as $key => $value)
+            <div class="td_tab {{ ($key == '0')?'active':'' }}" id="tab_{{$value->id}}">
+              <div class="row td_gap_y_24">
+                @foreach(getUniversitiesByCourseId($value->id) as $key => $value)
+                  <div class="col-lg-4 col-md-6">
+                    <div class="td_card university_grid d-block td_radius_10">
                       <a href="course-details.html" class="td_card_thumb">
                         <img src="{{ (($value->featured_image !== null))?getSizedImage($value->featured_image):'' }}" alt="">
                       </a>
                       <div class="td_card_info td_white_bg">
                         <div class="td_card_info_in">
-                          <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color">
+                          <h2 class="td_card_title td_fs_18 td_mb_16 mb-0">
+                            <a href="{{ route('university-detail',$value->slug) }}">{{$value->name}}</a>
+                          </h2>
+                          <ul class="td_card_meta td_mp_0 td_fs_18 td_medium td_heading_color mb-0">
                             <li>
                               <img src="assets/img/icons/user_3.svg" alt="">
                               <span class="td_opacity_7">150 Seats</span>
@@ -639,9 +646,15 @@
                               <span class="td_opacity_7">12 Semesters</span>
                             </li>
                           </ul>
-                          <a href="courses-grid-with-sidebar.html" class="td_card_category td_fs_14 td_bold td_heading_color td_mb_14"><span>Data Analytics</span></a>
-                          <h2 class="td_card_title td_fs_24 td_mb_16"><a href="course-details.html">Starting Reputed Education & Build your Skills</a></h2>
-                          <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">Far far away, behind the word mountains, far from the Consonantia.</p>
+                          <div class="course_criteria">
+                            <ul class="edu_list right">
+                              <li>Eligibility :<strong>12+/Graduate</strong></li>
+                              <li>Total Duration :<strong>&nbsp;3 Years (2 Years of Classroom + 1 Year of Job-training)</strong></li>
+                              <li>Course Type :&nbsp;<strong>100% Job-Assurance</strong>
+                              </li>
+                            </ul>
+                          </div>
+                          <!-- <p class="td_card_subtitle td_heading_color td_opacity_7 td_mb_20">@if(isset($value->excerpt)) {{$value->excerpt}} @endif</p> -->
                           <div class="td_card_review">
                             <div class="td_rating" data-rating="4.5">
                               <i class="fa-regular fa-star"></i>
@@ -660,7 +673,7 @@
                             <span class="td_heading_color td_opacity_5 td_medium">(5.0/5 Ratings)</span>
                           </div>
                           <div class="td_card_btn">
-                            <a href="cart.html" class="td_btn td_style_1 td_radius_10 td_medium">
+                            <a href="#lead-generate-popup" class="td_btn td_style_1 td_radius_10 td_medium open-popup-link">
                               <span class="td_btn_in td_white_color td_accent_bg">
                                 <span>Enroll Now</span>
                               </span>             
@@ -669,32 +682,17 @@
                         </div>
                       </div>
                     </div>
-                    @endforeach
-                    </div>
-                </div>
-                <div class="td_height_40 td_height_lg_30"></div>
-                <div class="td_slider_arrows td_style_1 td_type_2">
-                  <div class="td_left_arrow td_accent_bg td_radius_10 td_center td_white_color">
-                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.00194 6.00024L17.002 6.00024" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M6.00191 1C6.00191 1 1.00196 4.68244 1.00195 6.00004C1.00194 7.31763 6.00195 11 6.00195 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                            
                   </div>
-                  <div class="td_right_arrow td_accent_bg td_radius_10 td_center td_white_color">
-                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M17.002 5.99976L1.00195 5.99976" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                      <path d="M12.002 11C12.002 11 17.0019 7.31756 17.002 5.99996C17.002 4.68237 12.002 1 12.002 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                               
-                  </div>
-                </div>
+                @endforeach
               </div>
             </div>
+            @endforeach
           </div>
         </div>
       </div>
       <div class="td_height_120 td_height_lg_80"></div>
     </section>
-    <!-- End Testimonials Section -->
+    <!-- End Popular Courses -->
     <!-- Start Category Section -->
     <section class="curve-section light-purple">
       <div class="container-fluid">
@@ -718,7 +716,7 @@
               <div class="masonry-grid wow bounceInDown flip-rotate-anime" data-wow-duration="1s" data-wow-delay="0.2s" >
                 <a href="{{ $subject->slug }}" class="td_iconbox td_style_3 td_fs_18 td_semibold td_radius_10 td_white_bg td_heading_color">
                   <span class="td_iconbox_icon">
-                    <img src="assets/frontend/img/home_3/category_icon_1.svg" alt="">
+                    <img src="assets/frontend/img/icons/topic-list.png" alt="">
                   </span>
                   <span class="td_iconbox_title">{{ $subject->name }}</span>
                 </a>
@@ -731,36 +729,7 @@
       <div class="td_height_120 td_height_lg_80"></div>
     </section>
     <!-- End Category Section -->
-    <!-- Start Category Section -->
-    <section class="curve-section td_yellow_bg_4">
-      <div class="container-fluid">
-        <div class="row pt-5">
-          <div class="col-md-4">
-            <div class="td_section_heading td_style_1 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-              <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">Browse Recruter</p>
-              <h2 class="td_section_title td_fs_48 mb-0 text-white">List of Top Conmapies </h2>
-              <div class="text-left mt-3" style="margin-left: 50px;">
-                <p class="text-white">Receive unbiased and personalized course recommendations from across India and the world. Filter, compare and enrol for a course that fits your unique needs.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="placement-grid-container td_gap_y_10">
-              @foreach(getRecruiters() as $recruiter)
-              <div class="placement-redious-grid" data-wow-duration="1s" data-wow-delay="0.2s">
-                <a href="javascript:void(0)" class="placement-grid-img">
-                  <img src="{{ getSizedImage($recruiter->featured_image) }}" alt="">
-                </a>
-              </div>
-              @endforeach
-            </div>
-          </div>
-        </div>        
-      </div>
-      <div class="td_height_120 td_height_lg_80"></div>
-    </section>
-    <!-- End Category Section -->
-    <!-- Start Feature Section -->
+     <!-- Start Feature Section -->
     <section class="scrollSnap curve-section">
       <div class="td_height_30"></div>
       <div class="container">
@@ -845,6 +814,35 @@
       <div class="td_height_120 td_height_lg_80"></div>
     </section>
     <!-- End Feature Section -->
+    <!-- Start Category Section -->
+    <section class="curve-section td_yellow_bg_4">
+      <div class="container-fluid">
+        <div class="row py-5">
+          <div class="col-md-4">
+            <div class="td_section_heading td_style_1 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
+              <p class="td_section_subtitle_up td_fs_18 td_semibold td_spacing_1 td_mb_10 text-uppercase td_accent_color">Our Recruiters.</p>
+              <h2 class="td_section_title td_fs_48 mb-0 ">List of Top Companies </h2>
+              <div class="text-left mt-3" style="margin-left: 50px;">
+                <p class="">Top companies hire our graduates, ensuring strong career opportunities.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="placement-grid-container td_gap_y_10">
+              @foreach(getRecruiters() as $recruiter)
+              <div class="placement-redious-grid" data-wow-duration="1s" data-wow-delay="0.2s">
+                <a href="javascript:void(0)" class="placement-grid-img">
+                  <img src="{{ getSizedImage($recruiter->featured_image) }}" alt="">
+                </a>
+              </div>
+              @endforeach
+            </div>
+          </div>
+        </div>        
+      </div>
+    </section>
+    <!-- End Category Section -->
+    
     <!-- Start Campus Life -->
     <section class="td_accent_bg td_shape_section_1 scrollSnap curve-section">
       <div class="td_shape_position_4 td_accent_color position-absolute">
@@ -878,7 +876,7 @@
                 </defs>
               </svg>  
               <div class="td_btn_box_in">
-                <a href="#lead-generate-popup" class="td_btn td_style_1 td_radius_10 td_medium td_fs_18 open-popup-link">
+                <a target="_blank" href="{{ url('/gallery') }}" class="td_btn td_style_1 td_radius_10 td_medium td_fs_18 open-popup-link">
                   <span class="td_btn_in td_heading_color td_white_bg">
                     <span>Life with Us</span>
                   </span>             
@@ -890,14 +888,14 @@
             <div class="row">
               <div class="col-sm-6">
                 <div class="td_card td_style_2 wow fadeInUp threesixty-rotate-anime" data-wow-duration="1s" data-wow-delay="0.2s">
-                  <a href="course-details.html" class="td_card_thumb d-block">
+                  <a href="{{ url('/placements') }}" class="td_card_thumb d-block">
                     <img src="assets/frontend/img/home_1/campur_life_1.jpg" alt="" class="w-100">
                   </a>
                   <div class="td_card_info">
                     <h2 class="td_card_title mb-0 td_fs_18 td_semibold td_white_color">
-                      <a href="course-details.html">Placement</a>
+                      <a href="{{ url('/placements') }}">Placement</a>
                     </h2>
-                    <a href="course-details.html" class="td_card_btn">
+                    <a href="{{ url('/placements') }}" class="td_card_btn">
                       <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18.564 4.70161L4.42188 18.8438" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M18.5654 13.5341C18.5654 13.5341 19.7299 5.85989 18.5654 4.69528C17.4008 3.53067 9.72656 4.69531 9.72656 4.69531" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -934,14 +932,14 @@
               <div class="col-sm-6">
                 <div class="td_height_50 td_height_lg_30"></div>
                 <div class="td_card td_style_2 wow fadeInUp threesixty-rotate-anime" data-wow-duration="1s" data-wow-delay="0.25s">
-                  <a href="course-details.html" class="td_card_thumb d-block">
+                  <a href="{{ url('/events') }}" class="td_card_thumb d-block">
                     <img src="assets/frontend/img/home_1/campur_life_2.jpg" alt="" class="w-100">
                   </a>
                   <div class="td_card_info">
                     <h2 class="td_card_title mb-0 td_fs_18 td_semibold td_white_color">
-                      <a href="course-details.html">Events</a>
+                      <a href="{{ url('/events') }}">Events</a>
                     </h2>
-                    <a href="course-details.html" class="td_card_btn">
+                    <a href="{{ url('/events') }}" class="td_card_btn">
                       <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18.564 4.70161L4.42188 18.8438" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M18.5654 13.5341C18.5654 13.5341 19.7299 5.85989 18.5654 4.69528C17.4008 3.53067 9.72656 4.69531 9.72656 4.69531" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -955,14 +953,14 @@
                 </div>
                 <div class="td_height_40 td_height_lg_30"></div>
                 <div class="td_card td_style_2 wow fadeInUp threesixty-rotate-anime" data-wow-duration="1s" data-wow-delay="0.3s">
-                  <a href="course-details.html" class="td_card_thumb d-block">
+                  <a href="{{ url('/testimonials') }}" class="td_card_thumb d-block">
                     <img src="assets/frontend/img/home_1/campur_life_4.jpg" alt="" class="w-100">
                   </a>
                   <div class="td_card_info">
                     <h2 class="td_card_title mb-0 td_fs_18 td_semibold td_white_color">
-                      <a href="course-details.html">Testimonials</a>
+                      <a href="{{ url('/testimonials') }}">Testimonials</a>
                     </h2>
-                    <a href="course-details.html" class="td_card_btn">
+                    <a href="{{ url('/testimonials') }}" class="td_card_btn">
                       <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18.564 4.70161L4.42188 18.8438" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M18.5654 13.5341C18.5654 13.5341 19.7299 5.85989 18.5654 4.69528C17.4008 3.53067 9.72656 4.69531 9.72656 4.69531" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
