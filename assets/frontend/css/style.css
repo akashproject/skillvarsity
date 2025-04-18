@@ -3368,6 +3368,13 @@ label {
   .td_fs_48 {
     font-size: 30px;
   }
+  .course_highlights ul li{
+    width: 100% !important;
+  }
+  .course_syllabus ul li {
+    font-size: 16px !important;
+    margin: 5px 0 !important;
+  }
 }
 
 .td_video_block.td_style_2 {
@@ -14928,6 +14935,9 @@ div#otp_target {
   padding: 20px 30px;
   border-radius: 30px;
 }
+.course_syllabus {
+  position: relative;
+}
 .course_syllabus h3 {
   margin: 0;
 }
@@ -14937,11 +14947,11 @@ div#otp_target {
 }
 .course_syllabus:before {
   content: ".";
-  height: auto;
+  height: 100%;
   width: 2px;
   background: #890909cc;
-  margin-right: 10px;
-  margin-left: 14px;
+  position: absolute;
+  left: 0;
   color: #89090900;
 }
 .course_syllabus ul li {

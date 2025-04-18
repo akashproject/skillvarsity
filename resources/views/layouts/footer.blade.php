@@ -29,10 +29,9 @@
         <div class="td_footer_widget">
           <h2 class="td_footer_widget_title td_fs_32 td_white_color td_medium td_mb_30">Navigate</h2>
           <ul class="td_footer_widget_menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="contact.html">Refund</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about-us">About</a></li>
+            <li><a href="/contact-us">Contact</a></li>
             <li><a href="#">Help Center</a></li>
             <li><a href="#">Privacy Policy</a></li>
           </ul>
