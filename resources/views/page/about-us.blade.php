@@ -234,15 +234,14 @@
       <div class="td_height_112 td_height_lg_75"></div>
       <div class="container">
         <div class="td_section_heading td_style_1 text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">
-          <p class="td_section_subtitle_up td_fs_18 td_medium td_spacing_1 td_mb_10 td_accent_color">Expert Instructor</p>
-          <h2 class="td_section_title td_fs_48 mb-0">Meet our Universityi <br>Experts </h2>
+          <h2 class="td_section_title td_fs_48 mb-0">Meet our Team </h2>
         </div>
         <div class="td_height_50 td_height_lg_50"></div>
         <div class="row td_gap_y_30">
           <div class="col-xl-3 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
             <div class="td_team td_style_5 td_type_1 text-center">
               <div class="td_team_thumb d-block td_mb_16">
-                <img src="/assets/frontend/img/home_7/team_member_1.jpg" alt="" class="w-100">
+                <img src="/assets/frontend/img/team/nks.webp" alt="" class="w-100">
                 <div class="td_team_social_list td_fs_14 td_white_color">
                   <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                   <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
@@ -253,9 +252,9 @@
               <div class="td_team_info">
                 <div class="td_team_info_in">
                   <h3 class="td_team_member_title td_fs_20 mb-0">
-                    <a href="team-member-details.html">Hafiz Din Mohammed Islam</a>
+                    <a href="team-member-details.html">Dr.Narendra Shyamsukha</a>
                   </h3>
-                  <p class="td_team_member_designation mb-0 td_fs_16 td_opacity_6 td_heading_color">Teacher</p>
+                  <p class="td_team_member_designation mb-0 td_fs_16 td_opacity_6 td_heading_color">Chairman</p>
                 </div>
               </div>
             </div>
@@ -263,7 +262,7 @@
           <div class="col-xl-3 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.35s">
             <div class="td_team td_style_5 td_type_1 text-center">
               <div class="td_team_thumb d-block td_mb_16">
-                <img src="/assets/frontend/img/home_7/team_member_2.jpg" alt="" class="w-100">
+                <img src="/assets/frontend/img/team/ankit.webp" alt="" class="w-100">
                 <div class="td_team_social_list td_fs_14 td_white_color">
                   <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                   <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
@@ -274,9 +273,9 @@
               <div class="td_team_info">
                 <div class="td_team_info_in">
                   <h3 class="td_team_member_title td_fs_20 mb-0">
-                    <a href="team-member-details.html">Hafiza Dina Asmaul Islam</a>
+                    <a href="team-member-details.html">Ankit Shyamsukha</a>
                   </h3>
-                  <p class="td_team_member_designation mb-0 td_fs_16 td_opacity_6 td_heading_color">Teacher</p>
+                  <p class="td_team_member_designation mb-0 td_fs_16 td_opacity_6 td_heading_color">CEO</p>
                 </div>
               </div>
             </div>
@@ -284,7 +283,7 @@
           <div class="col-xl-3 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
             <div class="td_team td_style_5 td_type_1 text-center">
               <div class="td_team_thumb d-block td_mb_16">
-                <img src="/assets/frontend/img/home_7/team_member_3.jpg" alt="" class="w-100">
+                <img src="/assets/frontend/img/team/kanhaiya.webp" alt="" class="w-100">
                 <div class="td_team_social_list td_fs_14 td_white_color">
                   <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                   <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
@@ -295,9 +294,9 @@
               <div class="td_team_info">
                 <div class="td_team_info_in">
                   <h3 class="td_team_member_title td_fs_20 mb-0">
-                    <a href="team-member-details.html">Alfaqul Mamunur Islam</a>
+                    <a href="team-member-details.html">Kanhaiya Poddar</a>
                   </h3>
-                  <p class="td_team_member_designation mb-0 td_fs_16 td_opacity_6 td_heading_color">Teacher</p>
+                  <p class="td_team_member_designation mb-0 td_fs_16 td_opacity_6 td_heading_color">CFO</p>
                 </div>
               </div>
             </div>
@@ -305,7 +304,7 @@
           <div class="col-xl-3 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.45s">
             <div class="td_team td_style_5 td_type_1 text-center">
               <div class="td_team_thumb d-block td_mb_16">
-                <img src="/assets/frontend/img/home_7/team_member_4.jpg" alt="" class="w-100">
+                <img src="/assets/frontend/img/team/ganesh.webp" alt="" class="w-100">
                 <div class="td_team_social_list td_fs_14 td_white_color">
                   <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                   <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
@@ -316,9 +315,9 @@
               <div class="td_team_info">
                 <div class="td_team_info_in">
                   <h3 class="td_team_member_title td_fs_20 mb-0">
-                    <a href="team-member-details.html">Hafiza Rehnuma Annesa</a>
+                    <a href="team-member-details.html">Ganesh Todi</a>
                   </h3>
-                  <p class="td_team_member_designation mb-0 td_fs_16 td_opacity_6 td_heading_color">Teacher</p>
+                  <p class="td_team_member_designation mb-0 td_fs_16 td_opacity_6 td_heading_color">Vice President</p>
                 </div>
               </div>
             </div>
