@@ -65,6 +65,18 @@
                             <div class="col-md-6">
                                 <input type="text" name="lead_city" class="td_form_field_2 td_mb_16" placeholder="City">
                             </div>
+                            @if(isset($universityName))
+                            <input type="hidden" name="university" value="{{ $universityName }}" >
+                            @else
+                            <div class="col-md-12">
+                                <select type="text" name="university" class="td_form_field_2 td_mb_16">
+                                    <option value="">Select University</option>
+                                    @foreach($universities as $university)
+                                    <option value="{{$university->name}}">{{$university->name}}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                            @endif
                         </div>
                         
                         <div class="row align-items-center td_row_reverse_lg td_gap_y_20">
@@ -81,7 +93,7 @@
                         </div>
                     </div>
                     <input type="hidden" class="formFieldOtpResponse" > 
-                    <input type="hidden" name="university" value="{{ (isset($universityName))?$universityName:'' }}" >
+                    
                     <input type="hidden" name="utm_campaign" value="{{ getUtmCampaign(isset($contentMain->utm_campaign)?$contentMain->utm_campaign:null) }}">
                     <input type="hidden" name="utm_source" value="{{ getUtmSource(isset($contentMain->utm_source)?$contentMain->utm_source:null) }}">
                     <input type="hidden" name ="LeadType" value="{{ getCommunicationMedium(isset($contentMain->lead_type)?$contentMain->lead_type:null) }}" >

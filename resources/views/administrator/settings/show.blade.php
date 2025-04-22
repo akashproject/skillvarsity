@@ -305,6 +305,15 @@
 											/>
 										</div>		
 										<div class="mb-3 col-md-12">
+											<label for="firstName" class="form-label">Instagram</label>
+											<input
+												class="form-control"
+												type="text"
+												name="instagram" id="instagram" placeholder="Enter Instagram Link Here" value="{{ (isset($settings['instagram']))?$settings['instagram']:'' }}"
+												autofocus
+											/>
+										</div>
+										<div class="mb-3 col-md-12">
 											<label for="firstName" class="form-label">Twitter</label>
 											<input
 												class="form-control"

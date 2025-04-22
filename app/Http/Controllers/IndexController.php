@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Trait\afterLeadSubmit;
 use App\Models\Contact;
+use App\Models\University;
+use Illuminate\Support\Facades\DB;
 
 class IndexController extends Controller
 {
@@ -71,7 +73,9 @@ class IndexController extends Controller
                 "lead_mobile_number" => "required",
                 "lead_first_name" => "required",
             ]);
-            
+            $university = University::where("name",$postData['university'])->first();
+            $city = DB::table('cities')->where('id',$university->city)->first()->name;
+            $postData['city'] = $city;
             $ee = $this->leadCaptureLeadToExtraage($postData);
             $cogno = $this->cognoai_api_calling($postData);
             $thankYou = $this->thankyouNotication($postData);

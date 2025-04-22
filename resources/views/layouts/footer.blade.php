@@ -39,7 +39,7 @@
         <div class="td_footer_widget">
           <h2 class="td_footer_widget_title td_fs_32 td_white_color td_medium td_mb_30">Subscribe Now</h2>
           <div class="td_newsletter td_style_1">
-            <p class="td_mb_20 td_opacity_7">Far far away, behind the word mountains, far from the Consonantia.</p>
+            <p class="td_mb_20 td_opacity_7">Stay updated with the courses, latest news, events, and more.</p>
             <form action="#" class="td_newsletter_form">
               <input type="email" class="td_newsletter_input" placeholder="Email address">
               <button type="submit" class="td_btn td_style_1 td_radius_30 td_medium">
@@ -53,15 +53,13 @@
             <a href="{{ get_theme_setting('facebook') }}" class="td_center">
               <i class="fa-brands fa-facebook-f"></i>
             </a>
-            <a href="{{ get_theme_setting('twitter') }}" class="td_center">
-              <i class="fa-brands fa-x-twitter"></i>
+            <a href="{{ get_theme_setting('linkedin') }}" class="td_center">
+              <i class="fa-brands fa-linkedin"></i>
             </a>
             <a href="{{ get_theme_setting('instagram') }}" class="td_center">
               <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="{{ get_theme_setting('copyright') }}" class="td_center">
-              <i class="fa-brands fa-pinterest-p"></i>
-            </a>
+            
           </div>
         </div>
       </div>

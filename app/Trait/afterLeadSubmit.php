@@ -18,7 +18,8 @@ trait afterLeadSubmit
             'LastName' => $postData['lead_last_name'],
             'Email' => $postData['lead_email'],
             'MobileNumber' => $postData['lead_mobile_number'],
-            'Center' => $postData['lead_city'],
+            'Center' => $postData['city'],
+            'address' => $postData['lead_city'],
             'Location' => isset($postData['university'])?$postData['university']:'',
             'LeadType' => $postData['LeadType'],
             'LeadSource' => $postData['utm_source'],
@@ -28,8 +29,7 @@ trait afterLeadSubmit
             'textb3' => $postData['utm_content'],
             'textb4' => $postData['utm_adgroup'],
             'field5' => $postData['utm_device']
-        );
-        
+        );        
         $url = "https://prodivrapi.extraaedge.com/api/WebHook/addLead"; 		
         $curl = curl_init();
         
