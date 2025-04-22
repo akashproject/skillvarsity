@@ -55,7 +55,7 @@ trait afterLeadSubmit
     function cognoai_api_calling($postData){
         $whatsappArray = (object) array(
             "authorization" => "1d27951f-1532-48a2-b892-b84453945a06", 
-            "campaign_id" => "147227", 
+            "campaign_id" => "248047", 
             "whatsapp_bsp" => "1", 
             "client_data" => array(
                 "phone_number" => "+91".$postData['lead_mobile_number'], 
@@ -114,6 +114,31 @@ trait afterLeadSubmit
         } catch(\Illuminate\Database\QueryException $e){
             //throw $th;
             return response()->json($e, $this->_statusOK);
+        }
+    }
+
+    public function thankyouNotication($postData){
+        try {
+
+            $url = "https://api.st-messaging.com/fe/api/v1/send?username=icaedu1.trans&password=Password@123&unicode=true&from=SKLVAR&to=".$postData["lead_mobile_number"]."&text=Hi+".$postData["lead_first_name"]."%2C+Thank+you+for+your+interest+in+our+graduation+programs.+We+have+received+your+details+and+will+be+in+touch+soon.+Thanks+%26+Regards%2C+SkillVarsity&dltContentId=1207174505809479896&dltPrincipalEntityId=1201159245568554682";
+
+            $curl = curl_init($url);
+            curl_setopt($curl, CURLOPT_URL, $url);
+            curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+            $headers = array(
+            "Accept: */*",
+            );
+            curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+            //for debug only!
+            curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+            curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+
+            $response = curl_exec($curl);
+
+            return true;
+        } catch (\Illuminate\Database\QueryException $e) {
+            //throw $th;
         }
     }
 }

@@ -28,7 +28,7 @@ class IndexController extends Controller
             $lastdigit = substr($_POST['mobile'], -4);
 
             $curl = curl_init();
-            $tel = "https://api.st-messaging.com/fe/api/v1/send?username=icaedu1.trans&password=Password@123&unicode=true&from=ICAEDU&to=".$_POST["mobile"]."&text=".$otpvalue."+is+your+One+Time+Password+%28OTP%29+for+course+enquiry+at+ICA+Edu+Skills+Pvt+Ltd.+for+the+mobile+number+xxxxxx".$lastdigit.".+Thank+you+for+your+inquiry.%0D%0A&dltContentId=1207173138503092263&dltPrincipalEntityId=1201159245568554682";
+            $tel = "https://api.st-messaging.com/fe/api/v1/send?username=icaedu1.trans&password=Password@123&unicode=true&from=SKLVAR&to=".$_POST["mobile"]."&text=".$otpvalue."+is+your+One+Time+Password+%28OTP%29+for+graduation+course+enquiry+at+SkillVarsity+for+the+mobile+number+xxxxxx".$lastdigit.".+Thank+you+for+your+enquiry.&dltContentId=1207174505626246408&dltPrincipalEntityId=1201159245568554682";
 
             curl_setopt_array($curl, array(
             CURLOPT_URL => $tel,
@@ -74,6 +74,7 @@ class IndexController extends Controller
             
             $ee = $this->leadCaptureLeadToExtraage($postData);
             $cogno = $this->cognoai_api_calling($postData);
+            $thankYou = $this->thankyouNotication($postData);
             $postData['crm_status'] = $ee->original;
             $postData['whatsApp_status'] = $cogno->original;
             $insert_lead_to_db = $this->captureLeadToDB($postData);

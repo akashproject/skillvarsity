@@ -9,7 +9,7 @@
                         <li class="breadcrumb-item"><a href="{{ route('website') }}">Home</a></li>
                         <li class="breadcrumb-item active">{{ $contentMain->name}}</li>
                     </ol>
-                    <h1 class="td_mb_10">6,000+ students found their dream jobs with Skillvarsity <span style="color: #890c25;">You could be next!</span></h1>
+                    <h1 class="td_mb_10">6,000+ students found their dream jobs with {{ env('APP_NAME') }} <span style="color: #890c25;">You could be next!</span></h1>
                     <div class="mb-0">{{ $contentMain->excerpt}}</div>
                   </div>
                 </div>
@@ -63,7 +63,7 @@
           <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
             <div class="td_section_heading td_style_1 td_mb_30">
               <p class="td_section_subtitle_up td_fs_18 td_medium td_spacing_1 td_mb_10 td_accent_color">About us</p>
-              <h2 class="td_section_title td_fs_48 td_mb_30">Skillvarsity is a forward-thinking initiative by ICA Edu Skills</h2>
+              <h2 class="td_section_title td_fs_48 td_mb_30">{{ env('APP_NAME') }} is a forward-thinking initiative by ICA Edu Skills</h2>
               <h3 class="td_fs_24 td_medium td_mb_30 fst-italic">“We’ve 20 years Advance it Motivational  Services Academy Courses Experience.”</h3>
               <p class="td_section_subtitle td_fs_18 mb-0">We partner with top universities to deliver undergraduate programs that combine strong theoretical foundations with hands-on, job-focused training.</p>
             </div>
@@ -172,7 +172,7 @@
             <div class="td_pr_20">
               <div class="td_section_heading td_style_1 td_mb_30">
                 <p class="td_section_subtitle_up td_fs_18 td_medium td_spacing_1 td_mb_10 td_accent_color">Why Choose us</p>
-                <h2 class="td_section_title td_fs_48 td_mb_24">At Skillvarsity, we don’t just offer degrees—we build careers. </h2>
+                <h2 class="td_section_title td_fs_48 td_mb_24">At {{ env('APP_NAME') }}, we don’t just offer degrees—we build careers. </h2>
                 <p>Our programs are designed to prepare students for the real world by integrating academic learning with practical industry exposure. With a focus on future-ready skills, expert mentorship, and hands-on training, we ensure our students stand out in a competitive job market.</p>
               </div>
               <div class="td_mb_40">
@@ -354,11 +354,11 @@
           <div class="td_accordians td_style_1 td_type_2 td_mb_40">
             <div class="td_accordian">
               <div class="td_accordian_head">
-                <h2 class="td_accordian_title td_fs_18">What makes Skillvarsity different from a regular university program?</h2>
+                <h2 class="td_accordian_title td_fs_18">What makes {{ env('APP_NAME') }} different from a regular university program?</h2>
                 <span class="td_accordian_toggle"></span>
               </div>
               <div class="td_accordian_body td_fs_18">
-                <p>Skillvarsity blends academic education with practical, industry-relevant training, ensuring students are job-ready from day one.</p>
+                <p>{{ env('APP_NAME') }} blends academic education with practical, industry-relevant training, ensuring students are job-ready from day one.</p>
               </div>
             </div><!-- .td_accordian -->
             <div class="td_accordian">
@@ -390,7 +390,7 @@
             </div><!-- .td_accordian -->
             <div class="td_accordian ">
               <div class="td_accordian_head">
-                <h2 class="td_accordian_title td_fs_18">Which courses are currently offered under Skillvarsity?</h2>
+                <h2 class="td_accordian_title td_fs_18">Which courses are currently offered under {{ env('APP_NAME') }}?</h2>
                 <span class="td_accordian_toggle"></span>
               </div>
               <div class="td_accordian_body td_fs_18">

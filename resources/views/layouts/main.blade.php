@@ -2,6 +2,7 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <title>{{ isset($contentMain->title)?$contentMain->title:'Accounts | Finance | Taxation | Courses | Training Institute' }}</title>
+    <link rel="icon" href="{{ asset('assets/images/favicon.ico') }}">
     <meta name="description" content="{{ isset($contentMain->meta_description)?$contentMain->meta_description:'Eduversity' }}" />
     <link rel="canonical" href="{{url()->current()}}"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -12,7 +13,7 @@
     <meta name="robots" content="{{ isset($contentMain->robots)?$contentMain->robots:'' }}" />
     <meta name="google-site-verification" content="" />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:site_name" content="ICA Edu Skills" />
+    <meta property="og:site_name" content="{{ env('APP_NAME') }}" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ isset($contentMain->title)?$contentMain->title:'Eduversity' }}" />
     <meta property="og:description" content="{{ isset($contentMain->meta_description)?$contentMain->meta_description:'Eduversity' }}" />
@@ -34,7 +35,6 @@
     <!-- Css -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="{{ asset('assets/images/favicon.ico') }}">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet"> 
 
     <!-- Icon Font Stylesheet -->
