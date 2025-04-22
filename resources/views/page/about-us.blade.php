@@ -315,7 +315,7 @@
               <div class="td_team_info">
                 <div class="td_team_info_in">
                   <h3 class="td_team_member_title td_fs_20 mb-0">
-                    <a href="team-member-details.html">Ganesh Todi</a>
+                    <a href="team-member-details.html">Ganesh Kumar Todi</a>
                   </h3>
                   <p class="td_team_member_designation mb-0 td_fs_16 td_opacity_6 td_heading_color">Vice President</p>
                 </div>

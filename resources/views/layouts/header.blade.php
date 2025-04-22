@@ -1,13 +1,4 @@
-<!-- Spinner Start -->
-<!-- Start Preloader -->
-<div class="td_preloader">
-	<div class="td_preloader_in">
-	<span></span>
-	<span></span>
-	</div>
-</div>
-    <!-- End Preloader -->
-<!-- Spinner End -->
+
 <!-- Start Header Section -->
 <header class="td_site_header td_style_1 td_type_2 td_sticky_header td_medium td_heading_color">
 	<div class="td_top_header td_heading_bg td_white_color">
