@@ -8,7 +8,7 @@
           <h1 class="td_hero_title td_fs_64 td_mb_20">Build The Skills with {{ $contentMain->name }} </h1>
           <p class="td_hero_subtitle td_fs_18 td_heading_color td_opacity_7 td_mb_30">{{$contentMain->exerpt }}</p>
           <div class="td_btns_group">
-            <a href="courses-grid-view.html" class="td_btn td_style_1 td_radius_30 td_medium">
+            <a href="{{ url('courses') }}" class="td_btn td_style_1 td_radius_30 td_medium">
               <span class="td_btn_in td_white_color td_accent_bg">
                 <span>Explore All Courses</span>
                 <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">

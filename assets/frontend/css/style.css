@@ -2658,7 +2658,7 @@ label {
 }
 
 .td_faq_1_img {
-  min-height: 720px;
+  min-height: 530px;
   width: 100%;
 }
 @media (max-width: 991px) {
@@ -3353,6 +3353,9 @@ label {
   }
 }
 @media (max-width: 767px) {
+  .placement-redious-grid {
+    width: 145px !important; 
+  }
   .course-sidebar {
     display: none;
   }
@@ -3804,7 +3807,7 @@ label {
   top: 5px;
 }
 .td_list.td_style_2 li:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 @media (max-width: 1199px) {
   .td_list.td_style_2 li:not(:last-child) {

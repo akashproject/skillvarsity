@@ -129,23 +129,7 @@
         </div>
         <div class="col-lg-4">
           <div class="td_sidebar_filter">
-            <div class="td_filter_widget">
-              <form action="#" class="td_sidebar_search">
-                <input type="text" placeholder="Keywords" class="td_sidebar_search_input">
-                <button type="submit" class="td_sidebar_search_btn td_center">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-              </form>
-            </div>
-            <div class="td_filter_widget">
-              <h3 class="td_filter_widget_title td_fs_20 td_mb_16">Price Filter</h3>
-              <div class="st-range-slider-wrap">
-                <div id="slider-range"></div>
-                <div class="td_amount_wrap">
-                  <input type="text" id="amount" readonly>
-                </div>
-              </div>
-            </div>
+            
             <div class="td_filter_widget">
               <h3 class="td_filter_widget_title td_fs_20 td_mb_16">Choose Subjects</h3>
               <div class="td_filter_category td_fs_18 td_semibold">

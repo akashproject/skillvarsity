@@ -24,7 +24,7 @@
 			<li>
 				<img src="assets/frontend/img/icons/envlop.svg" alt="">
 				<span>
-				Email: <a href="mailto:support@educat.com">{{ get_theme_setting('email') }}</a>
+				Email: <a href="mailto:{{ get_theme_setting('email') }}">{{ get_theme_setting('email') }}</a>
 				</span>
 			</li>
 			</ul>
@@ -96,19 +96,7 @@
 			</div>
 			</nav>
 			<div class="td_hero_icon_btns position-relative">
-			<div class="position-relative">
-				<button class="td_circle_btn td_center td_search_tobble_btn" type="button">
-					<img src="{{ url('assets/frontend/img/icons/search_2.svg')}}" alt="">                                     
-				</button>
-				<div class="td_header_search_wrap">
-					<form action="#" class="td_header_search">
-						<input type="text" class="td_header_search_input" placeholder="Search For Anything">
-						<button class="td_header_search_btn td_center">
-						<img src="{{ url('assets/frontend/img/icons/search_2.svg')}}" alt="">
-						</button>
-					</form>
-				</div>
-			</div>
+			
 			
 			</div>
 		</div>
