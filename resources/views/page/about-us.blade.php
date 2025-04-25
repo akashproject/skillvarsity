@@ -243,10 +243,8 @@
               <div class="td_team_thumb d-block td_mb_16">
                 <img src="/assets/frontend/img/team/nks.webp" alt="" class="w-100">
                 <div class="td_team_social_list td_fs_14 td_white_color">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                  <a href="https://www.facebook.com/narendra.shyamsukha"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://www.linkedin.com/in/narendrashyamsukha/"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
               </div>
               <div class="td_team_info">
@@ -264,10 +262,8 @@
               <div class="td_team_thumb d-block td_mb_16">
                 <img src="/assets/frontend/img/team/ankit.webp" alt="" class="w-100">
                 <div class="td_team_social_list td_fs_14 td_white_color">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                  <a href="https://www.facebook.com/ankitshyamsukha"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://www.linkedin.com/in/ankitshyamsukha/"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
               </div>
               <div class="td_team_info">
@@ -285,10 +281,8 @@
               <div class="td_team_thumb d-block td_mb_16">
                 <img src="/assets/frontend/img/team/kanhaiya.webp" alt="" class="w-100">
                 <div class="td_team_social_list td_fs_14 td_white_color">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                  <a href="https://www.facebook.com/kanhaiya.poddar.75"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://www.linkedin.com/in/kanhaiya-poddar-0a094a23/"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
               </div>
               <div class="td_team_info">
@@ -306,10 +300,8 @@
               <div class="td_team_thumb d-block td_mb_16">
                 <img src="/assets/frontend/img/team/ganesh.webp" alt="" class="w-100">
                 <div class="td_team_social_list td_fs_14 td_white_color">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                  <a href="https://www.facebook.com/ganesh.t.ca/"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="https://in.linkedin.com/in/ca-ganesh-todi-30a45740"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
               </div>
               <div class="td_team_info">

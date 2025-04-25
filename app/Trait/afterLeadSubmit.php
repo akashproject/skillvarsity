@@ -55,7 +55,7 @@ trait afterLeadSubmit
     function cognoai_api_calling($postData){
         $whatsappArray = (object) array(
             "authorization" => "1d27951f-1532-48a2-b892-b84453945a06", 
-            "campaign_id" => "248047", 
+            "campaign_id" => "250174", 
             "whatsapp_bsp" => "1", 
             "client_data" => array(
                 "phone_number" => "+91".$postData['lead_mobile_number'], 
