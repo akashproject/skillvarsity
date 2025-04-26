@@ -12900,7 +12900,10 @@ button.td_icon_btn:hover {
 
 .td_team.td_style_5 .td_team_thumb {
   position: relative;
+  border-radius: 10px;
+  overflow: hidden;
 }
+
 .td_team.td_style_5 .td_team_social_list {
   position: absolute;
   top: 20px;
